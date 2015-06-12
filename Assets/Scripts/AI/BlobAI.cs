@@ -18,6 +18,7 @@ public class BlobAI : MonoBehaviour
 	private float minRandomIdle = 1;
 	private float maxRandomIdle = 7;
 	bool hasFallen;
+	bool idleAgain;
 
 	private enum BlobAction {Idling,PushingUp,Moving}
 	private BlobAction myAction;
@@ -122,6 +123,10 @@ public class BlobAI : MonoBehaviour
 	public void Trigger () 
 	{
 		if (triggered == false) {
+			anim.SetTrigger("StartRunning");
+			myAction=BlobAction.Moving;
+			anim.SetTrigger (moveHash);
+			anim.SetBool (pushUpHash, false);
 			triggered = true;
 			agent.SetDestination (target.position);
 		} 
