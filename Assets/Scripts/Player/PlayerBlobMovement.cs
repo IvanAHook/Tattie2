@@ -20,6 +20,10 @@ public class PlayerBlobMovement : MonoBehaviour {
 
     public Transform player;
 
+    bool interract;
+
+    Transform interractTarget;
+
     bool aquired;
 
     void Start() {
@@ -29,21 +33,6 @@ public class PlayerBlobMovement : MonoBehaviour {
         audioSource = transform.GetComponent<AudioSource>();
         StartCoroutine(Footsteps());
     }
-
-    public void SetDestination(Vector3 destination) {
-        NavMeshPath path = new NavMeshPath();
-        agent.CalculatePath(destination, path);
-        if (path.status == NavMeshPathStatus.PathComplete) {
-            agent.SetPath(path);
-        } else {
-            Halt();
-        }
-    }
-
-    public void Halt() {
-        agent.ResetPath();
-    }
-
 
     void Update() {
 
@@ -62,6 +51,41 @@ public class PlayerBlobMovement : MonoBehaviour {
             }
         }
 
+        if (interract && interractTarget) {
+            Debug.Log("interractTarget");
+            if (Vector3.Distance(transform.position, agent.destination) < 2f) {
+                interractTarget.GetComponent<Interactable>().Interact();
+                interract = false;
+                Halt();
+            }
+        }
+    }
+
+    public void SetDestination(Vector3 destination) {
+        NavMeshPath path = new NavMeshPath();
+        agent.CalculatePath(destination, path);
+        if (path.status == NavMeshPathStatus.PathComplete) {
+            agent.SetPath(path);
+        } else {
+            Halt();
+        }
+    }
+
+    public void Halt() {
+        agent.ResetPath();
+    }
+
+    public void TargetHit(Transform t) {
+        if (t.tag == "Interactable") {
+            Debug.Log("TargetHit");
+            interract = true;
+            interractTarget = t;
+            t.SendMessage("PlayAnim", SendMessageOptions.DontRequireReceiver);
+            SetDestination(t.GetComponent<Interactable>().interactTransform.position);
+            //agent.destination = t.GetComponent<Interactable>().interactTransform.position;
+            return;
+        }
+        interract = false;
     }
 
     public void SetIsAquired(bool aquired) {

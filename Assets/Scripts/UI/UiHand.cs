@@ -15,7 +15,7 @@ public class UiHand : MonoBehaviour {
     public Transform player;
     public List<Transform> heldItems;
 
-    float hideDelay = 5f;
+    float hideDelay = 3f;
     float hideTimer = 0f;
 
     bool didHoverLastFrame;
@@ -23,7 +23,7 @@ public class UiHand : MonoBehaviour {
     public GameObject defaultItemPrefab;
 
     void Update() {
-
+        Debug.Log(ContainsMouse());
         if (didHoverLastFrame && !ContainsMouse() && mouseExit != null) {
             mouseExit();
             didHoverLastFrame = false;
@@ -34,13 +34,12 @@ public class UiHand : MonoBehaviour {
 
         hideTimer += Time.deltaTime;
         if (hideTimer >= hideDelay) {
-            transform.DOMoveY(-76f, 0.5f);
+            transform.DOMoveY(-128f, 0.5f);
             //transform.position = new Vector3(0f, -76f, 0f);
         }
     }
 
     public void PickupItem(Transform item) {
-        Debug.Log(item.GetComponent<Pickup>().sprite.name);
         if (item.GetComponent<Pickup>()) {
             Transform newItem = ((GameObject)Instantiate(defaultItemPrefab, Vector3.zero, Quaternion.identity)).transform;
             newItem.GetComponent<UiItem>().sprite = item.GetComponent<Pickup>().sprite;

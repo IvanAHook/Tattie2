@@ -12,7 +12,7 @@ public class PlayerGroupController : MonoBehaviour {
     Camera cam;
 
     Vector3 targetPosition;
-    ActivePlayer activePlayer;
+    public ActivePlayer activePlayer;
 
     public Texture2D cursorInteract;
     public Texture2D cursorDefault;
@@ -20,7 +20,7 @@ public class PlayerGroupController : MonoBehaviour {
     public GameObject clickDust;
     public GameObject clickLeaves;
 
-    enum ActivePlayer { Player, Blob };
+    public enum ActivePlayer { Player, Blob };
 
 	void Start () {
 
@@ -78,7 +78,11 @@ public class PlayerGroupController : MonoBehaviour {
                 }
 
             } else if (hitInfo.transform.gameObject.layer == 10 || hitInfo.transform.gameObject.layer == 13) {
-                player.TargetHit(hitInfo.transform);
+                if (activePlayer == ActivePlayer.Player) {
+                    player.TargetHit(hitInfo.transform);
+                } else if (activePlayer == ActivePlayer.Blob) {
+                    playerBlob.TargetHit(hitInfo.transform);
+                }
             }
 
         }
@@ -115,7 +119,7 @@ public class PlayerGroupController : MonoBehaviour {
     void UpdateCursor() {
         RaycastHit hitInfo;
 
-        if (Physics.Raycast(cam.ScreenPointToRay(Input.mousePosition), out hitInfo) && activePlayer == ActivePlayer.Player) {
+        if (Physics.Raycast(cam.ScreenPointToRay(Input.mousePosition), out hitInfo)) {
 
             if (hitInfo.transform.GetComponent<Pickup>() || hitInfo.transform.GetComponent<Interactable>()) {
                 Cursor.SetCursor(cursorInteract, Vector2.zero, CursorMode.Auto);
@@ -143,7 +147,6 @@ public class PlayerGroupController : MonoBehaviour {
             cam.GetComponent<CameraScript>().target = player.transform;
             playerBlob.SetDestination(player.transform.position - player.transform.forward);
         }
-        Debug.Log(activePlayer.ToString());
     }
 
     Color GetRaycastColor(RaycastHit hitInfo) {
