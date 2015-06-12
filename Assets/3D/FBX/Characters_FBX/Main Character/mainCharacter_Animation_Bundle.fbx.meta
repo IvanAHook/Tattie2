@@ -128,6 +128,7 @@ ModelImporter:
     7400018: '"No"'
     7400020: Idle
     7400022: Look into cam
+    7400024: Look ahead idle
     9500000: //RootNode
     11100000: //RootNode
     13700000: Mesh_Main_Character
@@ -1655,6 +1656,142 @@ ModelImporter:
       loop: 0
       loopTime: 0
       loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: global_control
+        weight: 1
+      - path: global_control/bind_skeleton
+        weight: 1
+      - path: global_control/bind_skeleton/nb_root_jnt_01
+        weight: 1
+      - path: global_control/bind_skeleton/nb_root_jnt_01/bind_pelvis_jnt_01
+        weight: 1
+      - path: global_control/bind_skeleton/nb_root_jnt_01/bind_pelvis_jnt_01/bind_left_hip_jnt_01
+        weight: 1
+      - path: global_control/bind_skeleton/nb_root_jnt_01/bind_pelvis_jnt_01/bind_left_hip_jnt_01/bind_left_knee_jnt_01
+        weight: 1
+      - path: global_control/bind_skeleton/nb_root_jnt_01/bind_pelvis_jnt_01/bind_left_hip_jnt_01/bind_left_knee_jnt_01/bind_left_ankle_jnt_01
+        weight: 1
+      - path: global_control/bind_skeleton/nb_root_jnt_01/bind_pelvis_jnt_01/bind_left_hip_jnt_01/bind_left_knee_jnt_01/bind_left_ankle_jnt_01/bind_left_foot_jnt_01
+        weight: 1
+      - path: global_control/bind_skeleton/nb_root_jnt_01/bind_pelvis_jnt_01/bind_left_hip_jnt_01/bind_left_knee_jnt_01/bind_left_ankle_jnt_01/bind_left_foot_jnt_01/nb_left_toes_jnt_01
+        weight: 1
+      - path: global_control/bind_skeleton/nb_root_jnt_01/bind_pelvis_jnt_01/bind_right_hip_jnt_01
+        weight: 1
+      - path: global_control/bind_skeleton/nb_root_jnt_01/bind_pelvis_jnt_01/bind_right_hip_jnt_01/bind_right_knee_jnt_01
+        weight: 1
+      - path: global_control/bind_skeleton/nb_root_jnt_01/bind_pelvis_jnt_01/bind_right_hip_jnt_01/bind_right_knee_jnt_01/bind_right_ankle_jnt_01
+        weight: 1
+      - path: global_control/bind_skeleton/nb_root_jnt_01/bind_pelvis_jnt_01/bind_right_hip_jnt_01/bind_right_knee_jnt_01/bind_right_ankle_jnt_01/bind_right_foot_jnt_01
+        weight: 1
+      - path: global_control/bind_skeleton/nb_root_jnt_01/bind_pelvis_jnt_01/bind_right_hip_jnt_01/bind_right_knee_jnt_01/bind_right_ankle_jnt_01/bind_right_foot_jnt_01/nb_right_toes_jnt_01
+        weight: 1
+      - path: global_control/bind_skeleton/nb_root_jnt_01/bind_spine_jnt_01
+        weight: 1
+      - path: global_control/bind_skeleton/nb_root_jnt_01/bind_spine_jnt_01/bind_spine_jnt_02
+        weight: 1
+      - path: global_control/bind_skeleton/nb_root_jnt_01/bind_spine_jnt_01/bind_spine_jnt_02/bind_spine_jnt_03
+        weight: 1
+      - path: global_control/bind_skeleton/nb_root_jnt_01/bind_spine_jnt_01/bind_spine_jnt_02/bind_spine_jnt_03/bind_left_clavicle_jnt_01
+        weight: 1
+      - path: global_control/bind_skeleton/nb_root_jnt_01/bind_spine_jnt_01/bind_spine_jnt_02/bind_spine_jnt_03/bind_left_clavicle_jnt_01/bind_left_shoulder_jnt_01
+        weight: 1
+      - path: global_control/bind_skeleton/nb_root_jnt_01/bind_spine_jnt_01/bind_spine_jnt_02/bind_spine_jnt_03/bind_left_clavicle_jnt_01/bind_left_shoulder_jnt_01/bind_left_elbow_jnt_01
+        weight: 1
+      - path: global_control/bind_skeleton/nb_root_jnt_01/bind_spine_jnt_01/bind_spine_jnt_02/bind_spine_jnt_03/bind_left_clavicle_jnt_01/bind_left_shoulder_jnt_01/bind_left_elbow_jnt_01/bind_left_wrist_jnt_01
+        weight: 1
+      - path: global_control/bind_skeleton/nb_root_jnt_01/bind_spine_jnt_01/bind_spine_jnt_02/bind_spine_jnt_03/bind_left_clavicle_jnt_01/bind_left_shoulder_jnt_01/bind_left_elbow_jnt_01/bind_left_wrist_jnt_01/nb_left_wrist_jnt_02
+        weight: 1
+      - path: global_control/bind_skeleton/nb_root_jnt_01/bind_spine_jnt_01/bind_spine_jnt_02/bind_spine_jnt_03/bind_left_clavicle_jnt_01/bind_left_shoulder_jnt_01/bind_left_elbow_jnt_01/bind_left_wrist_jnt_01/nb_left_wrist_jnt_02/bind_left_hand_jnt_01
+        weight: 1
+      - path: global_control/bind_skeleton/nb_root_jnt_01/bind_spine_jnt_01/bind_spine_jnt_02/bind_spine_jnt_03/bind_left_clavicle_jnt_01/bind_left_shoulder_jnt_01/bind_left_elbow_jnt_01/bind_left_wrist_jnt_01/nb_left_wrist_jnt_02/bind_left_hand_jnt_01/bind_left_hand_jnt_02
+        weight: 1
+      - path: global_control/bind_skeleton/nb_root_jnt_01/bind_spine_jnt_01/bind_spine_jnt_02/bind_spine_jnt_03/bind_left_clavicle_jnt_01/bind_left_shoulder_jnt_01/bind_left_elbow_jnt_01/bind_left_wrist_jnt_01/nb_left_wrist_jnt_02/bind_left_hand_jnt_01/bind_left_hand_jnt_02/bind_left_hand_jnt_03
+        weight: 1
+      - path: global_control/bind_skeleton/nb_root_jnt_01/bind_spine_jnt_01/bind_spine_jnt_02/bind_spine_jnt_03/bind_left_clavicle_jnt_01/nb_fk_left_shoulder_jnt_01
+        weight: 1
+      - path: global_control/bind_skeleton/nb_root_jnt_01/bind_spine_jnt_01/bind_spine_jnt_02/bind_spine_jnt_03/bind_left_clavicle_jnt_01/nb_fk_left_shoulder_jnt_01/nb_fk_left_elbow_jnt_01
+        weight: 1
+      - path: global_control/bind_skeleton/nb_root_jnt_01/bind_spine_jnt_01/bind_spine_jnt_02/bind_spine_jnt_03/bind_left_clavicle_jnt_01/nb_fk_left_shoulder_jnt_01/nb_fk_left_elbow_jnt_01/nb_fk_left_wrist_jnt_01
+        weight: 1
+      - path: global_control/bind_skeleton/nb_root_jnt_01/bind_spine_jnt_01/bind_spine_jnt_02/bind_spine_jnt_03/bind_left_clavicle_jnt_01/nb_ik_left_shoulder_jnt_01
+        weight: 1
+      - path: global_control/bind_skeleton/nb_root_jnt_01/bind_spine_jnt_01/bind_spine_jnt_02/bind_spine_jnt_03/bind_left_clavicle_jnt_01/nb_ik_left_shoulder_jnt_01/nb_ik_left_elbow_jnt_01
+        weight: 1
+      - path: global_control/bind_skeleton/nb_root_jnt_01/bind_spine_jnt_01/bind_spine_jnt_02/bind_spine_jnt_03/bind_left_clavicle_jnt_01/nb_ik_left_shoulder_jnt_01/nb_ik_left_elbow_jnt_01/nb_ik_left_wrist_jnt_01
+        weight: 1
+      - path: global_control/bind_skeleton/nb_root_jnt_01/bind_spine_jnt_01/bind_spine_jnt_02/bind_spine_jnt_03/bind_neck_jnt_01
+        weight: 1
+      - path: global_control/bind_skeleton/nb_root_jnt_01/bind_spine_jnt_01/bind_spine_jnt_02/bind_spine_jnt_03/bind_neck_jnt_01/bind_head_jnt_01
+        weight: 1
+      - path: global_control/bind_skeleton/nb_root_jnt_01/bind_spine_jnt_01/bind_spine_jnt_02/bind_spine_jnt_03/bind_neck_jnt_01/bind_head_jnt_01/bind_base_hat_jnt_01
+        weight: 1
+      - path: global_control/bind_skeleton/nb_root_jnt_01/bind_spine_jnt_01/bind_spine_jnt_02/bind_spine_jnt_03/bind_neck_jnt_01/bind_head_jnt_01/bind_base_hat_jnt_01/bind_in_hat_jnt_01
+        weight: 1
+      - path: global_control/bind_skeleton/nb_root_jnt_01/bind_spine_jnt_01/bind_spine_jnt_02/bind_spine_jnt_03/bind_neck_jnt_01/bind_head_jnt_01/bind_base_hat_jnt_01/bind_in_hat_jnt_01/bind_in_hat_jnt_02
+        weight: 1
+      - path: global_control/bind_skeleton/nb_root_jnt_01/bind_spine_jnt_01/bind_spine_jnt_02/bind_spine_jnt_03/bind_neck_jnt_01/bind_head_jnt_01/bind_base_hat_jnt_01/bind_in_hat_jnt_01/bind_in_hat_jnt_02/bind_in_hat_jnt_03
+        weight: 1
+      - path: global_control/bind_skeleton/nb_root_jnt_01/bind_spine_jnt_01/bind_spine_jnt_02/bind_spine_jnt_03/bind_neck_jnt_01/bind_head_jnt_01/bind_base_hat_jnt_01/bind_in_hat_jnt_01/bind_in_hat_jnt_02/bind_in_hat_jnt_03/bind_in_hat_jnt_04
+        weight: 1
+      - path: global_control/bind_skeleton/nb_root_jnt_01/bind_spine_jnt_01/bind_spine_jnt_02/bind_spine_jnt_03/bind_neck_jnt_01/bind_head_jnt_01/bind_base_hat_jnt_01/bind_in_hat_jnt_01/bind_in_hat_jnt_02/bind_in_hat_jnt_03/bind_in_hat_jnt_04/nb_tip_hat_jnt_01
+        weight: 1
+      - path: global_control/bind_skeleton/nb_root_jnt_01/bind_spine_jnt_01/bind_spine_jnt_02/bind_spine_jnt_03/bind_right_clavicle_jnt_01
+        weight: 1
+      - path: global_control/bind_skeleton/nb_root_jnt_01/bind_spine_jnt_01/bind_spine_jnt_02/bind_spine_jnt_03/bind_right_clavicle_jnt_01/bind_right_shoulder_jnt_01
+        weight: 1
+      - path: global_control/bind_skeleton/nb_root_jnt_01/bind_spine_jnt_01/bind_spine_jnt_02/bind_spine_jnt_03/bind_right_clavicle_jnt_01/bind_right_shoulder_jnt_01/bind_right_elbow_jnt_01
+        weight: 1
+      - path: global_control/bind_skeleton/nb_root_jnt_01/bind_spine_jnt_01/bind_spine_jnt_02/bind_spine_jnt_03/bind_right_clavicle_jnt_01/bind_right_shoulder_jnt_01/bind_right_elbow_jnt_01/bind_right_wrist_jnt_01
+        weight: 1
+      - path: global_control/bind_skeleton/nb_root_jnt_01/bind_spine_jnt_01/bind_spine_jnt_02/bind_spine_jnt_03/bind_right_clavicle_jnt_01/bind_right_shoulder_jnt_01/bind_right_elbow_jnt_01/bind_right_wrist_jnt_01/nb_right_wrist_jnt_02
+        weight: 1
+      - path: global_control/bind_skeleton/nb_root_jnt_01/bind_spine_jnt_01/bind_spine_jnt_02/bind_spine_jnt_03/bind_right_clavicle_jnt_01/bind_right_shoulder_jnt_01/bind_right_elbow_jnt_01/bind_right_wrist_jnt_01/nb_right_wrist_jnt_02/bind_right_hand_jnt_01
+        weight: 1
+      - path: global_control/bind_skeleton/nb_root_jnt_01/bind_spine_jnt_01/bind_spine_jnt_02/bind_spine_jnt_03/bind_right_clavicle_jnt_01/bind_right_shoulder_jnt_01/bind_right_elbow_jnt_01/bind_right_wrist_jnt_01/nb_right_wrist_jnt_02/bind_right_hand_jnt_01/bind_right_hand_jnt_02
+        weight: 1
+      - path: global_control/bind_skeleton/nb_root_jnt_01/bind_spine_jnt_01/bind_spine_jnt_02/bind_spine_jnt_03/bind_right_clavicle_jnt_01/bind_right_shoulder_jnt_01/bind_right_elbow_jnt_01/bind_right_wrist_jnt_01/nb_right_wrist_jnt_02/bind_right_hand_jnt_01/bind_right_hand_jnt_02/bind_right_hand_jnt_03
+        weight: 1
+      - path: global_control/bind_skeleton/nb_root_jnt_01/bind_spine_jnt_01/bind_spine_jnt_02/bind_spine_jnt_03/bind_right_clavicle_jnt_01/nb_fk_right_shoulder_jnt_01
+        weight: 1
+      - path: global_control/bind_skeleton/nb_root_jnt_01/bind_spine_jnt_01/bind_spine_jnt_02/bind_spine_jnt_03/bind_right_clavicle_jnt_01/nb_fk_right_shoulder_jnt_01/nb_fk_right_elbow_jnt_01
+        weight: 1
+      - path: global_control/bind_skeleton/nb_root_jnt_01/bind_spine_jnt_01/bind_spine_jnt_02/bind_spine_jnt_03/bind_right_clavicle_jnt_01/nb_fk_right_shoulder_jnt_01/nb_fk_right_elbow_jnt_01/nb_fk_right_wrist_jnt_01
+        weight: 1
+      - path: global_control/bind_skeleton/nb_root_jnt_01/bind_spine_jnt_01/bind_spine_jnt_02/bind_spine_jnt_03/bind_right_clavicle_jnt_01/nb_ik_right_shoulder_jnt_01
+        weight: 1
+      - path: global_control/bind_skeleton/nb_root_jnt_01/bind_spine_jnt_01/bind_spine_jnt_02/bind_spine_jnt_03/bind_right_clavicle_jnt_01/nb_ik_right_shoulder_jnt_01/nb_ik_right_elbow_jnt_01
+        weight: 1
+      - path: global_control/bind_skeleton/nb_root_jnt_01/bind_spine_jnt_01/bind_spine_jnt_02/bind_spine_jnt_03/bind_right_clavicle_jnt_01/nb_ik_right_shoulder_jnt_01/nb_ik_right_elbow_jnt_01/nb_ik_right_wrist_jnt_01
+        weight: 1
+      - path: Mesh_Main_Character
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: Look ahead idle
+      takeName: Take 001
+      firstFrame: 490
+      lastFrame: 560
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 1
+      loopBlend: 1
       loopBlendOrientation: 0
       loopBlendPositionY: 0
       loopBlendPositionXZ: 0
