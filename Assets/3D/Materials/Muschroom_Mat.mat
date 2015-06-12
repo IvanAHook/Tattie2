@@ -1,0 +1,73 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!21 &2100000
+Material:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: Muschroom_Mat
+  m_Shader: {fileID: 4800000, guid: 85d66983da6dc144193466bd4d1c6bfe, type: 3}
+  m_ShaderKeywords: 
+  m_LightmapFlags: 5
+  m_CustomRenderQueue: -1
+  m_SavedProperties:
+    serializedVersion: 2
+    m_TexEnvs:
+      data:
+        first:
+          name: _node_9653
+        second:
+          m_Texture: {fileID: 0}
+          m_Scale: {x: 1, y: 1}
+          m_Offset: {x: 0, y: 0}
+      data:
+        first:
+          name: _Transparancy
+        second:
+          m_Texture: {fileID: 2800000, guid: cb89008e708e4bc48a4368c06b3ff5fc, type: 3}
+          m_Scale: {x: 1, y: 1}
+          m_Offset: {x: 0, y: 0}
+      data:
+        first:
+          name: _node_7013
+        second:
+          m_Texture: {fileID: 2800000, guid: 9e463e1043f31724387ef30c1c366525, type: 3}
+          m_Scale: {x: 1, y: 1}
+          m_Offset: {x: 0, y: 0}
+      data:
+        first:
+          name: _node_2049
+        second:
+          m_Texture: {fileID: 0}
+          m_Scale: {x: 1, y: 1}
+          m_Offset: {x: 0, y: 0}
+      data:
+        first:
+          name: _texture
+        second:
+          m_Texture: {fileID: 2800000, guid: fc79468710d144c4f87cc6209aa1c4cc, type: 3}
+          m_Scale: {x: 1, y: 1}
+          m_Offset: {x: 0, y: 0}
+    m_Floats:
+      data:
+        first:
+          name: _Cutoff
+        second: .5
+      data:
+        first:
+          name: _Intensity
+        second: .00400000019
+      data:
+        first:
+          name: _Intesity
+        second: .00300000003
+      data:
+        first:
+          name: _node_5136
+        second: 1
+    m_Colors:
+      data:
+        first:
+          name: _node_5769
+        second: {r: .34256056, g: .357260495, b: .647058845, a: 1}

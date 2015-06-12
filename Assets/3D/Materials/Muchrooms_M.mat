@@ -1,0 +1,79 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!21 &2100000
+Material:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: Muchrooms_M
+  m_Shader: {fileID: 4800000, guid: f9ffbea1fb23672409857868b36df87f, type: 3}
+  m_ShaderKeywords: 
+  m_LightmapFlags: 5
+  m_CustomRenderQueue: -1
+  m_SavedProperties:
+    serializedVersion: 2
+    m_TexEnvs:
+      data:
+        first:
+          name: _Transparancy
+        second:
+          m_Texture: {fileID: 0}
+          m_Scale: {x: 1, y: 1}
+          m_Offset: {x: 0, y: 0}
+      data:
+        first:
+          name: _node_7013
+        second:
+          m_Texture: {fileID: 0}
+          m_Scale: {x: 1, y: 1}
+          m_Offset: {x: 0, y: 0}
+      data:
+        first:
+          name: _texture
+        second:
+          m_Texture: {fileID: 2800000, guid: fc79468710d144c4f87cc6209aa1c4cc, type: 3}
+          m_Scale: {x: 1, y: 1}
+          m_Offset: {x: 0, y: 0}
+    m_Floats:
+      data:
+        first:
+          name: _Cutoff
+        second: .5
+      data:
+        first:
+          name: _Intensity
+        second: .0199999996
+      data:
+        first:
+          name: _PlayerX
+        second: 1
+      data:
+        first:
+          name: _PlayerZ
+        second: 1
+      data:
+        first:
+          name: _ShakeDistance
+        second: .200000003
+      data:
+        first:
+          name: _ShakeSpeed
+        second: 2.54999995
+      data:
+        first:
+          name: _WindDistance
+        second: .5
+      data:
+        first:
+          name: _WindSpeed
+        second: 0
+      data:
+        first:
+          name: _TimeOffsetG
+        second: 0
+      data:
+        first:
+          name: _HitTime
+        second: 0
+    m_Colors: {}

@@ -1,0 +1,33 @@
+Naming conventions
+
+scripts: MyScript.cs
+
+shader: shdr_myShader
+
+materials: mat_myMat
+
+meshes:  mesh_myMesh.fbx
+
+textures: tex_myTex.psd
+
+
+C# naming conventions and code standard:
+
+MyClass
+
+MyFunction
+
+myVariable
+
+void MyFunction() {
+
+    for() {
+    }
+
+    while() {
+    }
+
+    if() {
+    }
+
+}
