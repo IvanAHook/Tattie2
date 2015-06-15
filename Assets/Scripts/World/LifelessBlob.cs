@@ -5,6 +5,8 @@ using DG.Tweening;
 public class LifelessBlob : Interactable {
 
     public Transform player;
+    public Transform target;
+
     private const string emissionID = "_Emission";
     private Material mat;
 
@@ -28,6 +30,8 @@ public class LifelessBlob : Interactable {
             GetComponent<BoxCollider>().enabled = false;
 			GetComponentInChildren<BlobAIPlayerBlobFall>().RunAgain();
             GetComponentInChildren<PlayerBlobMovement>().enabled = true;
+
+            Destroy(target.gameObject);
 
             //GetComponentInChildren<PlayerBlobMovement>().SetDestination(player.position);
             //GetComponentInChildren<BlobAI>().enabled = true;
