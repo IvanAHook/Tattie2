@@ -565,7 +565,6 @@ GameObject:
   m_Component:
   - 4: {fileID: 438794}
   - 208: {fileID: 20899950}
-  - 114: {fileID: 11459446}
   m_Layer: 0
   m_Name: BridgeBlocker
   m_TagString: Untagged
@@ -2646,19 +2645,8 @@ MonoBehaviour:
   interractItem: {fileID: 0}
   interactTransform: {fileID: 491684}
   interractSound: {fileID: 0}
-  obstacle: {fileID: 20899950}
-  bridge: {fileID: 0}
---- !u!114 &11459446
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 188002}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 0}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  obstacle: {fileID: 20838392}
+  bridge: {fileID: 11468906}
 --- !u!114 &11468906
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -2670,9 +2658,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4dfdeb2808b8ad04bb2e5c18dbc429d8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  bridgeWhole: {fileID: 0}
-  bridgeBroken: {fileID: 0}
-  obstacle: {fileID: 0}
+  bridgeWhole: {fileID: 191692}
+  bridgeBroken: {fileID: 139054}
+  obstacle: {fileID: 20838392}
 --- !u!208 &20838392
 NavMeshObstacle:
   m_ObjectHideFlags: 1
