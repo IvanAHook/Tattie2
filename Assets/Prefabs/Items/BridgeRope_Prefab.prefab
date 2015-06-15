@@ -19,23 +19,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!1 &136208
-GameObject:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  serializedVersion: 4
-  m_Component:
-  - 4: {fileID: 484150}
-  - 208: {fileID: 20846760}
-  - 114: {fileID: 11405456}
-  m_Layer: 0
-  m_Name: BridgeBlocker
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
 --- !u!1 &153924
 GameObject:
   m_ObjectHideFlags: 0
@@ -75,25 +58,12 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 153924}
   m_LocalRotation: {x: -.0548271388, y: -.939949691, z: .15218097, w: -.300548851}
-  m_LocalPosition: {x: 22.3910007, y: .246999994, z: 34.7820015}
+  m_LocalPosition: {x: 17.3157616, y: -2.22864461, z: 33.427227}
   m_LocalScale: {x: 2, y: 2, z: 2}
   m_Children:
   - {fileID: 457936}
-  - {fileID: 484150}
   m_Father: {fileID: 0}
   m_RootOrder: 0
---- !u!4 &484150
-Transform:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 136208}
-  m_LocalRotation: {x: .0548271388, y: .939949691, z: -.15218097, w: -.300548851}
-  m_LocalPosition: {x: 4.46562386, y: 1.38796496, z: 4.45273447}
-  m_LocalScale: {x: .499999881, y: .50000006, z: .499999821}
-  m_Children: []
-  m_Father: {fileID: 471912}
-  m_RootOrder: 1
 --- !u!23 &2344166
 MeshRenderer:
   m_ObjectHideFlags: 1
@@ -209,17 +179,6 @@ Animator:
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
---- !u!114 &11405456
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 136208}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7a41fd0b086139546857236031253b6d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &11410974
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -236,22 +195,8 @@ MonoBehaviour:
   interractItem: {fileID: 0}
   interactTransform: {fileID: 457936}
   interractSound: {fileID: 0}
-  obstacle: {fileID: 20846760}
---- !u!208 &20846760
-NavMeshObstacle:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 136208}
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Shape: 1
-  m_Extents: {x: .5, y: .5, z: .5}
-  m_MoveThreshold: .100000001
-  m_Carve: 1
-  m_CarveOnlyStationary: 1
-  m_Center: {x: 0, y: 0, z: 0}
-  m_TimeToStationary: .5
+  obstacle: {fileID: 0}
+  bridge: {fileID: 0}
 --- !u!1001 &100100000
 Prefab:
   m_ObjectHideFlags: 1
