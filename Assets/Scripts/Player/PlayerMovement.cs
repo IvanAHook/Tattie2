@@ -118,7 +118,9 @@ public class PlayerMovement : MonoBehaviour {
     }
 
     public void Halt() {
-        agent.ResetPath();
+        Debug.Log("Stop");
+        //agent.Stop();
+        //agent.ResetPath();
     }
 
     public void TargetHit(Transform t) {

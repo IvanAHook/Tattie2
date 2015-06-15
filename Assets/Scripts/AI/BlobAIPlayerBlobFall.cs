@@ -126,7 +126,7 @@ public class BlobAIPlayerBlobFall : MonoBehaviour
 	private void Trip ()
 	{
 		anim.SetTrigger (playerTripHash);
-		agent.destination = transform.position+transform.forward*2;
+		agent.SetDestination(transform.position+transform.forward*2);
 		hasFallen=true;
 		//Invoke ("RunAgain",2.5f);
 	}
