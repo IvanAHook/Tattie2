@@ -28,14 +28,19 @@ public class LifelessBlob : Interactable {
             transform.gameObject.tag = "Player";
 
             GetComponent<BoxCollider>().enabled = false;
-			GetComponentInChildren<BlobAIPlayerBlobFall>().RunAgain();
-            GetComponentInChildren<PlayerBlobMovement>().enabled = true;
+            StartCoroutine("Stand");
 
             Destroy(target.gameObject);
 
             //GetComponentInChildren<PlayerBlobMovement>().SetDestination(player.position);
             //GetComponentInChildren<BlobAI>().enabled = true;
         }
+    }
+
+    IEnumerator Stand() {
+        GetComponentInChildren<BlobAIPlayerBlobFall>().RunAgain();
+        yield return new WaitForSeconds(1.2f);
+        GetComponentInChildren<PlayerBlobMovement>().enabled = true;
     }
 
     void ProximityBrightness() {
