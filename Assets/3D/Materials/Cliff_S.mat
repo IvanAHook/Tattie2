@@ -1,0 +1,62 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!21 &2100000
+Material:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: Cliff_S
+  m_Shader: {fileID: 4800000, guid: 1acf45cfa52494e48a3315e8ab194b3a, type: 3}
+  m_ShaderKeywords: 
+  m_LightmapFlags: 5
+  m_CustomRenderQueue: -1
+  m_SavedProperties:
+    serializedVersion: 2
+    m_TexEnvs:
+      data:
+        first:
+          name: _node_7654
+        second:
+          m_Texture: {fileID: 2800000, guid: 9bacd7f0b42049043a53e32ce339766c, type: 3}
+          m_Scale: {x: 1, y: 1}
+          m_Offset: {x: 0, y: 0}
+      data:
+        first:
+          name: _node_7858
+        second:
+          m_Texture: {fileID: 2800000, guid: 4d6568d54fdf1244b9f02c2082ee1baf, type: 3}
+          m_Scale: {x: 1, y: 1}
+          m_Offset: {x: 0, y: 0}
+      data:
+        first:
+          name: _mnoss_t
+        second:
+          m_Texture: {fileID: 2800000, guid: 3fb06727ff1b77b47a394012b1326378, type: 3}
+          m_Scale: {x: 1, y: 1}
+          m_Offset: {x: 0, y: 0}
+      data:
+        first:
+          name: _moss_normal
+        second:
+          m_Texture: {fileID: 2800000, guid: 32f9322402dcb1e45bf48725c0e97e07, type: 3}
+          m_Scale: {x: 1, y: 1}
+          m_Offset: {x: 0, y: 0}
+    m_Floats:
+      data:
+        first:
+          name: _Stone_Spec
+        second: 0
+      data:
+        first:
+          name: _s
+        second: 0
+      data:
+        first:
+          name: _node_9968
+        second: 1
+    m_Colors:
+      data:
+        first:
+          name: _node_5432
+        second: {r: .588235259, g: .588235259, b: .588235259, a: 1}
