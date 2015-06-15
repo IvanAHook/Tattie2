@@ -2246,7 +2246,7 @@ Transform:
   - {fileID: 1325676631}
   - {fileID: 208057515}
   m_Father: {fileID: 0}
-  m_RootOrder: 40
+  m_RootOrder: 41
 --- !u!1001 &79397782
 Prefab:
   m_ObjectHideFlags: 0
@@ -12350,7 +12350,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Quit
+  m_Text: quit
 --- !u!222 &362838286
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -23362,7 +23362,7 @@ Transform:
   - {fileID: 1866263209}
   - {fileID: 866215330}
   m_Father: {fileID: 0}
-  m_RootOrder: 100
+  m_RootOrder: 103
 --- !u!1 &869377171
 GameObject:
   m_ObjectHideFlags: 0
@@ -38584,7 +38584,7 @@ Transform:
   - {fileID: 1796689292}
   - {fileID: 327186424}
   m_Father: {fileID: 0}
-  m_RootOrder: 90
+  m_RootOrder: 91
 --- !u!1001 &1629444778
 Prefab:
   m_ObjectHideFlags: 0
@@ -44355,7 +44355,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Play
+  m_Text: play
 --- !u!222 &1904397182
 CanvasRenderer:
   m_ObjectHideFlags: 0
