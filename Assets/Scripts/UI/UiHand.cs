@@ -23,7 +23,6 @@ public class UiHand : MonoBehaviour {
     public GameObject defaultItemPrefab;
 
     void Update() {
-        Debug.Log(ContainsMouse());
         if (didHoverLastFrame && !ContainsMouse() && mouseExit != null) {
             mouseExit();
             didHoverLastFrame = false;
