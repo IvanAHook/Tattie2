@@ -1587,13 +1587,25 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dd4fea18941a75d4d83d78d9565d2c0a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  footsteps:
+  footstepsGrass:
   - {fileID: 8300000, guid: 7dc58526c287a244993b2adf25e4288f, type: 3}
   - {fileID: 8300000, guid: 64ff0ef50d4025b459678ee8e0b6a5ce, type: 3}
   - {fileID: 8300000, guid: 5135ec514827c0e43a6533a056008118, type: 3}
   - {fileID: 8300000, guid: 6b9889f269c0f9e4f82421036a22d44c, type: 3}
   - {fileID: 8300000, guid: 9416d63c2a0920948b6db55e5cefdb7f, type: 3}
   - {fileID: 8300000, guid: e0beee5b53acb0c47af2d04d8b741b7c, type: 3}
+  footstepsWood:
+  - {fileID: 8300000, guid: eb99c06ce537cf549a4f2843588610f1, type: 3}
+  - {fileID: 8300000, guid: 5edc3987c9be90641b132ff0c690c969, type: 3}
+  - {fileID: 8300000, guid: af29ed00be17b86448a8d48c75459ffb, type: 3}
+  - {fileID: 8300000, guid: 2bee27b032eeeb4409f1df5046d98582, type: 3}
+  - {fileID: 8300000, guid: ee0024096e52b044491a35bfb3b0a7c0, type: 3}
+  footstepsWater:
+  - {fileID: 8300000, guid: 99415bc0854deab43a2db1f253c67429, type: 3}
+  - {fileID: 8300000, guid: 74526a23530e24a4382f53ced7723aac, type: 3}
+  - {fileID: 8300000, guid: 527fc838efb188f429faf82c92b8bf9d, type: 3}
+  - {fileID: 8300000, guid: 19a4c8cdf61e40548bbd1721192faee3, type: 3}
+  - {fileID: 8300000, guid: f04e0f145d187824e8d038b0b03ef9dd, type: 3}
   footDelay: .400000006
   active: 0
   isMoving: 0
