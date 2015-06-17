@@ -88,6 +88,7 @@ ModelImporter:
     7400018: PlayerTrip
     7400020: PlayerGetUp
     7400022: Happy
+    7400024: Knocking
     9500000: //RootNode
     11100000: //RootNode
     13700000: blob_mesh
@@ -1175,6 +1176,102 @@ ModelImporter:
       loop: 0
       loopTime: 0
       loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: mesh_group
+        weight: 1
+      - path: mesh_group/blob_mesh
+        weight: 1
+      - path: rig_group
+        weight: 1
+      - path: rig_group/bind_skeleton
+        weight: 1
+      - path: rig_group/bind_skeleton/root_jnt_01
+        weight: 1
+      - path: rig_group/bind_skeleton/root_jnt_01/pelvis_jnt_01
+        weight: 1
+      - path: rig_group/bind_skeleton/root_jnt_01/pelvis_jnt_01/left_hip_jnt_01
+        weight: 1
+      - path: rig_group/bind_skeleton/root_jnt_01/pelvis_jnt_01/left_hip_jnt_01/left_knee_jnt_01
+        weight: 1
+      - path: rig_group/bind_skeleton/root_jnt_01/pelvis_jnt_01/left_hip_jnt_01/left_knee_jnt_01/left_ankle_jnt_01
+        weight: 1
+      - path: rig_group/bind_skeleton/root_jnt_01/pelvis_jnt_01/left_hip_jnt_01/left_knee_jnt_01/left_ankle_jnt_01/left_ankle_nb_joint
+        weight: 1
+      - path: rig_group/bind_skeleton/root_jnt_01/pelvis_jnt_01/left_hip_jnt_01/left_knee_jnt_01/left_ankle_jnt_01/left_ankle_nb_joint/left_foot_joint
+        weight: 1
+      - path: rig_group/bind_skeleton/root_jnt_01/pelvis_jnt_01/right_hip_jnt_01
+        weight: 1
+      - path: rig_group/bind_skeleton/root_jnt_01/pelvis_jnt_01/right_hip_jnt_01/right_knee_jnt_01
+        weight: 1
+      - path: rig_group/bind_skeleton/root_jnt_01/pelvis_jnt_01/right_hip_jnt_01/right_knee_jnt_01/right_ankle_jnt_01
+        weight: 1
+      - path: rig_group/bind_skeleton/root_jnt_01/pelvis_jnt_01/right_hip_jnt_01/right_knee_jnt_01/right_ankle_jnt_01/right_ankle_nb_joint
+        weight: 1
+      - path: rig_group/bind_skeleton/root_jnt_01/pelvis_jnt_01/right_hip_jnt_01/right_knee_jnt_01/right_ankle_jnt_01/right_ankle_nb_joint/right_foot_joint
+        weight: 1
+      - path: rig_group/bind_skeleton/root_jnt_01/spine_jnt_01
+        weight: 1
+      - path: rig_group/bind_skeleton/root_jnt_01/spine_jnt_01/belly_scale_joint
+        weight: 1
+      - path: rig_group/bind_skeleton/root_jnt_01/spine_jnt_01/spine_jnt_02
+        weight: 1
+      - path: rig_group/bind_skeleton/root_jnt_01/spine_jnt_01/spine_jnt_02/left_clavicle_joint
+        weight: 1
+      - path: rig_group/bind_skeleton/root_jnt_01/spine_jnt_01/spine_jnt_02/left_clavicle_joint/left_shoulder_jnt_01
+        weight: 1
+      - path: rig_group/bind_skeleton/root_jnt_01/spine_jnt_01/spine_jnt_02/left_clavicle_joint/left_shoulder_jnt_01/left_elbow_jnt_01
+        weight: 1
+      - path: rig_group/bind_skeleton/root_jnt_01/spine_jnt_01/spine_jnt_02/left_clavicle_joint/left_shoulder_jnt_01/left_elbow_jnt_01/left_hand_jnt_01
+        weight: 1
+      - path: rig_group/bind_skeleton/root_jnt_01/spine_jnt_01/spine_jnt_02/left_exp_jnt_02
+        weight: 1
+      - path: rig_group/bind_skeleton/root_jnt_01/spine_jnt_01/spine_jnt_02/middle_exp_jnt_02
+        weight: 1
+      - path: rig_group/bind_skeleton/root_jnt_01/spine_jnt_01/spine_jnt_02/right_clavicle_joint
+        weight: 1
+      - path: rig_group/bind_skeleton/root_jnt_01/spine_jnt_01/spine_jnt_02/right_clavicle_joint/right_shoulder_jnt_01
+        weight: 1
+      - path: rig_group/bind_skeleton/root_jnt_01/spine_jnt_01/spine_jnt_02/right_clavicle_joint/right_shoulder_jnt_01/right_elbow_jnt_01
+        weight: 1
+      - path: rig_group/bind_skeleton/root_jnt_01/spine_jnt_01/spine_jnt_02/right_clavicle_joint/right_shoulder_jnt_01/right_elbow_jnt_01/right_hand_jnt_01
+        weight: 1
+      - path: rig_group/bind_skeleton/root_jnt_01/spine_jnt_01/spine_jnt_02/right_exp_jnt_02
+        weight: 1
+      - path: rig_group/bind_skeleton/root_jnt_01/spine_jnt_01/spine_jnt_02/spine_jnt_03
+        weight: 1
+      - path: rig_group/bind_skeleton/root_jnt_01/spine_jnt_01/spine_jnt_02/spine_jnt_03/forehead_scale_joint
+        weight: 1
+      - path: rig_group/bind_skeleton/root_jnt_01/spine_jnt_01/spine_jnt_02/spine_jnt_03/left_eye_jnt_01
+        weight: 1
+      - path: rig_group/bind_skeleton/root_jnt_01/spine_jnt_01/spine_jnt_02/spine_jnt_03/right_eye_jnt_01
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: Knocking
+      takeName: Take 001
+      firstFrame: 324
+      lastFrame: 340
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 1
+      loopBlend: 1
       loopBlendOrientation: 0
       loopBlendPositionY: 0
       loopBlendPositionXZ: 0

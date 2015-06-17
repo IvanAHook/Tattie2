@@ -3164,11 +3164,11 @@ MonoBehaviour:
   - {fileID: 8300000, guid: 9416d63c2a0920948b6db55e5cefdb7f, type: 3}
   - {fileID: 8300000, guid: e0beee5b53acb0c47af2d04d8b741b7c, type: 3}
   footstepsWood:
-  - {fileID: 8300000, guid: eb99c06ce537cf549a4f2843588610f1, type: 3}
-  - {fileID: 8300000, guid: 5edc3987c9be90641b132ff0c690c969, type: 3}
-  - {fileID: 8300000, guid: af29ed00be17b86448a8d48c75459ffb, type: 3}
-  - {fileID: 8300000, guid: 2bee27b032eeeb4409f1df5046d98582, type: 3}
-  - {fileID: 8300000, guid: ee0024096e52b044491a35bfb3b0a7c0, type: 3}
+  - {fileID: 8300000, guid: 19b66248e015a21438e96a95b8461640, type: 3}
+  - {fileID: 8300000, guid: f79547d489f5bef4783f4e1b87a7e241, type: 3}
+  - {fileID: 8300000, guid: 587cb6ff28b70e24d9df72241eed5775, type: 3}
+  - {fileID: 8300000, guid: faf91eab30931a7408aa7d5adbac7634, type: 3}
+  - {fileID: 8300000, guid: 4bda46699c8af3a4c92118d8f20567ef, type: 3}
   footstepsWater:
   - {fileID: 8300000, guid: 99415bc0854deab43a2db1f253c67429, type: 3}
   - {fileID: 8300000, guid: 74526a23530e24a4382f53ced7723aac, type: 3}
