@@ -8,6 +8,8 @@ public class Pickup : MonoBehaviour {
     public Transform worldItem;
 	public Sprite sprite;
 
+    public AudioClip soundFX;
+
 	public float shakeDuration;
 	public Vector3 shakeStrength;
 	public int shakeVibrato;

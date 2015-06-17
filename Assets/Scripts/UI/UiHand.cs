@@ -22,6 +22,12 @@ public class UiHand : MonoBehaviour {
 
     public GameObject defaultItemPrefab;
 
+    AudioSource audioSource;
+
+    void Awake() {
+        audioSource = GetComponent<AudioSource>();
+    }
+
     void Update() {
         if (didHoverLastFrame && !ContainsMouse() && mouseExit != null) {
             mouseExit();
@@ -39,10 +45,11 @@ public class UiHand : MonoBehaviour {
     }
 
     public void PickupItem(Transform item) {
-        if (item.GetComponent<Pickup>()) {
+        Pickup pickup;
+        if (pickup = item.GetComponent<Pickup>()) { 
             Transform newItem = ((GameObject)Instantiate(defaultItemPrefab, Vector3.zero, Quaternion.identity)).transform;
-            newItem.GetComponent<UiItem>().sprite = item.GetComponent<Pickup>().sprite;
-            newItem.GetComponent<UiItem>().worldItem = item.GetComponent<Pickup>().worldItem;
+            newItem.GetComponent<UiItem>().sprite = pickup.sprite;
+            newItem.GetComponent<UiItem>().worldItem = pickup.worldItem;
             newItem.GetComponent<UiItem>().worldItem.position = player.position;
             newItem.GetComponent<UiItem>().worldItem.gameObject.layer = 11;
             foreach (Transform i in newItem.GetComponent<UiItem>().worldItem.GetComponentsInChildren<Transform>()) {
@@ -51,13 +58,20 @@ public class UiHand : MonoBehaviour {
             newItem.SetParent(transform);
 
             heldItems.Add(newItem);
+            if (pickup.soundFX) {
+                audioSource.PlayOneShot(pickup.soundFX);
+            }
 
             item.gameObject.SetActive(false);
         }
     }
 
     bool ContainsMouse() {
-        return GetComponent<RectTransform>().rect.Contains(Input.mousePosition);
+        RectTransform rt = GetComponent<RectTransform>();
+        Rect r = rt.rect;
+        r.x += rt.position.x;
+        r.y += rt.position.y;
+        return r.Contains(Input.mousePosition);
     }
 
     //public void DropHeldItem() {

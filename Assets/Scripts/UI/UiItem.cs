@@ -78,6 +78,7 @@ public class UiItem : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndDragHa
             return;
         }
 
+        transform.position = eventData.position;
         transform.GetComponent<RectTransform>().localScale = new Vector3(0.5f, 0.5f, 0.5f);
 
     }
