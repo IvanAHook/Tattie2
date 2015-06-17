@@ -67,7 +67,11 @@ public class UiHand : MonoBehaviour {
     }
 
     bool ContainsMouse() {
-        return GetComponent<RectTransform>().rect.Contains(Input.mousePosition);
+        RectTransform rt = GetComponent<RectTransform>();
+        Rect r = rt.rect;
+        r.x += rt.position.x;
+        r.y += rt.position.y;
+        return r.Contains(Input.mousePosition);
     }
 
     //public void DropHeldItem() {
