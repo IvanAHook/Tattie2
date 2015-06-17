@@ -88,7 +88,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 120498}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -34, y: 0, z: 33}
+  m_LocalPosition: {x: -.119999997, y: 6.3499999, z: 21.0699997}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 437652}
@@ -130,7 +130,7 @@ MeshRenderer:
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_Materials:
-  - {fileID: 2100000, guid: beddaecfff58d4d4c9b4d3b51eaff764, type: 2}
+  - {fileID: 2100000, guid: c40cf86e5e978dc42950499ea050d3ca, type: 2}
   m_SubsetIndices: 
   m_StaticBatchRoot: {fileID: 0}
   m_UseLightProbes: 1
@@ -154,7 +154,7 @@ MeshRenderer:
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_Materials:
-  - {fileID: 2100000, guid: beddaecfff58d4d4c9b4d3b51eaff764, type: 2}
+  - {fileID: 2100000, guid: c40cf86e5e978dc42950499ea050d3ca, type: 2}
   m_SubsetIndices: 
   m_StaticBatchRoot: {fileID: 0}
   m_UseLightProbes: 1
@@ -178,7 +178,7 @@ MeshRenderer:
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_Materials:
-  - {fileID: 2100000, guid: beddaecfff58d4d4c9b4d3b51eaff764, type: 2}
+  - {fileID: 2100000, guid: c40cf86e5e978dc42950499ea050d3ca, type: 2}
   m_SubsetIndices: 
   m_StaticBatchRoot: {fileID: 0}
   m_UseLightProbes: 1
@@ -198,21 +198,21 @@ MeshFilter:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 159456}
-  m_Mesh: {fileID: 4300002, guid: 0af116dc9d16a2941b5f97715049e67d, type: 3}
+  m_Mesh: {fileID: 4300002, guid: 890fa8659812939488febe983e864bba, type: 3}
 --- !u!33 &3366082
 MeshFilter:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 125914}
-  m_Mesh: {fileID: 4300000, guid: 0af116dc9d16a2941b5f97715049e67d, type: 3}
+  m_Mesh: {fileID: 4300000, guid: 890fa8659812939488febe983e864bba, type: 3}
 --- !u!33 &3380568
 MeshFilter:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 158266}
-  m_Mesh: {fileID: 4300006, guid: 0af116dc9d16a2941b5f97715049e67d, type: 3}
+  m_Mesh: {fileID: 4300006, guid: 890fa8659812939488febe983e864bba, type: 3}
 --- !u!65 &6520730
 BoxCollider:
   m_ObjectHideFlags: 1

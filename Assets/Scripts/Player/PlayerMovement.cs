@@ -8,7 +8,10 @@ public class PlayerMovement : MonoBehaviour {
 
     AudioSource audioSource;
 
-    public AudioClip[] footsteps;
+    AudioClip[] footsteps;
+    public AudioClip[] footstepsGrass;
+    public AudioClip[] footstepsWood;
+    public AudioClip[] footstepsWater;
     public float footDelay;
 
 	private int moveSpeedHash;
@@ -30,17 +33,23 @@ public class PlayerMovement : MonoBehaviour {
 
     Camera cam;
 
-    void Start() {
-		moveSpeedHash = Animator.StringToHash ("Speed");
+    void Awake() {
+        moveSpeedHash = Animator.StringToHash("Speed");
 
         cam = Camera.main;
 
         agent = GetComponent<NavMeshAgent>();
 
-		anim = GetComponentInChildren<Animator> ();
+        anim = GetComponentInChildren<Animator>();
 
         audioSource = transform.GetComponent<AudioSource>();
+
+        footsteps = footstepsWood;
         StartCoroutine(Footsteps());
+    }
+
+    void Start() {
+
     }
 
     void Update() {
@@ -118,7 +127,8 @@ public class PlayerMovement : MonoBehaviour {
     }
 
     public void Halt() {
-        agent.ResetPath();
+        //agent.Stop();
+        //agent.ResetPath();
     }
 
     public void TargetHit(Transform t) {
@@ -150,6 +160,16 @@ public class PlayerMovement : MonoBehaviour {
     IEnumerator Footsteps() {
         while (true) {
             if (isMoving) {
+                RaycastHit hitInfo;
+                Physics.Raycast(transform.position, Vector3.down, out hitInfo);
+
+                if (hitInfo.transform.tag == "Grass") {
+                    footsteps = footstepsGrass;
+                } else if (hitInfo.transform.tag == "Wood_Floor") {
+                    footsteps = footstepsWood;
+                } else if (hitInfo.transform.tag == "Water") {
+                    footsteps = footstepsWater;
+                }
                 audioSource.PlayOneShot(footsteps[Random.Range(0, footsteps.Length)]);
                 yield return new WaitForSeconds(footDelay);
             } else {
