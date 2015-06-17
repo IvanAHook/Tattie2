@@ -9,7 +9,10 @@ public class PlayerBlobMovement : MonoBehaviour {
 
     AudioSource audioSource;
 
-    public AudioClip[] footsteps;
+    AudioClip[] footsteps;
+    public AudioClip[] footstepsGrass;
+    public AudioClip[] footstepsWood;
+    public AudioClip[] footstepsWater;
     public float footDelay;
 
     public bool active = false;
@@ -99,6 +102,16 @@ public class PlayerBlobMovement : MonoBehaviour {
     IEnumerator Footsteps() {
         while (true) {
             if (isMoving) {
+                RaycastHit hitInfo;
+                Physics.Raycast(transform.position, Vector3.down, out hitInfo);
+
+                if (hitInfo.transform.tag == "Grass") {
+                    footsteps = footstepsGrass;
+                } else if (hitInfo.transform.tag == "Wood_Floor") {
+                    footsteps = footstepsWood;
+                } else if (hitInfo.transform.tag == "Water") {
+                    footsteps = footstepsWater;
+                }
                 audioSource.PlayOneShot(footsteps[Random.Range(0, footsteps.Length)]);
                 yield return new WaitForSeconds(footDelay);
             } else {

@@ -41,6 +41,7 @@ public class LifelessBlob : Interactable {
         GetComponentInChildren<BlobAIPlayerBlobFall>().RunAgain();
         yield return new WaitForSeconds(1.2f);
         GetComponentInChildren<PlayerBlobMovement>().enabled = true;
+        GetComponentInChildren<PlayerBlobResponse>().ShowResponse();
     }
 
     void ProximityBrightness() {
