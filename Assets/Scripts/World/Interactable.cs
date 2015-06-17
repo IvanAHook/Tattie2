@@ -12,7 +12,7 @@ public class Interactable  : MonoBehaviour {
     //public UiPopupMessage message;
 
     public SpeechBubble speechBubble;
-    SpeechBubble currentSpeechBubble;
+    public SpeechBubble currentSpeechBubble;
 
     public Transform interractItem;
     public Transform interactTransform;
