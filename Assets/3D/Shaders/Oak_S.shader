@@ -1,13 +1,14 @@
 // Shader created with Shader Forge v1.13 
 // Shader Forge (c) Neat Corporation / Joachim Holmer - http://www.acegikmo.com/shaderforge/
 // Note: Manually altering this data may prevent you from opening it in Shader Forge
-/*SF_DATA;ver:1.13;sub:START;pass:START;ps:flbk:,lico:1,lgpr:1,nrmq:1,nrsp:0,limd:1,spmd:1,trmd:0,grmd:0,uamb:True,mssp:True,bkdf:False,rprd:False,enco:False,rmgx:True,rpth:0,hqsc:True,hqlp:False,tesm:0,bsrc:0,bdst:1,culm:0,dpts:2,wrdp:True,dith:0,ufog:True,aust:True,igpj:False,qofs:0,qpre:1,rntp:1,fgom:False,fgoc:False,fgod:False,fgor:False,fgmd:0,fgcr:0.5,fgcg:0.5,fgcb:0.5,fgca:1,fgde:0.01,fgrn:0,fgrf:300,ofsf:0,ofsu:0,f2p0:False;n:type:ShaderForge.SFN_Final,id:5248,x:33354,y:32750,varname:node_5248,prsc:2|diff-2030-OUT,normal-7060-RGB;n:type:ShaderForge.SFN_Tex2d,id:9920,x:32880,y:32709,ptovrint:False,ptlb:diffuse,ptin:_diffuse,varname:node_9920,prsc:2,tex:b7b8ef9d05f112048ba68243f6b96ea6,ntxv:0,isnm:False;n:type:ShaderForge.SFN_Tex2d,id:7060,x:32927,y:33084,ptovrint:False,ptlb:Normal,ptin:_Normal,varname:node_7060,prsc:2,tex:967e6093cdd4a9d4eafc63fcd71cc492,ntxv:3,isnm:True;n:type:ShaderForge.SFN_Color,id:5010,x:32902,y:32924,ptovrint:False,ptlb:node_5010,ptin:_node_5010,varname:node_5010,prsc:2,glob:False,c1:1,c2:1,c3:1,c4:1;n:type:ShaderForge.SFN_Power,id:2030,x:33126,y:32780,varname:node_2030,prsc:2|VAL-9920-RGB,EXP-5010-RGB;proporder:9920-7060-5010;pass:END;sub:END;*/
+/*SF_DATA;ver:1.13;sub:START;pass:START;ps:flbk:,lico:1,lgpr:1,nrmq:1,nrsp:0,limd:1,spmd:1,trmd:0,grmd:0,uamb:True,mssp:True,bkdf:False,rprd:False,enco:False,rmgx:True,rpth:0,hqsc:True,hqlp:False,tesm:0,bsrc:0,bdst:1,culm:0,dpts:2,wrdp:True,dith:0,ufog:True,aust:True,igpj:False,qofs:0,qpre:1,rntp:1,fgom:False,fgoc:False,fgod:False,fgor:False,fgmd:0,fgcr:0.5,fgcg:0.5,fgcb:0.5,fgca:1,fgde:0.01,fgrn:0,fgrf:300,ofsf:0,ofsu:0,f2p0:False;n:type:ShaderForge.SFN_Final,id:5248,x:33354,y:32750,varname:node_5248,prsc:2|diff-598-OUT,normal-6551-OUT;n:type:ShaderForge.SFN_Tex2d,id:9920,x:31883,y:32621,ptovrint:False,ptlb:diffuse,ptin:_diffuse,varname:_diffuse,prsc:2,tex:b7b8ef9d05f112048ba68243f6b96ea6,ntxv:0,isnm:False;n:type:ShaderForge.SFN_Tex2d,id:7060,x:31810,y:33441,ptovrint:False,ptlb:Normal,ptin:_Normal,varname:_Normal,prsc:2,tex:967e6093cdd4a9d4eafc63fcd71cc492,ntxv:3,isnm:True;n:type:ShaderForge.SFN_Tex2d,id:4547,x:31824,y:33147,ptovrint:False,ptlb:Normal_copy,ptin:_Normal_copy,varname:_Normal_copy,prsc:2,tex:1cfac8d7cd391cd46b58fa8106209a54,ntxv:3,isnm:True;n:type:ShaderForge.SFN_VertexColor,id:7064,x:30824,y:32728,varname:node_7064,prsc:2;n:type:ShaderForge.SFN_Tex2d,id:5196,x:32049,y:32307,ptovrint:False,ptlb:T_Moss,ptin:_T_Moss,varname:_T_Moss,prsc:2,tex:3fb06727ff1b77b47a394012b1326378,ntxv:0,isnm:False;n:type:ShaderForge.SFN_Tex2d,id:5990,x:31599,y:33016,ptovrint:False,ptlb:nN_Moss,ptin:_nN_Moss,varname:_nN_Moss,prsc:2,ntxv:3,isnm:True;n:type:ShaderForge.SFN_NormalBlend,id:7385,x:32242,y:32892,varname:node_7385,prsc:2|BSE-5990-RGB,DTL-7060-RGB;n:type:ShaderForge.SFN_Lerp,id:598,x:32282,y:32555,varname:node_598,prsc:2|A-9920-RGB,B-5196-RGB,T-7064-R;n:type:ShaderForge.SFN_Lerp,id:6551,x:32459,y:32892,varname:node_6551,prsc:2|A-7385-OUT,B-7060-RGB,T-7064-R;proporder:9920-7060-5196-5990;pass:END;sub:END;*/
 
 Shader "Shader Forge/Oak_S" {
     Properties {
         _diffuse ("diffuse", 2D) = "white" {}
         _Normal ("Normal", 2D) = "bump" {}
-        _node_5010 ("node_5010", Color) = (1,1,1,1)
+        _T_Moss ("T_Moss", 2D) = "white" {}
+        _nN_Moss ("nN_Moss", 2D) = "bump" {}
     }
     SubShader {
         Tags {
@@ -33,12 +34,14 @@ Shader "Shader Forge/Oak_S" {
             uniform float4 _LightColor0;
             uniform sampler2D _diffuse; uniform float4 _diffuse_ST;
             uniform sampler2D _Normal; uniform float4 _Normal_ST;
-            uniform float4 _node_5010;
+            uniform sampler2D _T_Moss; uniform float4 _T_Moss_ST;
+            uniform sampler2D _nN_Moss; uniform float4 _nN_Moss_ST;
             struct VertexInput {
                 float4 vertex : POSITION;
                 float3 normal : NORMAL;
                 float4 tangent : TANGENT;
                 float2 texcoord0 : TEXCOORD0;
+                float4 vertexColor : COLOR;
             };
             struct VertexOutput {
                 float4 pos : SV_POSITION;
@@ -47,12 +50,14 @@ Shader "Shader Forge/Oak_S" {
                 float3 normalDir : TEXCOORD2;
                 float3 tangentDir : TEXCOORD3;
                 float3 bitangentDir : TEXCOORD4;
+                float4 vertexColor : COLOR;
                 LIGHTING_COORDS(5,6)
                 UNITY_FOG_COORDS(7)
             };
             VertexOutput vert (VertexInput v) {
                 VertexOutput o = (VertexOutput)0;
                 o.uv0 = v.texcoord0;
+                o.vertexColor = v.vertexColor;
                 o.normalDir = UnityObjectToWorldNormal(v.normal);
                 o.tangentDir = normalize( mul( _Object2World, float4( v.tangent.xyz, 0.0 ) ).xyz );
                 o.bitangentDir = normalize(cross(o.normalDir, o.tangentDir) * v.tangent.w);
@@ -68,8 +73,13 @@ Shader "Shader Forge/Oak_S" {
                 float3x3 tangentTransform = float3x3( i.tangentDir, i.bitangentDir, i.normalDir);
 /////// Vectors:
                 float3 viewDirection = normalize(_WorldSpaceCameraPos.xyz - i.posWorld.xyz);
+                float3 _nN_Moss_var = UnpackNormal(tex2D(_nN_Moss,TRANSFORM_TEX(i.uv0, _nN_Moss)));
                 float3 _Normal_var = UnpackNormal(tex2D(_Normal,TRANSFORM_TEX(i.uv0, _Normal)));
-                float3 normalLocal = _Normal_var.rgb;
+                float3 node_7385_nrm_base = _nN_Moss_var.rgb + float3(0,0,1);
+                float3 node_7385_nrm_detail = _Normal_var.rgb * float3(-1,-1,1);
+                float3 node_7385_nrm_combined = node_7385_nrm_base*dot(node_7385_nrm_base, node_7385_nrm_detail)/node_7385_nrm_base.z - node_7385_nrm_detail;
+                float3 node_7385 = node_7385_nrm_combined;
+                float3 normalLocal = lerp(node_7385,_Normal_var.rgb,i.vertexColor.r);
                 float3 normalDirection = normalize(mul( normalLocal, tangentTransform )); // Perturbed normals
                 float3 lightDirection = normalize(_WorldSpaceLightPos0.xyz);
                 float3 lightColor = _LightColor0.rgb;
@@ -82,7 +92,8 @@ Shader "Shader Forge/Oak_S" {
                 float3 indirectDiffuse = float3(0,0,0);
                 indirectDiffuse += UNITY_LIGHTMODEL_AMBIENT.rgb; // Ambient Light
                 float4 _diffuse_var = tex2D(_diffuse,TRANSFORM_TEX(i.uv0, _diffuse));
-                float3 diffuseColor = pow(_diffuse_var.rgb,_node_5010.rgb);
+                float4 _T_Moss_var = tex2D(_T_Moss,TRANSFORM_TEX(i.uv0, _T_Moss));
+                float3 diffuseColor = lerp(_diffuse_var.rgb,_T_Moss_var.rgb,i.vertexColor.r);
                 float3 diffuse = (directDiffuse + indirectDiffuse) * diffuseColor;
 /// Final Color:
                 float3 finalColor = diffuse;
@@ -113,12 +124,14 @@ Shader "Shader Forge/Oak_S" {
             uniform float4 _LightColor0;
             uniform sampler2D _diffuse; uniform float4 _diffuse_ST;
             uniform sampler2D _Normal; uniform float4 _Normal_ST;
-            uniform float4 _node_5010;
+            uniform sampler2D _T_Moss; uniform float4 _T_Moss_ST;
+            uniform sampler2D _nN_Moss; uniform float4 _nN_Moss_ST;
             struct VertexInput {
                 float4 vertex : POSITION;
                 float3 normal : NORMAL;
                 float4 tangent : TANGENT;
                 float2 texcoord0 : TEXCOORD0;
+                float4 vertexColor : COLOR;
             };
             struct VertexOutput {
                 float4 pos : SV_POSITION;
@@ -127,11 +140,13 @@ Shader "Shader Forge/Oak_S" {
                 float3 normalDir : TEXCOORD2;
                 float3 tangentDir : TEXCOORD3;
                 float3 bitangentDir : TEXCOORD4;
+                float4 vertexColor : COLOR;
                 LIGHTING_COORDS(5,6)
             };
             VertexOutput vert (VertexInput v) {
                 VertexOutput o = (VertexOutput)0;
                 o.uv0 = v.texcoord0;
+                o.vertexColor = v.vertexColor;
                 o.normalDir = UnityObjectToWorldNormal(v.normal);
                 o.tangentDir = normalize( mul( _Object2World, float4( v.tangent.xyz, 0.0 ) ).xyz );
                 o.bitangentDir = normalize(cross(o.normalDir, o.tangentDir) * v.tangent.w);
@@ -146,8 +161,13 @@ Shader "Shader Forge/Oak_S" {
                 float3x3 tangentTransform = float3x3( i.tangentDir, i.bitangentDir, i.normalDir);
 /////// Vectors:
                 float3 viewDirection = normalize(_WorldSpaceCameraPos.xyz - i.posWorld.xyz);
+                float3 _nN_Moss_var = UnpackNormal(tex2D(_nN_Moss,TRANSFORM_TEX(i.uv0, _nN_Moss)));
                 float3 _Normal_var = UnpackNormal(tex2D(_Normal,TRANSFORM_TEX(i.uv0, _Normal)));
-                float3 normalLocal = _Normal_var.rgb;
+                float3 node_7385_nrm_base = _nN_Moss_var.rgb + float3(0,0,1);
+                float3 node_7385_nrm_detail = _Normal_var.rgb * float3(-1,-1,1);
+                float3 node_7385_nrm_combined = node_7385_nrm_base*dot(node_7385_nrm_base, node_7385_nrm_detail)/node_7385_nrm_base.z - node_7385_nrm_detail;
+                float3 node_7385 = node_7385_nrm_combined;
+                float3 normalLocal = lerp(node_7385,_Normal_var.rgb,i.vertexColor.r);
                 float3 normalDirection = normalize(mul( normalLocal, tangentTransform )); // Perturbed normals
                 float3 lightDirection = normalize(lerp(_WorldSpaceLightPos0.xyz, _WorldSpaceLightPos0.xyz - i.posWorld.xyz,_WorldSpaceLightPos0.w));
                 float3 lightColor = _LightColor0.rgb;
@@ -158,7 +178,8 @@ Shader "Shader Forge/Oak_S" {
                 float NdotL = max(0.0,dot( normalDirection, lightDirection ));
                 float3 directDiffuse = max( 0.0, NdotL) * attenColor;
                 float4 _diffuse_var = tex2D(_diffuse,TRANSFORM_TEX(i.uv0, _diffuse));
-                float3 diffuseColor = pow(_diffuse_var.rgb,_node_5010.rgb);
+                float4 _T_Moss_var = tex2D(_T_Moss,TRANSFORM_TEX(i.uv0, _T_Moss));
+                float3 diffuseColor = lerp(_diffuse_var.rgb,_T_Moss_var.rgb,i.vertexColor.r);
                 float3 diffuse = directDiffuse * diffuseColor;
 /// Final Color:
                 float3 finalColor = diffuse;
