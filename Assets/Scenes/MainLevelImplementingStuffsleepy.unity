@@ -4075,7 +4075,7 @@ Transform:
   - {fileID: 1744170600}
   - {fileID: 1841636316}
   - {fileID: 1771336314}
-  - {fileID: 1726847727}
+  - {fileID: 1368107722}
   - {fileID: 1322865034}
   - {fileID: 2114508277}
   - {fileID: 1509807512}
@@ -4162,12 +4162,12 @@ Transform:
   - {fileID: 1657942013}
   - {fileID: 2094198405}
   - {fileID: 910913378}
-  - {fileID: 1368107722}
   - {fileID: 190051413}
   - {fileID: 1679769651}
   - {fileID: 1853129961}
   - {fileID: 1817849841}
   - {fileID: 687405935}
+  - {fileID: 1726847727}
   - {fileID: 211863613}
   - {fileID: 1077432970}
   - {fileID: 475731879}
@@ -28534,11 +28534,6 @@ Prefab:
 GameObject:
   m_PrefabParentObject: {fileID: 100064, guid: f4f895947444a1042a8a1a45954ba79c, type: 3}
   m_PrefabInternal: {fileID: 1907977879}
---- !u!95 &915892046 stripped
-Animator:
-  m_PrefabParentObject: {fileID: 9500000, guid: f4f895947444a1042a8a1a45954ba79c,
-    type: 3}
-  m_PrefabInternal: {fileID: 1907977879}
 --- !u!114 &915892047
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -28550,7 +28545,28 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f1628ddc3ecf4d44daa1cdc7bfca7a10, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  anim: {fileID: 915892046}
+  target: {fileID: 0}
+  agent: {fileID: 915892048}
+--- !u!195 &915892048
+NavMeshAgent:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 915892044}
+  m_Enabled: 1
+  m_Radius: .5
+  m_Speed: 3.5
+  m_Acceleration: 8
+  avoidancePriority: 50
+  m_AngularSpeed: 120
+  m_StoppingDistance: 0
+  m_AutoTraverseOffMeshLink: 1
+  m_AutoBraking: 1
+  m_AutoRepath: 1
+  m_Height: 2
+  m_BaseOffset: 0
+  m_WalkableMask: 4294967295
+  m_ObstacleAvoidanceType: 4
 --- !u!1001 &917864811
 Prefab:
   m_ObjectHideFlags: 0
