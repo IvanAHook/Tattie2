@@ -11,6 +11,7 @@ public class WaitTrigger : MonoBehaviour {
     }
 
     void OnTriggerEnter(Collider other) {
+        Debug.Log(other.name);
         if (other.gameObject == player) {
             gameObject.SetActive(false);
         }

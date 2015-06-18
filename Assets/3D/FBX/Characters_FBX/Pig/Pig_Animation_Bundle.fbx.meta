@@ -1,0 +1,1119 @@
+fileFormatVersion: 2
+guid: f4f895947444a1042a8a1a45954ba79c
+timeCreated: 1434551711
+licenseType: Free
+ModelImporter:
+  serializedVersion: 18
+  fileIDToRecycleName:
+    100000: bind_skeleton
+    100002: global_control
+    100004: head_jnt01
+    100006: jaw_jnt01
+    100008: left_ankle_jnt01
+    100010: left_apron_jnt01
+    100012: left_apron_jnt02
+    100014: left_apron_jnt03
+    100016: left_clavicle_jnt01
+    100018: left_ear_jnt01
+    100020: left_ear_jnt02
+    100022: left_ear_jnt03
+    100024: left_elbow_jnt01
+    100026: left_finger_jnt01
+    100028: left_finger_jnt02
+    100030: left_finger_jnt03
+    100032: left_hip_jnt01
+    100034: left_in_ankle_jnt01
+    100036: left_knee_jnt01
+    100038: left_shoulder_jnt01
+    100040: left_thumb_jnt01
+    100042: left_thumb_jnt02
+    100044: left_thumb_jnt03
+    100046: left_wrist_jnt01
+    100048: mesh_group
+    100050: middle_apron_jnt01
+    100052: middle_apron_jnt02
+    100054: middle_apron_jnt03
+    100056: nb_jaw_jnt01
+    100058: nb_tophead_jnt01
+    100060: neck_jnt01
+    100062: pelvis_jnt01
+    100064: //RootNode
+    100066: pig_mesh
+    100068: right_ankle_jnt01
+    100070: right_apron_jnt01
+    100072: right_apron_jnt02
+    100074: right_apron_jnt03
+    100076: right_clavicle_jnt01
+    100078: right_ear_jnt01
+    100080: right_ear_jnt02
+    100082: right_ear_jnt03
+    100084: right_elbow_jnt01
+    100086: right_finger_jnt01
+    100088: right_finger_jnt02
+    100090: right_finger_jnt03
+    100092: right_hip_jnt01
+    100094: right_in_ankle_jnt01
+    100096: right_knee_jnt01
+    100098: right_shoulder_jnt01
+    100100: right_thumb_jnt01
+    100102: right_thumb_jnt02
+    100104: right_thumb_jnt03
+    100106: right_wrist_jnt01
+    100108: root_jnt01
+    100110: spine_jnt01
+    100112: spine_jnt02
+    100114: tail_jnt01
+    100116: tail_jnt02
+    100118: chest_control
+    100120: chest_control_ori
+    100122: head_control
+    100124: head_control_ori
+    100126: hips_control
+    100128: hips_control_ori
+    100130: left_clavicle_control
+    100132: left_clavicle_control_ori
+    100134: left_elbow_control
+    100136: left_elbow_control_ori
+    100138: left_hand_control
+    100140: left_hand_control_ori
+    100142: left_leg_control
+    100144: left_leg_control_ori
+    100146: left_shoulder_control
+    100148: left_shoulder_control_ori
+    100150: left_shoulder_control_ori 1
+    100152: leg_controls
+    100154: right_clavicle_control
+    100156: right_clavicle_control_ori
+    100158: right_elbow_control
+    100160: right_elbow_control_ori
+    100162: right_hand_control
+    100164: right_hand_control_ori
+    100166: right_leg_control
+    100168: right_leg_control_ori
+    100170: right_shoulder_control
+    100172: root_control
+    100174: root_control_ori
+    100176: spine_control
+    100178: spine_control_ori
+    400000: bind_skeleton
+    400002: global_control
+    400004: head_jnt01
+    400006: jaw_jnt01
+    400008: left_ankle_jnt01
+    400010: left_apron_jnt01
+    400012: left_apron_jnt02
+    400014: left_apron_jnt03
+    400016: left_clavicle_jnt01
+    400018: left_ear_jnt01
+    400020: left_ear_jnt02
+    400022: left_ear_jnt03
+    400024: left_elbow_jnt01
+    400026: left_finger_jnt01
+    400028: left_finger_jnt02
+    400030: left_finger_jnt03
+    400032: left_hip_jnt01
+    400034: left_in_ankle_jnt01
+    400036: left_knee_jnt01
+    400038: left_shoulder_jnt01
+    400040: left_thumb_jnt01
+    400042: left_thumb_jnt02
+    400044: left_thumb_jnt03
+    400046: left_wrist_jnt01
+    400048: mesh_group
+    400050: middle_apron_jnt01
+    400052: middle_apron_jnt02
+    400054: middle_apron_jnt03
+    400056: nb_jaw_jnt01
+    400058: nb_tophead_jnt01
+    400060: neck_jnt01
+    400062: pelvis_jnt01
+    400064: //RootNode
+    400066: pig_mesh
+    400068: right_ankle_jnt01
+    400070: right_apron_jnt01
+    400072: right_apron_jnt02
+    400074: right_apron_jnt03
+    400076: right_clavicle_jnt01
+    400078: right_ear_jnt01
+    400080: right_ear_jnt02
+    400082: right_ear_jnt03
+    400084: right_elbow_jnt01
+    400086: right_finger_jnt01
+    400088: right_finger_jnt02
+    400090: right_finger_jnt03
+    400092: right_hip_jnt01
+    400094: right_in_ankle_jnt01
+    400096: right_knee_jnt01
+    400098: right_shoulder_jnt01
+    400100: right_thumb_jnt01
+    400102: right_thumb_jnt02
+    400104: right_thumb_jnt03
+    400106: right_wrist_jnt01
+    400108: root_jnt01
+    400110: spine_jnt01
+    400112: spine_jnt02
+    400114: tail_jnt01
+    400116: tail_jnt02
+    400118: chest_control
+    400120: chest_control_ori
+    400122: head_control
+    400124: head_control_ori
+    400126: hips_control
+    400128: hips_control_ori
+    400130: left_clavicle_control
+    400132: left_clavicle_control_ori
+    400134: left_elbow_control
+    400136: left_elbow_control_ori
+    400138: left_hand_control
+    400140: left_hand_control_ori
+    400142: left_leg_control
+    400144: left_leg_control_ori
+    400146: left_shoulder_control
+    400148: left_shoulder_control_ori
+    400150: left_shoulder_control_ori 1
+    400152: leg_controls
+    400154: right_clavicle_control
+    400156: right_clavicle_control_ori
+    400158: right_elbow_control
+    400160: right_elbow_control_ori
+    400162: right_hand_control
+    400164: right_hand_control_ori
+    400166: right_leg_control
+    400168: right_leg_control_ori
+    400170: right_shoulder_control
+    400172: root_control
+    400174: root_control_ori
+    400176: spine_control
+    400178: spine_control_ori
+    4300000: pig_mesh
+    7400000: Idle
+    7400002: Walk
+    7400004: Fiddling
+    7400006: Suspicious
+    7400008: Laugh
+    7400010: Ass scratch
+    9500000: //RootNode
+    11100000: //RootNode
+    13700000: pig_mesh
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationCompression: 3
+    animationRotationError: .5
+    animationPositionError: .5
+    animationScaleError: .5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: Idle
+      takeName: Take 001
+      firstFrame: 122
+      lastFrame: 146
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 1
+      loopBlend: 1
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: global_control
+        weight: 1
+      - path: global_control/bind_skeleton
+        weight: 1
+      - path: global_control/bind_skeleton/root_jnt01
+        weight: 1
+      - path: global_control/bind_skeleton/root_jnt01/pelvis_jnt01
+        weight: 1
+      - path: global_control/bind_skeleton/root_jnt01/pelvis_jnt01/left_apron_jnt01
+        weight: 1
+      - path: global_control/bind_skeleton/root_jnt01/pelvis_jnt01/left_apron_jnt01/left_apron_jnt02
+        weight: 1
+      - path: global_control/bind_skeleton/root_jnt01/pelvis_jnt01/left_apron_jnt01/left_apron_jnt02/left_apron_jnt03
+        weight: 1
+      - path: global_control/bind_skeleton/root_jnt01/pelvis_jnt01/left_hip_jnt01
+        weight: 1
+      - path: global_control/bind_skeleton/root_jnt01/pelvis_jnt01/left_hip_jnt01/left_knee_jnt01
+        weight: 1
+      - path: global_control/bind_skeleton/root_jnt01/pelvis_jnt01/left_hip_jnt01/left_knee_jnt01/left_in_ankle_jnt01
+        weight: 1
+      - path: global_control/bind_skeleton/root_jnt01/pelvis_jnt01/left_hip_jnt01/left_knee_jnt01/left_in_ankle_jnt01/left_ankle_jnt01
+        weight: 1
+      - path: global_control/bind_skeleton/root_jnt01/pelvis_jnt01/middle_apron_jnt01
+        weight: 1
+      - path: global_control/bind_skeleton/root_jnt01/pelvis_jnt01/middle_apron_jnt01/middle_apron_jnt02
+        weight: 1
+      - path: global_control/bind_skeleton/root_jnt01/pelvis_jnt01/middle_apron_jnt01/middle_apron_jnt02/middle_apron_jnt03
+        weight: 1
+      - path: global_control/bind_skeleton/root_jnt01/pelvis_jnt01/right_apron_jnt01
+        weight: 1
+      - path: global_control/bind_skeleton/root_jnt01/pelvis_jnt01/right_apron_jnt01/right_apron_jnt02
+        weight: 1
+      - path: global_control/bind_skeleton/root_jnt01/pelvis_jnt01/right_apron_jnt01/right_apron_jnt02/right_apron_jnt03
+        weight: 1
+      - path: global_control/bind_skeleton/root_jnt01/pelvis_jnt01/right_hip_jnt01
+        weight: 1
+      - path: global_control/bind_skeleton/root_jnt01/pelvis_jnt01/right_hip_jnt01/right_knee_jnt01
+        weight: 1
+      - path: global_control/bind_skeleton/root_jnt01/pelvis_jnt01/right_hip_jnt01/right_knee_jnt01/right_in_ankle_jnt01
+        weight: 1
+      - path: global_control/bind_skeleton/root_jnt01/pelvis_jnt01/right_hip_jnt01/right_knee_jnt01/right_in_ankle_jnt01/right_ankle_jnt01
+        weight: 1
+      - path: global_control/bind_skeleton/root_jnt01/pelvis_jnt01/tail_jnt01
+        weight: 1
+      - path: global_control/bind_skeleton/root_jnt01/pelvis_jnt01/tail_jnt01/tail_jnt02
+        weight: 1
+      - path: global_control/bind_skeleton/root_jnt01/spine_jnt01
+        weight: 1
+      - path: global_control/bind_skeleton/root_jnt01/spine_jnt01/spine_jnt02
+        weight: 1
+      - path: global_control/bind_skeleton/root_jnt01/spine_jnt01/spine_jnt02/left_clavicle_jnt01
+        weight: 1
+      - path: global_control/bind_skeleton/root_jnt01/spine_jnt01/spine_jnt02/left_clavicle_jnt01/left_shoulder_jnt01
+        weight: 1
+      - path: global_control/bind_skeleton/root_jnt01/spine_jnt01/spine_jnt02/left_clavicle_jnt01/left_shoulder_jnt01/left_elbow_jnt01
+        weight: 1
+      - path: global_control/bind_skeleton/root_jnt01/spine_jnt01/spine_jnt02/left_clavicle_jnt01/left_shoulder_jnt01/left_elbow_jnt01/left_wrist_jnt01
+        weight: 1
+      - path: global_control/bind_skeleton/root_jnt01/spine_jnt01/spine_jnt02/left_clavicle_jnt01/left_shoulder_jnt01/left_elbow_jnt01/left_wrist_jnt01/left_finger_jnt01
+        weight: 1
+      - path: global_control/bind_skeleton/root_jnt01/spine_jnt01/spine_jnt02/left_clavicle_jnt01/left_shoulder_jnt01/left_elbow_jnt01/left_wrist_jnt01/left_finger_jnt01/left_finger_jnt02
+        weight: 1
+      - path: global_control/bind_skeleton/root_jnt01/spine_jnt01/spine_jnt02/left_clavicle_jnt01/left_shoulder_jnt01/left_elbow_jnt01/left_wrist_jnt01/left_finger_jnt01/left_finger_jnt02/left_finger_jnt03
+        weight: 1
+      - path: global_control/bind_skeleton/root_jnt01/spine_jnt01/spine_jnt02/left_clavicle_jnt01/left_shoulder_jnt01/left_elbow_jnt01/left_wrist_jnt01/left_thumb_jnt01
+        weight: 1
+      - path: global_control/bind_skeleton/root_jnt01/spine_jnt01/spine_jnt02/left_clavicle_jnt01/left_shoulder_jnt01/left_elbow_jnt01/left_wrist_jnt01/left_thumb_jnt01/left_thumb_jnt02
+        weight: 1
+      - path: global_control/bind_skeleton/root_jnt01/spine_jnt01/spine_jnt02/left_clavicle_jnt01/left_shoulder_jnt01/left_elbow_jnt01/left_wrist_jnt01/left_thumb_jnt01/left_thumb_jnt02/left_thumb_jnt03
+        weight: 1
+      - path: global_control/bind_skeleton/root_jnt01/spine_jnt01/spine_jnt02/neck_jnt01
+        weight: 1
+      - path: global_control/bind_skeleton/root_jnt01/spine_jnt01/spine_jnt02/neck_jnt01/head_jnt01
+        weight: 1
+      - path: global_control/bind_skeleton/root_jnt01/spine_jnt01/spine_jnt02/neck_jnt01/head_jnt01/jaw_jnt01
+        weight: 1
+      - path: global_control/bind_skeleton/root_jnt01/spine_jnt01/spine_jnt02/neck_jnt01/head_jnt01/jaw_jnt01/nb_jaw_jnt01
+        weight: 1
+      - path: global_control/bind_skeleton/root_jnt01/spine_jnt01/spine_jnt02/neck_jnt01/head_jnt01/left_ear_jnt01
+        weight: 1
+      - path: global_control/bind_skeleton/root_jnt01/spine_jnt01/spine_jnt02/neck_jnt01/head_jnt01/left_ear_jnt01/left_ear_jnt02
+        weight: 1
+      - path: global_control/bind_skeleton/root_jnt01/spine_jnt01/spine_jnt02/neck_jnt01/head_jnt01/left_ear_jnt01/left_ear_jnt02/left_ear_jnt03
+        weight: 1
+      - path: global_control/bind_skeleton/root_jnt01/spine_jnt01/spine_jnt02/neck_jnt01/head_jnt01/nb_tophead_jnt01
+        weight: 1
+      - path: global_control/bind_skeleton/root_jnt01/spine_jnt01/spine_jnt02/neck_jnt01/head_jnt01/right_ear_jnt01
+        weight: 1
+      - path: global_control/bind_skeleton/root_jnt01/spine_jnt01/spine_jnt02/neck_jnt01/head_jnt01/right_ear_jnt01/right_ear_jnt02
+        weight: 1
+      - path: global_control/bind_skeleton/root_jnt01/spine_jnt01/spine_jnt02/neck_jnt01/head_jnt01/right_ear_jnt01/right_ear_jnt02/right_ear_jnt03
+        weight: 1
+      - path: global_control/bind_skeleton/root_jnt01/spine_jnt01/spine_jnt02/right_clavicle_jnt01
+        weight: 1
+      - path: global_control/bind_skeleton/root_jnt01/spine_jnt01/spine_jnt02/right_clavicle_jnt01/right_shoulder_jnt01
+        weight: 1
+      - path: global_control/bind_skeleton/root_jnt01/spine_jnt01/spine_jnt02/right_clavicle_jnt01/right_shoulder_jnt01/right_elbow_jnt01
+        weight: 1
+      - path: global_control/bind_skeleton/root_jnt01/spine_jnt01/spine_jnt02/right_clavicle_jnt01/right_shoulder_jnt01/right_elbow_jnt01/right_wrist_jnt01
+        weight: 1
+      - path: global_control/bind_skeleton/root_jnt01/spine_jnt01/spine_jnt02/right_clavicle_jnt01/right_shoulder_jnt01/right_elbow_jnt01/right_wrist_jnt01/right_finger_jnt01
+        weight: 1
+      - path: global_control/bind_skeleton/root_jnt01/spine_jnt01/spine_jnt02/right_clavicle_jnt01/right_shoulder_jnt01/right_elbow_jnt01/right_wrist_jnt01/right_finger_jnt01/right_finger_jnt02
+        weight: 1
+      - path: global_control/bind_skeleton/root_jnt01/spine_jnt01/spine_jnt02/right_clavicle_jnt01/right_shoulder_jnt01/right_elbow_jnt01/right_wrist_jnt01/right_finger_jnt01/right_finger_jnt02/right_finger_jnt03
+        weight: 1
+      - path: global_control/bind_skeleton/root_jnt01/spine_jnt01/spine_jnt02/right_clavicle_jnt01/right_shoulder_jnt01/right_elbow_jnt01/right_wrist_jnt01/right_thumb_jnt01
+        weight: 1
+      - path: global_control/bind_skeleton/root_jnt01/spine_jnt01/spine_jnt02/right_clavicle_jnt01/right_shoulder_jnt01/right_elbow_jnt01/right_wrist_jnt01/right_thumb_jnt01/right_thumb_jnt02
+        weight: 1
+      - path: global_control/bind_skeleton/root_jnt01/spine_jnt01/spine_jnt02/right_clavicle_jnt01/right_shoulder_jnt01/right_elbow_jnt01/right_wrist_jnt01/right_thumb_jnt01/right_thumb_jnt02/right_thumb_jnt03
+        weight: 1
+      - path: mesh_group
+        weight: 1
+      - path: mesh_group/pig_mesh
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: Walk
+      takeName: Take 001
+      firstFrame: 1
+      lastFrame: 32
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 1
+      loopBlend: 1
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: global_control
+        weight: 1
+      - path: global_control/bind_skeleton
+        weight: 1
+      - path: global_control/bind_skeleton/root_jnt01
+        weight: 1
+      - path: global_control/bind_skeleton/root_jnt01/pelvis_jnt01
+        weight: 1
+      - path: global_control/bind_skeleton/root_jnt01/pelvis_jnt01/left_apron_jnt01
+        weight: 1
+      - path: global_control/bind_skeleton/root_jnt01/pelvis_jnt01/left_apron_jnt01/left_apron_jnt02
+        weight: 1
+      - path: global_control/bind_skeleton/root_jnt01/pelvis_jnt01/left_apron_jnt01/left_apron_jnt02/left_apron_jnt03
+        weight: 1
+      - path: global_control/bind_skeleton/root_jnt01/pelvis_jnt01/left_hip_jnt01
+        weight: 1
+      - path: global_control/bind_skeleton/root_jnt01/pelvis_jnt01/left_hip_jnt01/left_knee_jnt01
+        weight: 1
+      - path: global_control/bind_skeleton/root_jnt01/pelvis_jnt01/left_hip_jnt01/left_knee_jnt01/left_in_ankle_jnt01
+        weight: 1
+      - path: global_control/bind_skeleton/root_jnt01/pelvis_jnt01/left_hip_jnt01/left_knee_jnt01/left_in_ankle_jnt01/left_ankle_jnt01
+        weight: 1
+      - path: global_control/bind_skeleton/root_jnt01/pelvis_jnt01/middle_apron_jnt01
+        weight: 1
+      - path: global_control/bind_skeleton/root_jnt01/pelvis_jnt01/middle_apron_jnt01/middle_apron_jnt02
+        weight: 1
+      - path: global_control/bind_skeleton/root_jnt01/pelvis_jnt01/middle_apron_jnt01/middle_apron_jnt02/middle_apron_jnt03
+        weight: 1
+      - path: global_control/bind_skeleton/root_jnt01/pelvis_jnt01/right_apron_jnt01
+        weight: 1
+      - path: global_control/bind_skeleton/root_jnt01/pelvis_jnt01/right_apron_jnt01/right_apron_jnt02
+        weight: 1
+      - path: global_control/bind_skeleton/root_jnt01/pelvis_jnt01/right_apron_jnt01/right_apron_jnt02/right_apron_jnt03
+        weight: 1
+      - path: global_control/bind_skeleton/root_jnt01/pelvis_jnt01/right_hip_jnt01
+        weight: 1
+      - path: global_control/bind_skeleton/root_jnt01/pelvis_jnt01/right_hip_jnt01/right_knee_jnt01
+        weight: 1
+      - path: global_control/bind_skeleton/root_jnt01/pelvis_jnt01/right_hip_jnt01/right_knee_jnt01/right_in_ankle_jnt01
+        weight: 1
+      - path: global_control/bind_skeleton/root_jnt01/pelvis_jnt01/right_hip_jnt01/right_knee_jnt01/right_in_ankle_jnt01/right_ankle_jnt01
+        weight: 1
+      - path: global_control/bind_skeleton/root_jnt01/pelvis_jnt01/tail_jnt01
+        weight: 1
+      - path: global_control/bind_skeleton/root_jnt01/pelvis_jnt01/tail_jnt01/tail_jnt02
+        weight: 1
+      - path: global_control/bind_skeleton/root_jnt01/spine_jnt01
+        weight: 1
+      - path: global_control/bind_skeleton/root_jnt01/spine_jnt01/spine_jnt02
+        weight: 1
+      - path: global_control/bind_skeleton/root_jnt01/spine_jnt01/spine_jnt02/left_clavicle_jnt01
+        weight: 1
+      - path: global_control/bind_skeleton/root_jnt01/spine_jnt01/spine_jnt02/left_clavicle_jnt01/left_shoulder_jnt01
+        weight: 1
+      - path: global_control/bind_skeleton/root_jnt01/spine_jnt01/spine_jnt02/left_clavicle_jnt01/left_shoulder_jnt01/left_elbow_jnt01
+        weight: 1
+      - path: global_control/bind_skeleton/root_jnt01/spine_jnt01/spine_jnt02/left_clavicle_jnt01/left_shoulder_jnt01/left_elbow_jnt01/left_wrist_jnt01
+        weight: 1
+      - path: global_control/bind_skeleton/root_jnt01/spine_jnt01/spine_jnt02/left_clavicle_jnt01/left_shoulder_jnt01/left_elbow_jnt01/left_wrist_jnt01/left_finger_jnt01
+        weight: 1
+      - path: global_control/bind_skeleton/root_jnt01/spine_jnt01/spine_jnt02/left_clavicle_jnt01/left_shoulder_jnt01/left_elbow_jnt01/left_wrist_jnt01/left_finger_jnt01/left_finger_jnt02
+        weight: 1
+      - path: global_control/bind_skeleton/root_jnt01/spine_jnt01/spine_jnt02/left_clavicle_jnt01/left_shoulder_jnt01/left_elbow_jnt01/left_wrist_jnt01/left_finger_jnt01/left_finger_jnt02/left_finger_jnt03
+        weight: 1
+      - path: global_control/bind_skeleton/root_jnt01/spine_jnt01/spine_jnt02/left_clavicle_jnt01/left_shoulder_jnt01/left_elbow_jnt01/left_wrist_jnt01/left_thumb_jnt01
+        weight: 1
+      - path: global_control/bind_skeleton/root_jnt01/spine_jnt01/spine_jnt02/left_clavicle_jnt01/left_shoulder_jnt01/left_elbow_jnt01/left_wrist_jnt01/left_thumb_jnt01/left_thumb_jnt02
+        weight: 1
+      - path: global_control/bind_skeleton/root_jnt01/spine_jnt01/spine_jnt02/left_clavicle_jnt01/left_shoulder_jnt01/left_elbow_jnt01/left_wrist_jnt01/left_thumb_jnt01/left_thumb_jnt02/left_thumb_jnt03
+        weight: 1
+      - path: global_control/bind_skeleton/root_jnt01/spine_jnt01/spine_jnt02/neck_jnt01
+        weight: 1
+      - path: global_control/bind_skeleton/root_jnt01/spine_jnt01/spine_jnt02/neck_jnt01/head_jnt01
+        weight: 1
+      - path: global_control/bind_skeleton/root_jnt01/spine_jnt01/spine_jnt02/neck_jnt01/head_jnt01/jaw_jnt01
+        weight: 1
+      - path: global_control/bind_skeleton/root_jnt01/spine_jnt01/spine_jnt02/neck_jnt01/head_jnt01/jaw_jnt01/nb_jaw_jnt01
+        weight: 1
+      - path: global_control/bind_skeleton/root_jnt01/spine_jnt01/spine_jnt02/neck_jnt01/head_jnt01/left_ear_jnt01
+        weight: 1
+      - path: global_control/bind_skeleton/root_jnt01/spine_jnt01/spine_jnt02/neck_jnt01/head_jnt01/left_ear_jnt01/left_ear_jnt02
+        weight: 1
+      - path: global_control/bind_skeleton/root_jnt01/spine_jnt01/spine_jnt02/neck_jnt01/head_jnt01/left_ear_jnt01/left_ear_jnt02/left_ear_jnt03
+        weight: 1
+      - path: global_control/bind_skeleton/root_jnt01/spine_jnt01/spine_jnt02/neck_jnt01/head_jnt01/nb_tophead_jnt01
+        weight: 1
+      - path: global_control/bind_skeleton/root_jnt01/spine_jnt01/spine_jnt02/neck_jnt01/head_jnt01/right_ear_jnt01
+        weight: 1
+      - path: global_control/bind_skeleton/root_jnt01/spine_jnt01/spine_jnt02/neck_jnt01/head_jnt01/right_ear_jnt01/right_ear_jnt02
+        weight: 1
+      - path: global_control/bind_skeleton/root_jnt01/spine_jnt01/spine_jnt02/neck_jnt01/head_jnt01/right_ear_jnt01/right_ear_jnt02/right_ear_jnt03
+        weight: 1
+      - path: global_control/bind_skeleton/root_jnt01/spine_jnt01/spine_jnt02/right_clavicle_jnt01
+        weight: 1
+      - path: global_control/bind_skeleton/root_jnt01/spine_jnt01/spine_jnt02/right_clavicle_jnt01/right_shoulder_jnt01
+        weight: 1
+      - path: global_control/bind_skeleton/root_jnt01/spine_jnt01/spine_jnt02/right_clavicle_jnt01/right_shoulder_jnt01/right_elbow_jnt01
+        weight: 1
+      - path: global_control/bind_skeleton/root_jnt01/spine_jnt01/spine_jnt02/right_clavicle_jnt01/right_shoulder_jnt01/right_elbow_jnt01/right_wrist_jnt01
+        weight: 1
+      - path: global_control/bind_skeleton/root_jnt01/spine_jnt01/spine_jnt02/right_clavicle_jnt01/right_shoulder_jnt01/right_elbow_jnt01/right_wrist_jnt01/right_finger_jnt01
+        weight: 1
+      - path: global_control/bind_skeleton/root_jnt01/spine_jnt01/spine_jnt02/right_clavicle_jnt01/right_shoulder_jnt01/right_elbow_jnt01/right_wrist_jnt01/right_finger_jnt01/right_finger_jnt02
+        weight: 1
+      - path: global_control/bind_skeleton/root_jnt01/spine_jnt01/spine_jnt02/right_clavicle_jnt01/right_shoulder_jnt01/right_elbow_jnt01/right_wrist_jnt01/right_finger_jnt01/right_finger_jnt02/right_finger_jnt03
+        weight: 1
+      - path: global_control/bind_skeleton/root_jnt01/spine_jnt01/spine_jnt02/right_clavicle_jnt01/right_shoulder_jnt01/right_elbow_jnt01/right_wrist_jnt01/right_thumb_jnt01
+        weight: 1
+      - path: global_control/bind_skeleton/root_jnt01/spine_jnt01/spine_jnt02/right_clavicle_jnt01/right_shoulder_jnt01/right_elbow_jnt01/right_wrist_jnt01/right_thumb_jnt01/right_thumb_jnt02
+        weight: 1
+      - path: global_control/bind_skeleton/root_jnt01/spine_jnt01/spine_jnt02/right_clavicle_jnt01/right_shoulder_jnt01/right_elbow_jnt01/right_wrist_jnt01/right_thumb_jnt01/right_thumb_jnt02/right_thumb_jnt03
+        weight: 1
+      - path: mesh_group
+        weight: 1
+      - path: mesh_group/pig_mesh
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: Fiddling
+      takeName: Take 001
+      firstFrame: 34
+      lastFrame: 58
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 1
+      loopBlend: 1
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: global_control
+        weight: 1
+      - path: global_control/bind_skeleton
+        weight: 1
+      - path: global_control/bind_skeleton/root_jnt01
+        weight: 1
+      - path: global_control/bind_skeleton/root_jnt01/pelvis_jnt01
+        weight: 1
+      - path: global_control/bind_skeleton/root_jnt01/pelvis_jnt01/left_apron_jnt01
+        weight: 1
+      - path: global_control/bind_skeleton/root_jnt01/pelvis_jnt01/left_apron_jnt01/left_apron_jnt02
+        weight: 1
+      - path: global_control/bind_skeleton/root_jnt01/pelvis_jnt01/left_apron_jnt01/left_apron_jnt02/left_apron_jnt03
+        weight: 1
+      - path: global_control/bind_skeleton/root_jnt01/pelvis_jnt01/left_hip_jnt01
+        weight: 1
+      - path: global_control/bind_skeleton/root_jnt01/pelvis_jnt01/left_hip_jnt01/left_knee_jnt01
+        weight: 1
+      - path: global_control/bind_skeleton/root_jnt01/pelvis_jnt01/left_hip_jnt01/left_knee_jnt01/left_in_ankle_jnt01
+        weight: 1
+      - path: global_control/bind_skeleton/root_jnt01/pelvis_jnt01/left_hip_jnt01/left_knee_jnt01/left_in_ankle_jnt01/left_ankle_jnt01
+        weight: 1
+      - path: global_control/bind_skeleton/root_jnt01/pelvis_jnt01/middle_apron_jnt01
+        weight: 1
+      - path: global_control/bind_skeleton/root_jnt01/pelvis_jnt01/middle_apron_jnt01/middle_apron_jnt02
+        weight: 1
+      - path: global_control/bind_skeleton/root_jnt01/pelvis_jnt01/middle_apron_jnt01/middle_apron_jnt02/middle_apron_jnt03
+        weight: 1
+      - path: global_control/bind_skeleton/root_jnt01/pelvis_jnt01/right_apron_jnt01
+        weight: 1
+      - path: global_control/bind_skeleton/root_jnt01/pelvis_jnt01/right_apron_jnt01/right_apron_jnt02
+        weight: 1
+      - path: global_control/bind_skeleton/root_jnt01/pelvis_jnt01/right_apron_jnt01/right_apron_jnt02/right_apron_jnt03
+        weight: 1
+      - path: global_control/bind_skeleton/root_jnt01/pelvis_jnt01/right_hip_jnt01
+        weight: 1
+      - path: global_control/bind_skeleton/root_jnt01/pelvis_jnt01/right_hip_jnt01/right_knee_jnt01
+        weight: 1
+      - path: global_control/bind_skeleton/root_jnt01/pelvis_jnt01/right_hip_jnt01/right_knee_jnt01/right_in_ankle_jnt01
+        weight: 1
+      - path: global_control/bind_skeleton/root_jnt01/pelvis_jnt01/right_hip_jnt01/right_knee_jnt01/right_in_ankle_jnt01/right_ankle_jnt01
+        weight: 1
+      - path: global_control/bind_skeleton/root_jnt01/pelvis_jnt01/tail_jnt01
+        weight: 1
+      - path: global_control/bind_skeleton/root_jnt01/pelvis_jnt01/tail_jnt01/tail_jnt02
+        weight: 1
+      - path: global_control/bind_skeleton/root_jnt01/spine_jnt01
+        weight: 1
+      - path: global_control/bind_skeleton/root_jnt01/spine_jnt01/spine_jnt02
+        weight: 1
+      - path: global_control/bind_skeleton/root_jnt01/spine_jnt01/spine_jnt02/left_clavicle_jnt01
+        weight: 1
+      - path: global_control/bind_skeleton/root_jnt01/spine_jnt01/spine_jnt02/left_clavicle_jnt01/left_shoulder_jnt01
+        weight: 1
+      - path: global_control/bind_skeleton/root_jnt01/spine_jnt01/spine_jnt02/left_clavicle_jnt01/left_shoulder_jnt01/left_elbow_jnt01
+        weight: 1
+      - path: global_control/bind_skeleton/root_jnt01/spine_jnt01/spine_jnt02/left_clavicle_jnt01/left_shoulder_jnt01/left_elbow_jnt01/left_wrist_jnt01
+        weight: 1
+      - path: global_control/bind_skeleton/root_jnt01/spine_jnt01/spine_jnt02/left_clavicle_jnt01/left_shoulder_jnt01/left_elbow_jnt01/left_wrist_jnt01/left_finger_jnt01
+        weight: 1
+      - path: global_control/bind_skeleton/root_jnt01/spine_jnt01/spine_jnt02/left_clavicle_jnt01/left_shoulder_jnt01/left_elbow_jnt01/left_wrist_jnt01/left_finger_jnt01/left_finger_jnt02
+        weight: 1
+      - path: global_control/bind_skeleton/root_jnt01/spine_jnt01/spine_jnt02/left_clavicle_jnt01/left_shoulder_jnt01/left_elbow_jnt01/left_wrist_jnt01/left_finger_jnt01/left_finger_jnt02/left_finger_jnt03
+        weight: 1
+      - path: global_control/bind_skeleton/root_jnt01/spine_jnt01/spine_jnt02/left_clavicle_jnt01/left_shoulder_jnt01/left_elbow_jnt01/left_wrist_jnt01/left_thumb_jnt01
+        weight: 1
+      - path: global_control/bind_skeleton/root_jnt01/spine_jnt01/spine_jnt02/left_clavicle_jnt01/left_shoulder_jnt01/left_elbow_jnt01/left_wrist_jnt01/left_thumb_jnt01/left_thumb_jnt02
+        weight: 1
+      - path: global_control/bind_skeleton/root_jnt01/spine_jnt01/spine_jnt02/left_clavicle_jnt01/left_shoulder_jnt01/left_elbow_jnt01/left_wrist_jnt01/left_thumb_jnt01/left_thumb_jnt02/left_thumb_jnt03
+        weight: 1
+      - path: global_control/bind_skeleton/root_jnt01/spine_jnt01/spine_jnt02/neck_jnt01
+        weight: 1
+      - path: global_control/bind_skeleton/root_jnt01/spine_jnt01/spine_jnt02/neck_jnt01/head_jnt01
+        weight: 1
+      - path: global_control/bind_skeleton/root_jnt01/spine_jnt01/spine_jnt02/neck_jnt01/head_jnt01/jaw_jnt01
+        weight: 1
+      - path: global_control/bind_skeleton/root_jnt01/spine_jnt01/spine_jnt02/neck_jnt01/head_jnt01/jaw_jnt01/nb_jaw_jnt01
+        weight: 1
+      - path: global_control/bind_skeleton/root_jnt01/spine_jnt01/spine_jnt02/neck_jnt01/head_jnt01/left_ear_jnt01
+        weight: 1
+      - path: global_control/bind_skeleton/root_jnt01/spine_jnt01/spine_jnt02/neck_jnt01/head_jnt01/left_ear_jnt01/left_ear_jnt02
+        weight: 1
+      - path: global_control/bind_skeleton/root_jnt01/spine_jnt01/spine_jnt02/neck_jnt01/head_jnt01/left_ear_jnt01/left_ear_jnt02/left_ear_jnt03
+        weight: 1
+      - path: global_control/bind_skeleton/root_jnt01/spine_jnt01/spine_jnt02/neck_jnt01/head_jnt01/nb_tophead_jnt01
+        weight: 1
+      - path: global_control/bind_skeleton/root_jnt01/spine_jnt01/spine_jnt02/neck_jnt01/head_jnt01/right_ear_jnt01
+        weight: 1
+      - path: global_control/bind_skeleton/root_jnt01/spine_jnt01/spine_jnt02/neck_jnt01/head_jnt01/right_ear_jnt01/right_ear_jnt02
+        weight: 1
+      - path: global_control/bind_skeleton/root_jnt01/spine_jnt01/spine_jnt02/neck_jnt01/head_jnt01/right_ear_jnt01/right_ear_jnt02/right_ear_jnt03
+        weight: 1
+      - path: global_control/bind_skeleton/root_jnt01/spine_jnt01/spine_jnt02/right_clavicle_jnt01
+        weight: 1
+      - path: global_control/bind_skeleton/root_jnt01/spine_jnt01/spine_jnt02/right_clavicle_jnt01/right_shoulder_jnt01
+        weight: 1
+      - path: global_control/bind_skeleton/root_jnt01/spine_jnt01/spine_jnt02/right_clavicle_jnt01/right_shoulder_jnt01/right_elbow_jnt01
+        weight: 1
+      - path: global_control/bind_skeleton/root_jnt01/spine_jnt01/spine_jnt02/right_clavicle_jnt01/right_shoulder_jnt01/right_elbow_jnt01/right_wrist_jnt01
+        weight: 1
+      - path: global_control/bind_skeleton/root_jnt01/spine_jnt01/spine_jnt02/right_clavicle_jnt01/right_shoulder_jnt01/right_elbow_jnt01/right_wrist_jnt01/right_finger_jnt01
+        weight: 1
+      - path: global_control/bind_skeleton/root_jnt01/spine_jnt01/spine_jnt02/right_clavicle_jnt01/right_shoulder_jnt01/right_elbow_jnt01/right_wrist_jnt01/right_finger_jnt01/right_finger_jnt02
+        weight: 1
+      - path: global_control/bind_skeleton/root_jnt01/spine_jnt01/spine_jnt02/right_clavicle_jnt01/right_shoulder_jnt01/right_elbow_jnt01/right_wrist_jnt01/right_finger_jnt01/right_finger_jnt02/right_finger_jnt03
+        weight: 1
+      - path: global_control/bind_skeleton/root_jnt01/spine_jnt01/spine_jnt02/right_clavicle_jnt01/right_shoulder_jnt01/right_elbow_jnt01/right_wrist_jnt01/right_thumb_jnt01
+        weight: 1
+      - path: global_control/bind_skeleton/root_jnt01/spine_jnt01/spine_jnt02/right_clavicle_jnt01/right_shoulder_jnt01/right_elbow_jnt01/right_wrist_jnt01/right_thumb_jnt01/right_thumb_jnt02
+        weight: 1
+      - path: global_control/bind_skeleton/root_jnt01/spine_jnt01/spine_jnt02/right_clavicle_jnt01/right_shoulder_jnt01/right_elbow_jnt01/right_wrist_jnt01/right_thumb_jnt01/right_thumb_jnt02/right_thumb_jnt03
+        weight: 1
+      - path: mesh_group
+        weight: 1
+      - path: mesh_group/pig_mesh
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: Suspicious
+      takeName: Take 001
+      firstFrame: 60
+      lastFrame: 120
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: global_control
+        weight: 1
+      - path: global_control/bind_skeleton
+        weight: 1
+      - path: global_control/bind_skeleton/root_jnt01
+        weight: 1
+      - path: global_control/bind_skeleton/root_jnt01/pelvis_jnt01
+        weight: 1
+      - path: global_control/bind_skeleton/root_jnt01/pelvis_jnt01/left_apron_jnt01
+        weight: 1
+      - path: global_control/bind_skeleton/root_jnt01/pelvis_jnt01/left_apron_jnt01/left_apron_jnt02
+        weight: 1
+      - path: global_control/bind_skeleton/root_jnt01/pelvis_jnt01/left_apron_jnt01/left_apron_jnt02/left_apron_jnt03
+        weight: 1
+      - path: global_control/bind_skeleton/root_jnt01/pelvis_jnt01/left_hip_jnt01
+        weight: 1
+      - path: global_control/bind_skeleton/root_jnt01/pelvis_jnt01/left_hip_jnt01/left_knee_jnt01
+        weight: 1
+      - path: global_control/bind_skeleton/root_jnt01/pelvis_jnt01/left_hip_jnt01/left_knee_jnt01/left_in_ankle_jnt01
+        weight: 1
+      - path: global_control/bind_skeleton/root_jnt01/pelvis_jnt01/left_hip_jnt01/left_knee_jnt01/left_in_ankle_jnt01/left_ankle_jnt01
+        weight: 1
+      - path: global_control/bind_skeleton/root_jnt01/pelvis_jnt01/middle_apron_jnt01
+        weight: 1
+      - path: global_control/bind_skeleton/root_jnt01/pelvis_jnt01/middle_apron_jnt01/middle_apron_jnt02
+        weight: 1
+      - path: global_control/bind_skeleton/root_jnt01/pelvis_jnt01/middle_apron_jnt01/middle_apron_jnt02/middle_apron_jnt03
+        weight: 1
+      - path: global_control/bind_skeleton/root_jnt01/pelvis_jnt01/right_apron_jnt01
+        weight: 1
+      - path: global_control/bind_skeleton/root_jnt01/pelvis_jnt01/right_apron_jnt01/right_apron_jnt02
+        weight: 1
+      - path: global_control/bind_skeleton/root_jnt01/pelvis_jnt01/right_apron_jnt01/right_apron_jnt02/right_apron_jnt03
+        weight: 1
+      - path: global_control/bind_skeleton/root_jnt01/pelvis_jnt01/right_hip_jnt01
+        weight: 1
+      - path: global_control/bind_skeleton/root_jnt01/pelvis_jnt01/right_hip_jnt01/right_knee_jnt01
+        weight: 1
+      - path: global_control/bind_skeleton/root_jnt01/pelvis_jnt01/right_hip_jnt01/right_knee_jnt01/right_in_ankle_jnt01
+        weight: 1
+      - path: global_control/bind_skeleton/root_jnt01/pelvis_jnt01/right_hip_jnt01/right_knee_jnt01/right_in_ankle_jnt01/right_ankle_jnt01
+        weight: 1
+      - path: global_control/bind_skeleton/root_jnt01/pelvis_jnt01/tail_jnt01
+        weight: 1
+      - path: global_control/bind_skeleton/root_jnt01/pelvis_jnt01/tail_jnt01/tail_jnt02
+        weight: 1
+      - path: global_control/bind_skeleton/root_jnt01/spine_jnt01
+        weight: 1
+      - path: global_control/bind_skeleton/root_jnt01/spine_jnt01/spine_jnt02
+        weight: 1
+      - path: global_control/bind_skeleton/root_jnt01/spine_jnt01/spine_jnt02/left_clavicle_jnt01
+        weight: 1
+      - path: global_control/bind_skeleton/root_jnt01/spine_jnt01/spine_jnt02/left_clavicle_jnt01/left_shoulder_jnt01
+        weight: 1
+      - path: global_control/bind_skeleton/root_jnt01/spine_jnt01/spine_jnt02/left_clavicle_jnt01/left_shoulder_jnt01/left_elbow_jnt01
+        weight: 1
+      - path: global_control/bind_skeleton/root_jnt01/spine_jnt01/spine_jnt02/left_clavicle_jnt01/left_shoulder_jnt01/left_elbow_jnt01/left_wrist_jnt01
+        weight: 1
+      - path: global_control/bind_skeleton/root_jnt01/spine_jnt01/spine_jnt02/left_clavicle_jnt01/left_shoulder_jnt01/left_elbow_jnt01/left_wrist_jnt01/left_finger_jnt01
+        weight: 1
+      - path: global_control/bind_skeleton/root_jnt01/spine_jnt01/spine_jnt02/left_clavicle_jnt01/left_shoulder_jnt01/left_elbow_jnt01/left_wrist_jnt01/left_finger_jnt01/left_finger_jnt02
+        weight: 1
+      - path: global_control/bind_skeleton/root_jnt01/spine_jnt01/spine_jnt02/left_clavicle_jnt01/left_shoulder_jnt01/left_elbow_jnt01/left_wrist_jnt01/left_finger_jnt01/left_finger_jnt02/left_finger_jnt03
+        weight: 1
+      - path: global_control/bind_skeleton/root_jnt01/spine_jnt01/spine_jnt02/left_clavicle_jnt01/left_shoulder_jnt01/left_elbow_jnt01/left_wrist_jnt01/left_thumb_jnt01
+        weight: 1
+      - path: global_control/bind_skeleton/root_jnt01/spine_jnt01/spine_jnt02/left_clavicle_jnt01/left_shoulder_jnt01/left_elbow_jnt01/left_wrist_jnt01/left_thumb_jnt01/left_thumb_jnt02
+        weight: 1
+      - path: global_control/bind_skeleton/root_jnt01/spine_jnt01/spine_jnt02/left_clavicle_jnt01/left_shoulder_jnt01/left_elbow_jnt01/left_wrist_jnt01/left_thumb_jnt01/left_thumb_jnt02/left_thumb_jnt03
+        weight: 1
+      - path: global_control/bind_skeleton/root_jnt01/spine_jnt01/spine_jnt02/neck_jnt01
+        weight: 1
+      - path: global_control/bind_skeleton/root_jnt01/spine_jnt01/spine_jnt02/neck_jnt01/head_jnt01
+        weight: 1
+      - path: global_control/bind_skeleton/root_jnt01/spine_jnt01/spine_jnt02/neck_jnt01/head_jnt01/jaw_jnt01
+        weight: 1
+      - path: global_control/bind_skeleton/root_jnt01/spine_jnt01/spine_jnt02/neck_jnt01/head_jnt01/jaw_jnt01/nb_jaw_jnt01
+        weight: 1
+      - path: global_control/bind_skeleton/root_jnt01/spine_jnt01/spine_jnt02/neck_jnt01/head_jnt01/left_ear_jnt01
+        weight: 1
+      - path: global_control/bind_skeleton/root_jnt01/spine_jnt01/spine_jnt02/neck_jnt01/head_jnt01/left_ear_jnt01/left_ear_jnt02
+        weight: 1
+      - path: global_control/bind_skeleton/root_jnt01/spine_jnt01/spine_jnt02/neck_jnt01/head_jnt01/left_ear_jnt01/left_ear_jnt02/left_ear_jnt03
+        weight: 1
+      - path: global_control/bind_skeleton/root_jnt01/spine_jnt01/spine_jnt02/neck_jnt01/head_jnt01/nb_tophead_jnt01
+        weight: 1
+      - path: global_control/bind_skeleton/root_jnt01/spine_jnt01/spine_jnt02/neck_jnt01/head_jnt01/right_ear_jnt01
+        weight: 1
+      - path: global_control/bind_skeleton/root_jnt01/spine_jnt01/spine_jnt02/neck_jnt01/head_jnt01/right_ear_jnt01/right_ear_jnt02
+        weight: 1
+      - path: global_control/bind_skeleton/root_jnt01/spine_jnt01/spine_jnt02/neck_jnt01/head_jnt01/right_ear_jnt01/right_ear_jnt02/right_ear_jnt03
+        weight: 1
+      - path: global_control/bind_skeleton/root_jnt01/spine_jnt01/spine_jnt02/right_clavicle_jnt01
+        weight: 1
+      - path: global_control/bind_skeleton/root_jnt01/spine_jnt01/spine_jnt02/right_clavicle_jnt01/right_shoulder_jnt01
+        weight: 1
+      - path: global_control/bind_skeleton/root_jnt01/spine_jnt01/spine_jnt02/right_clavicle_jnt01/right_shoulder_jnt01/right_elbow_jnt01
+        weight: 1
+      - path: global_control/bind_skeleton/root_jnt01/spine_jnt01/spine_jnt02/right_clavicle_jnt01/right_shoulder_jnt01/right_elbow_jnt01/right_wrist_jnt01
+        weight: 1
+      - path: global_control/bind_skeleton/root_jnt01/spine_jnt01/spine_jnt02/right_clavicle_jnt01/right_shoulder_jnt01/right_elbow_jnt01/right_wrist_jnt01/right_finger_jnt01
+        weight: 1
+      - path: global_control/bind_skeleton/root_jnt01/spine_jnt01/spine_jnt02/right_clavicle_jnt01/right_shoulder_jnt01/right_elbow_jnt01/right_wrist_jnt01/right_finger_jnt01/right_finger_jnt02
+        weight: 1
+      - path: global_control/bind_skeleton/root_jnt01/spine_jnt01/spine_jnt02/right_clavicle_jnt01/right_shoulder_jnt01/right_elbow_jnt01/right_wrist_jnt01/right_finger_jnt01/right_finger_jnt02/right_finger_jnt03
+        weight: 1
+      - path: global_control/bind_skeleton/root_jnt01/spine_jnt01/spine_jnt02/right_clavicle_jnt01/right_shoulder_jnt01/right_elbow_jnt01/right_wrist_jnt01/right_thumb_jnt01
+        weight: 1
+      - path: global_control/bind_skeleton/root_jnt01/spine_jnt01/spine_jnt02/right_clavicle_jnt01/right_shoulder_jnt01/right_elbow_jnt01/right_wrist_jnt01/right_thumb_jnt01/right_thumb_jnt02
+        weight: 1
+      - path: global_control/bind_skeleton/root_jnt01/spine_jnt01/spine_jnt02/right_clavicle_jnt01/right_shoulder_jnt01/right_elbow_jnt01/right_wrist_jnt01/right_thumb_jnt01/right_thumb_jnt02/right_thumb_jnt03
+        weight: 1
+      - path: mesh_group
+        weight: 1
+      - path: mesh_group/pig_mesh
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: Laugh
+      takeName: Take 001
+      firstFrame: 148
+      lastFrame: 163
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 1
+      loopBlend: 1
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: global_control
+        weight: 1
+      - path: global_control/bind_skeleton
+        weight: 1
+      - path: global_control/bind_skeleton/root_jnt01
+        weight: 1
+      - path: global_control/bind_skeleton/root_jnt01/pelvis_jnt01
+        weight: 1
+      - path: global_control/bind_skeleton/root_jnt01/pelvis_jnt01/left_apron_jnt01
+        weight: 1
+      - path: global_control/bind_skeleton/root_jnt01/pelvis_jnt01/left_apron_jnt01/left_apron_jnt02
+        weight: 1
+      - path: global_control/bind_skeleton/root_jnt01/pelvis_jnt01/left_apron_jnt01/left_apron_jnt02/left_apron_jnt03
+        weight: 1
+      - path: global_control/bind_skeleton/root_jnt01/pelvis_jnt01/left_hip_jnt01
+        weight: 1
+      - path: global_control/bind_skeleton/root_jnt01/pelvis_jnt01/left_hip_jnt01/left_knee_jnt01
+        weight: 1
+      - path: global_control/bind_skeleton/root_jnt01/pelvis_jnt01/left_hip_jnt01/left_knee_jnt01/left_in_ankle_jnt01
+        weight: 1
+      - path: global_control/bind_skeleton/root_jnt01/pelvis_jnt01/left_hip_jnt01/left_knee_jnt01/left_in_ankle_jnt01/left_ankle_jnt01
+        weight: 1
+      - path: global_control/bind_skeleton/root_jnt01/pelvis_jnt01/middle_apron_jnt01
+        weight: 1
+      - path: global_control/bind_skeleton/root_jnt01/pelvis_jnt01/middle_apron_jnt01/middle_apron_jnt02
+        weight: 1
+      - path: global_control/bind_skeleton/root_jnt01/pelvis_jnt01/middle_apron_jnt01/middle_apron_jnt02/middle_apron_jnt03
+        weight: 1
+      - path: global_control/bind_skeleton/root_jnt01/pelvis_jnt01/right_apron_jnt01
+        weight: 1
+      - path: global_control/bind_skeleton/root_jnt01/pelvis_jnt01/right_apron_jnt01/right_apron_jnt02
+        weight: 1
+      - path: global_control/bind_skeleton/root_jnt01/pelvis_jnt01/right_apron_jnt01/right_apron_jnt02/right_apron_jnt03
+        weight: 1
+      - path: global_control/bind_skeleton/root_jnt01/pelvis_jnt01/right_hip_jnt01
+        weight: 1
+      - path: global_control/bind_skeleton/root_jnt01/pelvis_jnt01/right_hip_jnt01/right_knee_jnt01
+        weight: 1
+      - path: global_control/bind_skeleton/root_jnt01/pelvis_jnt01/right_hip_jnt01/right_knee_jnt01/right_in_ankle_jnt01
+        weight: 1
+      - path: global_control/bind_skeleton/root_jnt01/pelvis_jnt01/right_hip_jnt01/right_knee_jnt01/right_in_ankle_jnt01/right_ankle_jnt01
+        weight: 1
+      - path: global_control/bind_skeleton/root_jnt01/pelvis_jnt01/tail_jnt01
+        weight: 1
+      - path: global_control/bind_skeleton/root_jnt01/pelvis_jnt01/tail_jnt01/tail_jnt02
+        weight: 1
+      - path: global_control/bind_skeleton/root_jnt01/spine_jnt01
+        weight: 1
+      - path: global_control/bind_skeleton/root_jnt01/spine_jnt01/spine_jnt02
+        weight: 1
+      - path: global_control/bind_skeleton/root_jnt01/spine_jnt01/spine_jnt02/left_clavicle_jnt01
+        weight: 1
+      - path: global_control/bind_skeleton/root_jnt01/spine_jnt01/spine_jnt02/left_clavicle_jnt01/left_shoulder_jnt01
+        weight: 1
+      - path: global_control/bind_skeleton/root_jnt01/spine_jnt01/spine_jnt02/left_clavicle_jnt01/left_shoulder_jnt01/left_elbow_jnt01
+        weight: 1
+      - path: global_control/bind_skeleton/root_jnt01/spine_jnt01/spine_jnt02/left_clavicle_jnt01/left_shoulder_jnt01/left_elbow_jnt01/left_wrist_jnt01
+        weight: 1
+      - path: global_control/bind_skeleton/root_jnt01/spine_jnt01/spine_jnt02/left_clavicle_jnt01/left_shoulder_jnt01/left_elbow_jnt01/left_wrist_jnt01/left_finger_jnt01
+        weight: 1
+      - path: global_control/bind_skeleton/root_jnt01/spine_jnt01/spine_jnt02/left_clavicle_jnt01/left_shoulder_jnt01/left_elbow_jnt01/left_wrist_jnt01/left_finger_jnt01/left_finger_jnt02
+        weight: 1
+      - path: global_control/bind_skeleton/root_jnt01/spine_jnt01/spine_jnt02/left_clavicle_jnt01/left_shoulder_jnt01/left_elbow_jnt01/left_wrist_jnt01/left_finger_jnt01/left_finger_jnt02/left_finger_jnt03
+        weight: 1
+      - path: global_control/bind_skeleton/root_jnt01/spine_jnt01/spine_jnt02/left_clavicle_jnt01/left_shoulder_jnt01/left_elbow_jnt01/left_wrist_jnt01/left_thumb_jnt01
+        weight: 1
+      - path: global_control/bind_skeleton/root_jnt01/spine_jnt01/spine_jnt02/left_clavicle_jnt01/left_shoulder_jnt01/left_elbow_jnt01/left_wrist_jnt01/left_thumb_jnt01/left_thumb_jnt02
+        weight: 1
+      - path: global_control/bind_skeleton/root_jnt01/spine_jnt01/spine_jnt02/left_clavicle_jnt01/left_shoulder_jnt01/left_elbow_jnt01/left_wrist_jnt01/left_thumb_jnt01/left_thumb_jnt02/left_thumb_jnt03
+        weight: 1
+      - path: global_control/bind_skeleton/root_jnt01/spine_jnt01/spine_jnt02/neck_jnt01
+        weight: 1
+      - path: global_control/bind_skeleton/root_jnt01/spine_jnt01/spine_jnt02/neck_jnt01/head_jnt01
+        weight: 1
+      - path: global_control/bind_skeleton/root_jnt01/spine_jnt01/spine_jnt02/neck_jnt01/head_jnt01/jaw_jnt01
+        weight: 1
+      - path: global_control/bind_skeleton/root_jnt01/spine_jnt01/spine_jnt02/neck_jnt01/head_jnt01/jaw_jnt01/nb_jaw_jnt01
+        weight: 1
+      - path: global_control/bind_skeleton/root_jnt01/spine_jnt01/spine_jnt02/neck_jnt01/head_jnt01/left_ear_jnt01
+        weight: 1
+      - path: global_control/bind_skeleton/root_jnt01/spine_jnt01/spine_jnt02/neck_jnt01/head_jnt01/left_ear_jnt01/left_ear_jnt02
+        weight: 1
+      - path: global_control/bind_skeleton/root_jnt01/spine_jnt01/spine_jnt02/neck_jnt01/head_jnt01/left_ear_jnt01/left_ear_jnt02/left_ear_jnt03
+        weight: 1
+      - path: global_control/bind_skeleton/root_jnt01/spine_jnt01/spine_jnt02/neck_jnt01/head_jnt01/nb_tophead_jnt01
+        weight: 1
+      - path: global_control/bind_skeleton/root_jnt01/spine_jnt01/spine_jnt02/neck_jnt01/head_jnt01/right_ear_jnt01
+        weight: 1
+      - path: global_control/bind_skeleton/root_jnt01/spine_jnt01/spine_jnt02/neck_jnt01/head_jnt01/right_ear_jnt01/right_ear_jnt02
+        weight: 1
+      - path: global_control/bind_skeleton/root_jnt01/spine_jnt01/spine_jnt02/neck_jnt01/head_jnt01/right_ear_jnt01/right_ear_jnt02/right_ear_jnt03
+        weight: 1
+      - path: global_control/bind_skeleton/root_jnt01/spine_jnt01/spine_jnt02/right_clavicle_jnt01
+        weight: 1
+      - path: global_control/bind_skeleton/root_jnt01/spine_jnt01/spine_jnt02/right_clavicle_jnt01/right_shoulder_jnt01
+        weight: 1
+      - path: global_control/bind_skeleton/root_jnt01/spine_jnt01/spine_jnt02/right_clavicle_jnt01/right_shoulder_jnt01/right_elbow_jnt01
+        weight: 1
+      - path: global_control/bind_skeleton/root_jnt01/spine_jnt01/spine_jnt02/right_clavicle_jnt01/right_shoulder_jnt01/right_elbow_jnt01/right_wrist_jnt01
+        weight: 1
+      - path: global_control/bind_skeleton/root_jnt01/spine_jnt01/spine_jnt02/right_clavicle_jnt01/right_shoulder_jnt01/right_elbow_jnt01/right_wrist_jnt01/right_finger_jnt01
+        weight: 1
+      - path: global_control/bind_skeleton/root_jnt01/spine_jnt01/spine_jnt02/right_clavicle_jnt01/right_shoulder_jnt01/right_elbow_jnt01/right_wrist_jnt01/right_finger_jnt01/right_finger_jnt02
+        weight: 1
+      - path: global_control/bind_skeleton/root_jnt01/spine_jnt01/spine_jnt02/right_clavicle_jnt01/right_shoulder_jnt01/right_elbow_jnt01/right_wrist_jnt01/right_finger_jnt01/right_finger_jnt02/right_finger_jnt03
+        weight: 1
+      - path: global_control/bind_skeleton/root_jnt01/spine_jnt01/spine_jnt02/right_clavicle_jnt01/right_shoulder_jnt01/right_elbow_jnt01/right_wrist_jnt01/right_thumb_jnt01
+        weight: 1
+      - path: global_control/bind_skeleton/root_jnt01/spine_jnt01/spine_jnt02/right_clavicle_jnt01/right_shoulder_jnt01/right_elbow_jnt01/right_wrist_jnt01/right_thumb_jnt01/right_thumb_jnt02
+        weight: 1
+      - path: global_control/bind_skeleton/root_jnt01/spine_jnt01/spine_jnt02/right_clavicle_jnt01/right_shoulder_jnt01/right_elbow_jnt01/right_wrist_jnt01/right_thumb_jnt01/right_thumb_jnt02/right_thumb_jnt03
+        weight: 1
+      - path: mesh_group
+        weight: 1
+      - path: mesh_group/pig_mesh
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: Ass scratch
+      takeName: Take 001
+      firstFrame: 165
+      lastFrame: 189
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: global_control
+        weight: 1
+      - path: global_control/bind_skeleton
+        weight: 1
+      - path: global_control/bind_skeleton/root_jnt01
+        weight: 1
+      - path: global_control/bind_skeleton/root_jnt01/pelvis_jnt01
+        weight: 1
+      - path: global_control/bind_skeleton/root_jnt01/pelvis_jnt01/left_apron_jnt01
+        weight: 1
+      - path: global_control/bind_skeleton/root_jnt01/pelvis_jnt01/left_apron_jnt01/left_apron_jnt02
+        weight: 1
+      - path: global_control/bind_skeleton/root_jnt01/pelvis_jnt01/left_apron_jnt01/left_apron_jnt02/left_apron_jnt03
+        weight: 1
+      - path: global_control/bind_skeleton/root_jnt01/pelvis_jnt01/left_hip_jnt01
+        weight: 1
+      - path: global_control/bind_skeleton/root_jnt01/pelvis_jnt01/left_hip_jnt01/left_knee_jnt01
+        weight: 1
+      - path: global_control/bind_skeleton/root_jnt01/pelvis_jnt01/left_hip_jnt01/left_knee_jnt01/left_in_ankle_jnt01
+        weight: 1
+      - path: global_control/bind_skeleton/root_jnt01/pelvis_jnt01/left_hip_jnt01/left_knee_jnt01/left_in_ankle_jnt01/left_ankle_jnt01
+        weight: 1
+      - path: global_control/bind_skeleton/root_jnt01/pelvis_jnt01/middle_apron_jnt01
+        weight: 1
+      - path: global_control/bind_skeleton/root_jnt01/pelvis_jnt01/middle_apron_jnt01/middle_apron_jnt02
+        weight: 1
+      - path: global_control/bind_skeleton/root_jnt01/pelvis_jnt01/middle_apron_jnt01/middle_apron_jnt02/middle_apron_jnt03
+        weight: 1
+      - path: global_control/bind_skeleton/root_jnt01/pelvis_jnt01/right_apron_jnt01
+        weight: 1
+      - path: global_control/bind_skeleton/root_jnt01/pelvis_jnt01/right_apron_jnt01/right_apron_jnt02
+        weight: 1
+      - path: global_control/bind_skeleton/root_jnt01/pelvis_jnt01/right_apron_jnt01/right_apron_jnt02/right_apron_jnt03
+        weight: 1
+      - path: global_control/bind_skeleton/root_jnt01/pelvis_jnt01/right_hip_jnt01
+        weight: 1
+      - path: global_control/bind_skeleton/root_jnt01/pelvis_jnt01/right_hip_jnt01/right_knee_jnt01
+        weight: 1
+      - path: global_control/bind_skeleton/root_jnt01/pelvis_jnt01/right_hip_jnt01/right_knee_jnt01/right_in_ankle_jnt01
+        weight: 1
+      - path: global_control/bind_skeleton/root_jnt01/pelvis_jnt01/right_hip_jnt01/right_knee_jnt01/right_in_ankle_jnt01/right_ankle_jnt01
+        weight: 1
+      - path: global_control/bind_skeleton/root_jnt01/pelvis_jnt01/tail_jnt01
+        weight: 1
+      - path: global_control/bind_skeleton/root_jnt01/pelvis_jnt01/tail_jnt01/tail_jnt02
+        weight: 1
+      - path: global_control/bind_skeleton/root_jnt01/spine_jnt01
+        weight: 1
+      - path: global_control/bind_skeleton/root_jnt01/spine_jnt01/spine_jnt02
+        weight: 1
+      - path: global_control/bind_skeleton/root_jnt01/spine_jnt01/spine_jnt02/left_clavicle_jnt01
+        weight: 1
+      - path: global_control/bind_skeleton/root_jnt01/spine_jnt01/spine_jnt02/left_clavicle_jnt01/left_shoulder_jnt01
+        weight: 1
+      - path: global_control/bind_skeleton/root_jnt01/spine_jnt01/spine_jnt02/left_clavicle_jnt01/left_shoulder_jnt01/left_elbow_jnt01
+        weight: 1
+      - path: global_control/bind_skeleton/root_jnt01/spine_jnt01/spine_jnt02/left_clavicle_jnt01/left_shoulder_jnt01/left_elbow_jnt01/left_wrist_jnt01
+        weight: 1
+      - path: global_control/bind_skeleton/root_jnt01/spine_jnt01/spine_jnt02/left_clavicle_jnt01/left_shoulder_jnt01/left_elbow_jnt01/left_wrist_jnt01/left_finger_jnt01
+        weight: 1
+      - path: global_control/bind_skeleton/root_jnt01/spine_jnt01/spine_jnt02/left_clavicle_jnt01/left_shoulder_jnt01/left_elbow_jnt01/left_wrist_jnt01/left_finger_jnt01/left_finger_jnt02
+        weight: 1
+      - path: global_control/bind_skeleton/root_jnt01/spine_jnt01/spine_jnt02/left_clavicle_jnt01/left_shoulder_jnt01/left_elbow_jnt01/left_wrist_jnt01/left_finger_jnt01/left_finger_jnt02/left_finger_jnt03
+        weight: 1
+      - path: global_control/bind_skeleton/root_jnt01/spine_jnt01/spine_jnt02/left_clavicle_jnt01/left_shoulder_jnt01/left_elbow_jnt01/left_wrist_jnt01/left_thumb_jnt01
+        weight: 1
+      - path: global_control/bind_skeleton/root_jnt01/spine_jnt01/spine_jnt02/left_clavicle_jnt01/left_shoulder_jnt01/left_elbow_jnt01/left_wrist_jnt01/left_thumb_jnt01/left_thumb_jnt02
+        weight: 1
+      - path: global_control/bind_skeleton/root_jnt01/spine_jnt01/spine_jnt02/left_clavicle_jnt01/left_shoulder_jnt01/left_elbow_jnt01/left_wrist_jnt01/left_thumb_jnt01/left_thumb_jnt02/left_thumb_jnt03
+        weight: 1
+      - path: global_control/bind_skeleton/root_jnt01/spine_jnt01/spine_jnt02/neck_jnt01
+        weight: 1
+      - path: global_control/bind_skeleton/root_jnt01/spine_jnt01/spine_jnt02/neck_jnt01/head_jnt01
+        weight: 1
+      - path: global_control/bind_skeleton/root_jnt01/spine_jnt01/spine_jnt02/neck_jnt01/head_jnt01/jaw_jnt01
+        weight: 1
+      - path: global_control/bind_skeleton/root_jnt01/spine_jnt01/spine_jnt02/neck_jnt01/head_jnt01/jaw_jnt01/nb_jaw_jnt01
+        weight: 1
+      - path: global_control/bind_skeleton/root_jnt01/spine_jnt01/spine_jnt02/neck_jnt01/head_jnt01/left_ear_jnt01
+        weight: 1
+      - path: global_control/bind_skeleton/root_jnt01/spine_jnt01/spine_jnt02/neck_jnt01/head_jnt01/left_ear_jnt01/left_ear_jnt02
+        weight: 1
+      - path: global_control/bind_skeleton/root_jnt01/spine_jnt01/spine_jnt02/neck_jnt01/head_jnt01/left_ear_jnt01/left_ear_jnt02/left_ear_jnt03
+        weight: 1
+      - path: global_control/bind_skeleton/root_jnt01/spine_jnt01/spine_jnt02/neck_jnt01/head_jnt01/nb_tophead_jnt01
+        weight: 1
+      - path: global_control/bind_skeleton/root_jnt01/spine_jnt01/spine_jnt02/neck_jnt01/head_jnt01/right_ear_jnt01
+        weight: 1
+      - path: global_control/bind_skeleton/root_jnt01/spine_jnt01/spine_jnt02/neck_jnt01/head_jnt01/right_ear_jnt01/right_ear_jnt02
+        weight: 1
+      - path: global_control/bind_skeleton/root_jnt01/spine_jnt01/spine_jnt02/neck_jnt01/head_jnt01/right_ear_jnt01/right_ear_jnt02/right_ear_jnt03
+        weight: 1
+      - path: global_control/bind_skeleton/root_jnt01/spine_jnt01/spine_jnt02/right_clavicle_jnt01
+        weight: 1
+      - path: global_control/bind_skeleton/root_jnt01/spine_jnt01/spine_jnt02/right_clavicle_jnt01/right_shoulder_jnt01
+        weight: 1
+      - path: global_control/bind_skeleton/root_jnt01/spine_jnt01/spine_jnt02/right_clavicle_jnt01/right_shoulder_jnt01/right_elbow_jnt01
+        weight: 1
+      - path: global_control/bind_skeleton/root_jnt01/spine_jnt01/spine_jnt02/right_clavicle_jnt01/right_shoulder_jnt01/right_elbow_jnt01/right_wrist_jnt01
+        weight: 1
+      - path: global_control/bind_skeleton/root_jnt01/spine_jnt01/spine_jnt02/right_clavicle_jnt01/right_shoulder_jnt01/right_elbow_jnt01/right_wrist_jnt01/right_finger_jnt01
+        weight: 1
+      - path: global_control/bind_skeleton/root_jnt01/spine_jnt01/spine_jnt02/right_clavicle_jnt01/right_shoulder_jnt01/right_elbow_jnt01/right_wrist_jnt01/right_finger_jnt01/right_finger_jnt02
+        weight: 1
+      - path: global_control/bind_skeleton/root_jnt01/spine_jnt01/spine_jnt02/right_clavicle_jnt01/right_shoulder_jnt01/right_elbow_jnt01/right_wrist_jnt01/right_finger_jnt01/right_finger_jnt02/right_finger_jnt03
+        weight: 1
+      - path: global_control/bind_skeleton/root_jnt01/spine_jnt01/spine_jnt02/right_clavicle_jnt01/right_shoulder_jnt01/right_elbow_jnt01/right_wrist_jnt01/right_thumb_jnt01
+        weight: 1
+      - path: global_control/bind_skeleton/root_jnt01/spine_jnt01/spine_jnt02/right_clavicle_jnt01/right_shoulder_jnt01/right_elbow_jnt01/right_wrist_jnt01/right_thumb_jnt01/right_thumb_jnt02
+        weight: 1
+      - path: global_control/bind_skeleton/root_jnt01/spine_jnt01/spine_jnt02/right_clavicle_jnt01/right_shoulder_jnt01/right_elbow_jnt01/right_wrist_jnt01/right_thumb_jnt01/right_thumb_jnt02/right_thumb_jnt03
+        weight: 1
+      - path: mesh_group
+        weight: 1
+      - path: mesh_group/pig_mesh
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    splitTangentsAcrossUV: 1
+    normalImportMode: 0
+    tangentImportMode: 1
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: .5
+    foreArmTwist: .5
+    upperLegTwist: .5
+    legTwist: .5
+    armStretch: .0500000007
+    legStretch: .0500000007
+    feetSpacing: 0
+    rootMotionBoneName: global_control
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
