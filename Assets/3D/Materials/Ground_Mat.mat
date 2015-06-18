@@ -259,6 +259,18 @@ Material:
         first:
           name: _CenterFoam
         second: .730000019
+      data:
+        first:
+          name: _innerBorder
+        second: .400000006
+      data:
+        first:
+          name: _outerBorder
+        second: .479999989
+      data:
+        first:
+          name: _borderFade
+        second: .0900000036
     m_Colors:
       data:
         first:
@@ -276,3 +288,11 @@ Material:
         first:
           name: _Dots_Color
         second: {r: .654411793, g: .685395479, b: 1, a: 1}
+      data:
+        first:
+          name: _node_1314
+        second: {r: .606580317, g: .610294104, b: .54298228, a: 1}
+      data:
+        first:
+          name: _BorderColor
+        second: {r: .382352948, g: .382352948, b: .382352948, a: 1}
