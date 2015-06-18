@@ -7,8 +7,8 @@ public class Pig : MonoBehaviour {
 		public NavMeshAgent agent;
 		private int moveSpeedHash;
 		private int assHash;
-		//private int LookAroundHash;
-		//private int pushUpHash;
+		private int suspiciousHash;
+		private int fiddleHash;
 		private int moveHash;
 		//private int tripHash;
 		private float nextRandomIdle;
@@ -29,6 +29,8 @@ public class Pig : MonoBehaviour {
 			anim = GetComponent<Animator> ();
 			moveSpeedHash = Animator.StringToHash ("Speed");
 			assHash = Animator.StringToHash ("Ass");
+			suspiciousHash = Animator.StringToHash ("Suspicious");
+			fiddleHash = Animator.StringToHash ("Fiddle");
 			RandomTime ();
 			myAction = PigAction.Idling;
 		}
@@ -52,9 +54,10 @@ public class Pig : MonoBehaviour {
 						anim.SetTrigger (assHash);
 						break;
 					case 1:
-						//anim.SetTrigger (LookAroundHash);
+						anim.SetTrigger (fiddleHash);
 						break;
 					case 2:
+						anim.SetTrigger (suspiciousHash);	
 						//anim.SetBool (pushUpHash, true);
 						//pushupTime=RandomTime();
 						//myAction=BlobAction.PushingUp;
