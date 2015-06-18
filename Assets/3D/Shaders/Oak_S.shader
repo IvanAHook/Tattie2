@@ -1,7 +1,7 @@
 // Shader created with Shader Forge v1.13 
 // Shader Forge (c) Neat Corporation / Joachim Holmer - http://www.acegikmo.com/shaderforge/
 // Note: Manually altering this data may prevent you from opening it in Shader Forge
-/*SF_DATA;ver:1.13;sub:START;pass:START;ps:flbk:,lico:1,lgpr:1,nrmq:1,nrsp:0,limd:1,spmd:1,trmd:0,grmd:0,uamb:True,mssp:True,bkdf:False,rprd:False,enco:False,rmgx:True,rpth:0,hqsc:True,hqlp:False,tesm:0,bsrc:0,bdst:1,culm:0,dpts:2,wrdp:True,dith:0,ufog:True,aust:True,igpj:False,qofs:0,qpre:1,rntp:1,fgom:False,fgoc:False,fgod:False,fgor:False,fgmd:0,fgcr:0.5,fgcg:0.5,fgcb:0.5,fgca:1,fgde:0.01,fgrn:0,fgrf:300,ofsf:0,ofsu:0,f2p0:False;n:type:ShaderForge.SFN_Final,id:5248,x:33354,y:32750,varname:node_5248,prsc:2|diff-598-OUT,normal-6551-OUT,voffset-8607-OUT;n:type:ShaderForge.SFN_Tex2d,id:9920,x:31883,y:32621,ptovrint:False,ptlb:diffuse,ptin:_diffuse,varname:_diffuse,prsc:2,tex:b7b8ef9d05f112048ba68243f6b96ea6,ntxv:0,isnm:False;n:type:ShaderForge.SFN_Tex2d,id:7060,x:31810,y:33441,ptovrint:False,ptlb:Normal,ptin:_Normal,varname:_Normal,prsc:2,tex:967e6093cdd4a9d4eafc63fcd71cc492,ntxv:3,isnm:True;n:type:ShaderForge.SFN_Tex2d,id:4547,x:31824,y:33147,ptovrint:False,ptlb:Normal_copy,ptin:_Normal_copy,varname:_Normal_copy,prsc:2,tex:1cfac8d7cd391cd46b58fa8106209a54,ntxv:3,isnm:True;n:type:ShaderForge.SFN_VertexColor,id:7064,x:30824,y:32728,varname:node_7064,prsc:2;n:type:ShaderForge.SFN_Tex2d,id:5196,x:32049,y:32307,ptovrint:False,ptlb:T_Moss,ptin:_T_Moss,varname:_T_Moss,prsc:2,tex:3fb06727ff1b77b47a394012b1326378,ntxv:0,isnm:False;n:type:ShaderForge.SFN_Tex2d,id:5990,x:31599,y:33016,ptovrint:False,ptlb:nN_Moss,ptin:_nN_Moss,varname:_nN_Moss,prsc:2,ntxv:3,isnm:True;n:type:ShaderForge.SFN_NormalBlend,id:7385,x:32242,y:32892,varname:node_7385,prsc:2|BSE-5990-RGB,DTL-7060-RGB;n:type:ShaderForge.SFN_Lerp,id:598,x:32282,y:32555,varname:node_598,prsc:2|A-9920-RGB,B-5196-RGB,T-7064-R;n:type:ShaderForge.SFN_Lerp,id:6551,x:32459,y:32892,varname:node_6551,prsc:2|A-7385-OUT,B-7060-RGB,T-7064-R;n:type:ShaderForge.SFN_Time,id:7423,x:30863,y:33173,varname:node_7423,prsc:2;n:type:ShaderForge.SFN_Sin,id:7794,x:31313,y:33151,varname:node_7794,prsc:2|IN-3056-OUT;n:type:ShaderForge.SFN_Add,id:3056,x:31154,y:33151,varname:node_3056,prsc:2|A-7064-B,B-7423-T;n:type:ShaderForge.SFN_Multiply,id:8607,x:31667,y:33312,varname:node_8607,prsc:2|A-7064-G,B-2370-OUT,C-7289-OUT;n:type:ShaderForge.SFN_NormalVector,id:7289,x:31304,y:33440,prsc:2,pt:False;n:type:ShaderForge.SFN_RemapRange,id:2370,x:31492,y:33213,varname:node_2370,prsc:2,frmn:-1,frmx:1,tomn:-0.1,tomx:0.1|IN-7794-OUT;proporder:9920-7060-5196-5990;pass:END;sub:END;*/
+/*SF_DATA;ver:1.13;sub:START;pass:START;ps:flbk:,lico:1,lgpr:1,nrmq:1,nrsp:0,limd:1,spmd:1,trmd:0,grmd:0,uamb:True,mssp:True,bkdf:False,rprd:False,enco:False,rmgx:True,rpth:0,hqsc:True,hqlp:False,tesm:0,bsrc:0,bdst:1,culm:0,dpts:2,wrdp:True,dith:0,ufog:True,aust:True,igpj:False,qofs:0,qpre:1,rntp:1,fgom:False,fgoc:False,fgod:False,fgor:False,fgmd:0,fgcr:0.5,fgcg:0.5,fgcb:0.5,fgca:1,fgde:0.01,fgrn:0,fgrf:300,ofsf:0,ofsu:0,f2p0:False;n:type:ShaderForge.SFN_Final,id:5248,x:33354,y:32750,varname:node_5248,prsc:2|diff-598-OUT,normal-6551-OUT,voffset-8607-OUT;n:type:ShaderForge.SFN_Tex2d,id:9920,x:31883,y:32621,ptovrint:False,ptlb:diffuse,ptin:_diffuse,varname:_diffuse,prsc:2,tex:b7b8ef9d05f112048ba68243f6b96ea6,ntxv:0,isnm:False;n:type:ShaderForge.SFN_Tex2d,id:7060,x:31810,y:33441,ptovrint:False,ptlb:Normal,ptin:_Normal,varname:_Normal,prsc:2,tex:967e6093cdd4a9d4eafc63fcd71cc492,ntxv:3,isnm:True;n:type:ShaderForge.SFN_Tex2d,id:4547,x:31824,y:33147,ptovrint:False,ptlb:Normal_copy,ptin:_Normal_copy,varname:_Normal_copy,prsc:2,tex:1cfac8d7cd391cd46b58fa8106209a54,ntxv:3,isnm:True;n:type:ShaderForge.SFN_VertexColor,id:7064,x:30824,y:32728,varname:node_7064,prsc:2;n:type:ShaderForge.SFN_Tex2d,id:5196,x:32049,y:32307,ptovrint:False,ptlb:T_Moss,ptin:_T_Moss,varname:_T_Moss,prsc:2,tex:3fb06727ff1b77b47a394012b1326378,ntxv:0,isnm:False;n:type:ShaderForge.SFN_Tex2d,id:5990,x:31599,y:33016,ptovrint:False,ptlb:nN_Moss,ptin:_nN_Moss,varname:_nN_Moss,prsc:2,ntxv:3,isnm:True;n:type:ShaderForge.SFN_NormalBlend,id:7385,x:32242,y:32892,varname:node_7385,prsc:2|BSE-5990-RGB,DTL-7060-RGB;n:type:ShaderForge.SFN_Lerp,id:598,x:32282,y:32555,varname:node_598,prsc:2|A-9920-RGB,B-5196-RGB,T-7064-R;n:type:ShaderForge.SFN_Lerp,id:6551,x:32459,y:32892,varname:node_6551,prsc:2|A-7385-OUT,B-7060-RGB,T-7064-R;n:type:ShaderForge.SFN_Time,id:7423,x:30839,y:33214,varname:node_7423,prsc:2;n:type:ShaderForge.SFN_Sin,id:7794,x:31111,y:33199,varname:node_7794,prsc:2|IN-3056-OUT;n:type:ShaderForge.SFN_Add,id:3056,x:31092,y:33008,varname:node_3056,prsc:2|A-7064-B,B-2379-OUT;n:type:ShaderForge.SFN_Multiply,id:8607,x:31667,y:33312,varname:node_8607,prsc:2|A-7064-G,B-2370-OUT,C-7289-OUT;n:type:ShaderForge.SFN_NormalVector,id:7289,x:31304,y:33440,prsc:2,pt:False;n:type:ShaderForge.SFN_RemapRange,id:2370,x:31397,y:33241,varname:node_2370,prsc:2,frmn:-1,frmx:1,tomn:-0.1,tomx:0.1|IN-7794-OUT;n:type:ShaderForge.SFN_VertexColor,id:2737,x:33141,y:32550,varname:node_2737,prsc:2;n:type:ShaderForge.SFN_ValueProperty,id:2379,x:30778,y:33060,ptovrint:False,ptlb:ScriptedTime,ptin:_ScriptedTime,varname:_ScriptedTime,prsc:2,glob:False,v1:1;proporder:9920-7060-5196-5990-2379;pass:END;sub:END;*/
 
 Shader "Shader Forge/Oak_S" {
     Properties {
@@ -9,6 +9,7 @@ Shader "Shader Forge/Oak_S" {
         _Normal ("Normal", 2D) = "bump" {}
         _T_Moss ("T_Moss", 2D) = "white" {}
         _nN_Moss ("nN_Moss", 2D) = "bump" {}
+        _ScriptedTime ("ScriptedTime", Float ) = 1
     }
     SubShader {
         Tags {
@@ -32,11 +33,11 @@ Shader "Shader Forge/Oak_S" {
             #pragma exclude_renderers gles3 metal d3d11_9x xbox360 xboxone ps3 ps4 psp2 
             #pragma target 3.0
             uniform float4 _LightColor0;
-            uniform float4 _TimeEditor;
             uniform sampler2D _diffuse; uniform float4 _diffuse_ST;
             uniform sampler2D _Normal; uniform float4 _Normal_ST;
             uniform sampler2D _T_Moss; uniform float4 _T_Moss_ST;
             uniform sampler2D _nN_Moss; uniform float4 _nN_Moss_ST;
+            uniform float _ScriptedTime;
             struct VertexInput {
                 float4 vertex : POSITION;
                 float3 normal : NORMAL;
@@ -62,8 +63,7 @@ Shader "Shader Forge/Oak_S" {
                 o.normalDir = UnityObjectToWorldNormal(v.normal);
                 o.tangentDir = normalize( mul( _Object2World, float4( v.tangent.xyz, 0.0 ) ).xyz );
                 o.bitangentDir = normalize(cross(o.normalDir, o.tangentDir) * v.tangent.w);
-                float4 node_7423 = _Time + _TimeEditor;
-                v.vertex.xyz += (o.vertexColor.g*(sin((o.vertexColor.b+node_7423.g))*0.1+0.0)*v.normal);
+                v.vertex.xyz += (o.vertexColor.g*(sin((o.vertexColor.b+_ScriptedTime))*0.1+0.0)*v.normal);
                 o.posWorld = mul(_Object2World, v.vertex);
                 float3 lightColor = _LightColor0.rgb;
                 o.pos = mul(UNITY_MATRIX_MVP, v.vertex);
@@ -125,11 +125,11 @@ Shader "Shader Forge/Oak_S" {
             #pragma exclude_renderers gles3 metal d3d11_9x xbox360 xboxone ps3 ps4 psp2 
             #pragma target 3.0
             uniform float4 _LightColor0;
-            uniform float4 _TimeEditor;
             uniform sampler2D _diffuse; uniform float4 _diffuse_ST;
             uniform sampler2D _Normal; uniform float4 _Normal_ST;
             uniform sampler2D _T_Moss; uniform float4 _T_Moss_ST;
             uniform sampler2D _nN_Moss; uniform float4 _nN_Moss_ST;
+            uniform float _ScriptedTime;
             struct VertexInput {
                 float4 vertex : POSITION;
                 float3 normal : NORMAL;
@@ -154,8 +154,7 @@ Shader "Shader Forge/Oak_S" {
                 o.normalDir = UnityObjectToWorldNormal(v.normal);
                 o.tangentDir = normalize( mul( _Object2World, float4( v.tangent.xyz, 0.0 ) ).xyz );
                 o.bitangentDir = normalize(cross(o.normalDir, o.tangentDir) * v.tangent.w);
-                float4 node_7423 = _Time + _TimeEditor;
-                v.vertex.xyz += (o.vertexColor.g*(sin((o.vertexColor.b+node_7423.g))*0.1+0.0)*v.normal);
+                v.vertex.xyz += (o.vertexColor.g*(sin((o.vertexColor.b+_ScriptedTime))*0.1+0.0)*v.normal);
                 o.posWorld = mul(_Object2World, v.vertex);
                 float3 lightColor = _LightColor0.rgb;
                 o.pos = mul(UNITY_MATRIX_MVP, v.vertex);
@@ -211,7 +210,7 @@ Shader "Shader Forge/Oak_S" {
             #pragma multi_compile_fog
             #pragma exclude_renderers gles3 metal d3d11_9x xbox360 xboxone ps3 ps4 psp2 
             #pragma target 3.0
-            uniform float4 _TimeEditor;
+            uniform float _ScriptedTime;
             struct VertexInput {
                 float4 vertex : POSITION;
                 float3 normal : NORMAL;
@@ -226,8 +225,7 @@ Shader "Shader Forge/Oak_S" {
                 VertexOutput o = (VertexOutput)0;
                 o.vertexColor = v.vertexColor;
                 o.normalDir = UnityObjectToWorldNormal(v.normal);
-                float4 node_7423 = _Time + _TimeEditor;
-                v.vertex.xyz += (o.vertexColor.g*(sin((o.vertexColor.b+node_7423.g))*0.1+0.0)*v.normal);
+                v.vertex.xyz += (o.vertexColor.g*(sin((o.vertexColor.b+_ScriptedTime))*0.1+0.0)*v.normal);
                 o.pos = mul(UNITY_MATRIX_MVP, v.vertex);
                 TRANSFER_SHADOW_CASTER(o)
                 return o;
