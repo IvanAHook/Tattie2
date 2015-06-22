@@ -194,11 +194,11 @@ ParticleSystem:
         m_NumAlphaKeys: 2
       minColor:
         serializedVersion: 2
-        rgba: 3010296435
+        rgba: 3007992654
       maxColor:
         serializedVersion: 2
-        rgba: 2872199998
-      minMaxState: 2
+        rgba: 2663766219
+      minMaxState: 0
     startSize:
       scalar: .910000026
       maxCurve:
@@ -1091,9 +1091,9 @@ ParticleSystemRenderer:
   m_VelocityScale: .5
   m_LengthScale: 0
   m_SortingFudge: 0
-  m_NormalDirection: 1
+  m_NormalDirection: .129999995
   m_SortMode: 2
-  m_Mesh: {fileID: 0}
+  m_Mesh: {fileID: 10210, guid: 0000000000000000e000000000000000, type: 0}
   m_Mesh1: {fileID: 0}
   m_Mesh2: {fileID: 0}
   m_Mesh3: {fileID: 0}

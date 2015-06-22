@@ -16,6 +16,27 @@ Material:
     m_TexEnvs:
       data:
         first:
+          name: _Grass_N
+        second:
+          m_Texture: {fileID: 2800000, guid: 067bdfe551b6d3d4591d89b6eadf2d13, type: 3}
+          m_Scale: {x: 1, y: 1}
+          m_Offset: {x: 0, y: 0}
+      data:
+        first:
+          name: _Moss_T
+        second:
+          m_Texture: {fileID: 2800000, guid: 3fb06727ff1b77b47a394012b1326378, type: 3}
+          m_Scale: {x: 1, y: 1}
+          m_Offset: {x: 0, y: 0}
+      data:
+        first:
+          name: _Moss_N
+        second:
+          m_Texture: {fileID: 2800000, guid: 32f9322402dcb1e45bf48725c0e97e07, type: 3}
+          m_Scale: {x: 1, y: 1}
+          m_Offset: {x: 0, y: 0}
+      data:
+        first:
           name: _node_6745
         second:
           m_Texture: {fileID: 2800000, guid: 34752bb116bb08a43a2f8b8ef168ff89, type: 3}
@@ -28,9 +49,58 @@ Material:
           m_Texture: {fileID: 2800000, guid: 3e0b8e84cafb0df48b5780d9f73754ef, type: 3}
           m_Scale: {x: 1, y: 1}
           m_Offset: {x: 0, y: 0}
+      data:
+        first:
+          name: _node_1281
+        second:
+          m_Texture: {fileID: 0}
+          m_Scale: {x: 1, y: 1}
+          m_Offset: {x: 0, y: 0}
+      data:
+        first:
+          name: _Root_T
+        second:
+          m_Texture: {fileID: 2800000, guid: 3e0b8e84cafb0df48b5780d9f73754ef, type: 3}
+          m_Scale: {x: 1, y: 1}
+          m_Offset: {x: 0, y: 0}
+      data:
+        first:
+          name: _node_4586
+        second:
+          m_Texture: {fileID: 0}
+          m_Scale: {x: 1, y: 1}
+          m_Offset: {x: 0, y: 0}
+      data:
+        first:
+          name: _node_6742
+        second:
+          m_Texture: {fileID: 2800000, guid: 82427ccdd1c743042887d869a3e05841, type: 3}
+          m_Scale: {x: 1, y: 1}
+          m_Offset: {x: 0, y: 0}
+      data:
+        first:
+          name: _Root_N
+        second:
+          m_Texture: {fileID: 2800000, guid: 34752bb116bb08a43a2f8b8ef168ff89, type: 3}
+          m_Scale: {x: 1, y: 1}
+          m_Offset: {x: 0, y: 0}
+      data:
+        first:
+          name: _Dirt_N
+        second:
+          m_Texture: {fileID: 2800000, guid: 6d93c68a03993fa4198168eb5ffad660, type: 3}
+          m_Scale: {x: 1, y: 1}
+          m_Offset: {x: 0, y: 0}
+      data:
+        first:
+          name: _Grass_T
+        second:
+          m_Texture: {fileID: 2800000, guid: f0a8168310b10da4faedc474bb26c20f, type: 3}
+          m_Scale: {x: 2, y: 2}
+          m_Offset: {x: 0, y: 0}
     m_Floats: {}
     m_Colors:
       data:
         first:
           name: _node_2148
-        second: {r: .5, g: .5, b: .5, a: 1}
+        second: {r: .801470578, g: .581513226, b: .412521631, a: 1}

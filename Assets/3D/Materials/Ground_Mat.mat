@@ -279,7 +279,7 @@ Material:
       data:
         first:
           name: _FoamColor
-        second: {r: .661764741, g: .661764741, b: .661764741, a: 1}
+        second: {r: .41911763, g: .388300151, b: .388300151, a: 1}
       data:
         first:
           name: _node_7231
@@ -295,4 +295,4 @@ Material:
       data:
         first:
           name: _BorderColor
-        second: {r: .382352948, g: .382352948, b: .382352948, a: 1}
+        second: {r: .345588207, g: .327800572, b: .327800572, a: 1}
