@@ -16,16 +16,30 @@ Material:
     m_TexEnvs:
       data:
         first:
-          name: _Texture
+          name: _Normal
         second:
-          m_Texture: {fileID: 2800000, guid: fc79468710d144c4f87cc6209aa1c4cc, type: 3}
+          m_Texture: {fileID: 2800000, guid: 9e463e1043f31724387ef30c1c366525, type: 3}
           m_Scale: {x: 1, y: 1}
           m_Offset: {x: 0, y: 0}
       data:
         first:
-          name: _Normal
+          name: _nN_Moss
         second:
-          m_Texture: {fileID: 2800000, guid: 9e463e1043f31724387ef30c1c366525, type: 3}
+          m_Texture: {fileID: 2800000, guid: 32f9322402dcb1e45bf48725c0e97e07, type: 3}
+          m_Scale: {x: 3, y: 3}
+          m_Offset: {x: 0, y: 0}
+      data:
+        first:
+          name: _T_Moss
+        second:
+          m_Texture: {fileID: 2800000, guid: 3fb06727ff1b77b47a394012b1326378, type: 3}
+          m_Scale: {x: 3, y: 3}
+          m_Offset: {x: 0, y: 0}
+      data:
+        first:
+          name: _Texture
+        second:
+          m_Texture: {fileID: 2800000, guid: fc79468710d144c4f87cc6209aa1c4cc, type: 3}
           m_Scale: {x: 1, y: 1}
           m_Offset: {x: 0, y: 0}
       data:
@@ -70,20 +84,6 @@ Material:
           m_Texture: {fileID: 2800000, guid: 9e463e1043f31724387ef30c1c366525, type: 3}
           m_Scale: {x: 1, y: 1}
           m_Offset: {x: 0, y: 0}
-      data:
-        first:
-          name: _nN_Moss
-        second:
-          m_Texture: {fileID: 2800000, guid: 32f9322402dcb1e45bf48725c0e97e07, type: 3}
-          m_Scale: {x: 3, y: 3}
-          m_Offset: {x: 0, y: 0}
-      data:
-        first:
-          name: _T_Moss
-        second:
-          m_Texture: {fileID: 2800000, guid: 3fb06727ff1b77b47a394012b1326378, type: 3}
-          m_Scale: {x: 3, y: 3}
-          m_Offset: {x: 0, y: 0}
     m_Floats:
       data:
         first:
@@ -109,4 +109,4 @@ Material:
       data:
         first:
           name: _node_2148
-        second: {r: .691176474, g: .691176474, b: .691176474, a: 1}
+        second: {r: .632352948, g: .632352948, b: .632352948, a: 1}
