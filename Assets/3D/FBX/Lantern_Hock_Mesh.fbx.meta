@@ -50,6 +50,7 @@ ModelImporter:
     2300020: pPlane93
     2300022: pPlane94
     2300024: pPlane95
+    2300026: //RootNode
     3300000: polySurface33
     3300002: polySurface34
     3300004: polySurface39
@@ -63,6 +64,7 @@ ModelImporter:
     3300020: pPlane93
     3300022: pPlane94
     3300024: pPlane95
+    3300026: //RootNode
     4300000: polySurface33
     4300002: polySurface34
     4300004: polySurface39
@@ -76,6 +78,9 @@ ModelImporter:
     4300020: pPlane93
     4300022: pPlane94
     4300024: pPlane95
+    4300026: Lantern_Hook
+    4300028: Lantern_Hook2
+    4300030: polySurface1
   materials:
     importMaterials: 1
     materialName: 0

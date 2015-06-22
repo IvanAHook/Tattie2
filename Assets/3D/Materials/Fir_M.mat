@@ -99,6 +99,42 @@ Material:
         second: 0
       data:
         first:
+          name: _Intensity
+        second: 0
+      data:
+        first:
+          name: _TimeOffsetG
+        second: 1.19000006
+      data:
+        first:
+          name: _WindSpeed
+        second: 2.71000004
+      data:
+        first:
+          name: _ShakeSpeed
+        second: 3.04999995
+      data:
+        first:
+          name: _WindDistance
+        second: .230000004
+      data:
+        first:
+          name: _ShakeDistance
+        second: 1.92999995
+      data:
+        first:
+          name: _PlayerX
+        second: 1
+      data:
+        first:
+          name: _PlayerZ
+        second: 1
+      data:
+        first:
+          name: _HitTime
+        second: 0
+      data:
+        first:
           name: _Metallic
         second: 0
       data:
