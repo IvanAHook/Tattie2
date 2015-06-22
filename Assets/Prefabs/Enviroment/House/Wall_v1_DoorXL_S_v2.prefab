@@ -10,7 +10,7 @@ GameObject:
   - 4: {fileID: 403892}
   - 33: {fileID: 3310330}
   - 23: {fileID: 2366068}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Wall_v1_DoorXL_S_v2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -23,8 +23,8 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 145868}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -17.2697411, y: 4.6792717, z: 24.5749626}
+  m_LocalRotation: {x: 0, y: -1, z: 0, w: 3.57627869e-07}
+  m_LocalPosition: {x: 3.5, y: 0, z: 8}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -39,8 +39,8 @@ MeshRenderer:
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_Materials:
-  - {fileID: 2100000, guid: beddaecfff58d4d4c9b4d3b51eaff764, type: 2}
-  - {fileID: 2100000, guid: beddaecfff58d4d4c9b4d3b51eaff764, type: 2}
+  - {fileID: 2100000, guid: c40cf86e5e978dc42950499ea050d3ca, type: 2}
+  - {fileID: 2100000, guid: c40cf86e5e978dc42950499ea050d3ca, type: 2}
   m_SubsetIndices: 
   m_StaticBatchRoot: {fileID: 0}
   m_UseLightProbes: 1
