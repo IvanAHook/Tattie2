@@ -2,7 +2,7 @@
 using System.Collections;
 using DG.Tweening;
 
-public class ObjectInteract : MonoBehaviour {
+public class ObjectInteract : Interactable {
 	
 	public AudioClip soundFX;
 	
@@ -17,6 +17,11 @@ public class ObjectInteract : MonoBehaviour {
 
 	void Start (){
 		startPos = transform.position;
+	}
+
+	public override void Interact ()
+	{
+		PlayAnim ();
 	}
 	
 	public void ResetItem() {
