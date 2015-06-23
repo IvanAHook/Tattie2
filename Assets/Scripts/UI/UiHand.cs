@@ -3,6 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using DG.Tweening;
 
+[RequireComponent(typeof(AudioSource))]
 public class UiHand : MonoBehaviour {
 
     public delegate void MouseExit();

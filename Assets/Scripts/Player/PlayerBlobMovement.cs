@@ -3,6 +3,7 @@ using System.Collections;
 using DG.Tweening;
 using UnityEngine.EventSystems;
 
+[RequireComponent(typeof(AudioSource))]
 public class PlayerBlobMovement : MonoBehaviour {
 
     NavMeshAgent agent;
@@ -13,9 +14,11 @@ public class PlayerBlobMovement : MonoBehaviour {
     public AudioClip[] footstepsGrass;
     public AudioClip[] footstepsWood;
     public AudioClip[] footstepsWater;
+    public AudioClip[] footstepsDirt;
     public float footDelay;
 
     public bool active = false;
+    public bool friendly = false;
 
     public bool isMoving;
 
@@ -35,6 +38,7 @@ public class PlayerBlobMovement : MonoBehaviour {
         agent = GetComponent<NavMeshAgent>();
 
         audioSource = transform.GetComponent<AudioSource>();
+        footsteps = footstepsGrass;
         StartCoroutine(Footsteps());
     }
 
@@ -105,13 +109,18 @@ public class PlayerBlobMovement : MonoBehaviour {
                 RaycastHit hitInfo;
                 Physics.Raycast(transform.position, Vector3.down, out hitInfo);
 
-                if (hitInfo.transform.tag == "Grass") {
-                    footsteps = footstepsGrass;
-                } else if (hitInfo.transform.tag == "Wood_Floor") {
-                    footsteps = footstepsWood;
-                } else if (hitInfo.transform.tag == "Water") {
-                    footsteps = footstepsWater;
+                if (hitInfo.transform != null) {
+                    if (hitInfo.transform.tag == "Grass") {
+                        footsteps = footstepsGrass;
+                    } else if (hitInfo.transform.tag == "Wood_Floor") {
+                        footsteps = footstepsWood;
+                    } else if (hitInfo.transform.tag == "Water") {
+                        footsteps = footstepsWater;
+                    } else if (hitInfo.transform.tag == "Dirt") {
+                        footsteps = footstepsDirt;
+                    }
                 }
+
                 audioSource.PlayOneShot(footsteps[Random.Range(0, footsteps.Length)]);
                 yield return new WaitForSeconds(footDelay);
             } else {
