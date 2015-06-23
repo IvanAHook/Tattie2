@@ -1,7 +1,7 @@
 // Shader created with Shader Forge v1.13 
 // Shader Forge (c) Neat Corporation / Joachim Holmer - http://www.acegikmo.com/shaderforge/
 // Note: Manually altering this data may prevent you from opening it in Shader Forge
-/*SF_DATA;ver:1.13;sub:START;pass:START;ps:flbk:,lico:1,lgpr:1,nrmq:1,nrsp:0,limd:1,spmd:1,trmd:0,grmd:0,uamb:True,mssp:True,bkdf:False,rprd:False,enco:False,rmgx:True,rpth:0,hqsc:True,hqlp:False,tesm:0,bsrc:0,bdst:1,culm:2,dpts:2,wrdp:True,dith:0,ufog:True,aust:True,igpj:False,qofs:0,qpre:2,rntp:3,fgom:False,fgoc:False,fgod:False,fgor:False,fgmd:0,fgcr:0.5,fgcg:0.5,fgcb:0.5,fgca:1,fgde:0.01,fgrn:0,fgrf:300,ofsf:0,ofsu:0,f2p0:False;n:type:ShaderForge.SFN_Final,id:1256,x:32719,y:32712,varname:node_1256,prsc:2|diff-4433-RGB,normal-2735-RGB,clip-722-B;n:type:ShaderForge.SFN_Tex2d,id:4433,x:32301,y:32164,ptovrint:False,ptlb:node_4433,ptin:_node_4433,varname:_node_4433,prsc:2,tex:ed2aaf2b43a0bfc40b7b013ed0164464,ntxv:0,isnm:False;n:type:ShaderForge.SFN_Tex2d,id:722,x:32122,y:32915,ptovrint:False,ptlb:node_722,ptin:_node_722,varname:_node_722,prsc:2,tex:cb89008e708e4bc48a4368c06b3ff5fc,ntxv:0,isnm:False;n:type:ShaderForge.SFN_Tex2d,id:2735,x:32085,y:32647,ptovrint:False,ptlb:node_2735,ptin:_node_2735,varname:_node_2735,prsc:2,tex:a0953e01ec3ce974e9538c707d584896,ntxv:3,isnm:True;proporder:4433-722-2735;pass:END;sub:END;*/
+/*SF_DATA;ver:1.13;sub:START;pass:START;ps:flbk:,lico:1,lgpr:1,nrmq:1,nrsp:0,limd:1,spmd:1,trmd:0,grmd:0,uamb:True,mssp:True,bkdf:False,rprd:False,enco:False,rmgx:True,rpth:0,hqsc:True,hqlp:False,tesm:0,bsrc:0,bdst:1,culm:0,dpts:2,wrdp:True,dith:0,ufog:True,aust:True,igpj:False,qofs:0,qpre:2,rntp:3,fgom:False,fgoc:False,fgod:False,fgor:False,fgmd:0,fgcr:0.5,fgcg:0.5,fgcb:0.5,fgca:1,fgde:0.01,fgrn:0,fgrf:300,ofsf:0,ofsu:0,f2p0:False;n:type:ShaderForge.SFN_Final,id:1256,x:32719,y:32712,varname:node_1256,prsc:2|diff-4433-RGB,normal-2735-RGB,clip-722-B;n:type:ShaderForge.SFN_Tex2d,id:4433,x:32301,y:32164,ptovrint:False,ptlb:node_4433,ptin:_node_4433,varname:_node_4433,prsc:2,tex:ed2aaf2b43a0bfc40b7b013ed0164464,ntxv:0,isnm:False;n:type:ShaderForge.SFN_Tex2d,id:722,x:32122,y:32915,ptovrint:False,ptlb:node_722,ptin:_node_722,varname:_node_722,prsc:2,tex:cb89008e708e4bc48a4368c06b3ff5fc,ntxv:0,isnm:False;n:type:ShaderForge.SFN_Tex2d,id:2735,x:32085,y:32647,ptovrint:False,ptlb:node_2735,ptin:_node_2735,varname:_node_2735,prsc:2,tex:a0953e01ec3ce974e9538c707d584896,ntxv:3,isnm:True;proporder:4433-722-2735;pass:END;sub:END;*/
 
 Shader "Shader Forge/Lantern" {
     Properties {
@@ -20,7 +20,6 @@ Shader "Shader Forge/Lantern" {
             Tags {
                 "LightMode"="ForwardBase"
             }
-            Cull Off
             
             
             CGPROGRAM
@@ -74,11 +73,6 @@ Shader "Shader Forge/Lantern" {
                 float3 _node_2735_var = UnpackNormal(tex2D(_node_2735,TRANSFORM_TEX(i.uv0, _node_2735)));
                 float3 normalLocal = _node_2735_var.rgb;
                 float3 normalDirection = normalize(mul( normalLocal, tangentTransform )); // Perturbed normals
-                
-                float nSign = sign( dot( viewDirection, i.normalDir ) ); // Reverse normal if this is a backface
-                i.normalDir *= nSign;
-                normalDirection *= nSign;
-                
                 float4 _node_722_var = tex2D(_node_722,TRANSFORM_TEX(i.uv0, _node_722));
                 clip(_node_722_var.b - 0.5);
                 float3 lightDirection = normalize(_WorldSpaceLightPos0.xyz);
@@ -108,7 +102,6 @@ Shader "Shader Forge/Lantern" {
                 "LightMode"="ForwardAdd"
             }
             Blend One One
-            Cull Off
             
             
             CGPROGRAM
@@ -160,11 +153,6 @@ Shader "Shader Forge/Lantern" {
                 float3 _node_2735_var = UnpackNormal(tex2D(_node_2735,TRANSFORM_TEX(i.uv0, _node_2735)));
                 float3 normalLocal = _node_2735_var.rgb;
                 float3 normalDirection = normalize(mul( normalLocal, tangentTransform )); // Perturbed normals
-                
-                float nSign = sign( dot( viewDirection, i.normalDir ) ); // Reverse normal if this is a backface
-                i.normalDir *= nSign;
-                normalDirection *= nSign;
-                
                 float4 _node_722_var = tex2D(_node_722,TRANSFORM_TEX(i.uv0, _node_722));
                 clip(_node_722_var.b - 0.5);
                 float3 lightDirection = normalize(lerp(_WorldSpaceLightPos0.xyz, _WorldSpaceLightPos0.xyz - i.posWorld.xyz,_WorldSpaceLightPos0.w));
