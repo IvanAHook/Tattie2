@@ -14,9 +14,11 @@ public class PlayerBlobMovement : MonoBehaviour {
     public AudioClip[] footstepsGrass;
     public AudioClip[] footstepsWood;
     public AudioClip[] footstepsWater;
+    public AudioClip[] footstepsDirt;
     public float footDelay;
 
     public bool active = false;
+    public bool friendly = false;
 
     public bool isMoving;
 
@@ -105,17 +107,22 @@ public class PlayerBlobMovement : MonoBehaviour {
         while (true) {
             if (isMoving) {
                 RaycastHit hitInfo;
-                if (Physics.Raycast(transform.position, Vector3.down, out hitInfo)) {
+                Physics.Raycast(transform.position, Vector3.down, out hitInfo);
+
+                if (hitInfo.transform != null) {
                     if (hitInfo.transform.tag == "Grass") {
                         footsteps = footstepsGrass;
                     } else if (hitInfo.transform.tag == "Wood_Floor") {
                         footsteps = footstepsWood;
                     } else if (hitInfo.transform.tag == "Water") {
                         footsteps = footstepsWater;
+                    } else if (hitInfo.transform.tag == "Dirt") {
+                        footsteps = footstepsDirt;
                     }
-                    audioSource.PlayOneShot(footsteps[Random.Range(0, footsteps.Length)]);
-                    yield return new WaitForSeconds(footDelay);
                 }
+
+                audioSource.PlayOneShot(footsteps[Random.Range(0, footsteps.Length)]);
+                yield return new WaitForSeconds(footDelay);
             } else {
                 yield return 0;
             }

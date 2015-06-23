@@ -13,6 +13,7 @@ public class PlayerMovement : MonoBehaviour {
     public AudioClip[] footstepsGrass;
     public AudioClip[] footstepsWood;
     public AudioClip[] footstepsWater;
+    public AudioClip[] footstepsDirt;
     public float footDelay;
 
 	private int moveSpeedHash;
@@ -171,6 +172,8 @@ public class PlayerMovement : MonoBehaviour {
                         footsteps = footstepsWood;
                     } else if (hitInfo.transform.tag == "Water") {
                         footsteps = footstepsWater;
+                    } else if (hitInfo.transform.tag == "Dirt") {
+                        footsteps = footstepsDirt;
                     }
                 }
 
