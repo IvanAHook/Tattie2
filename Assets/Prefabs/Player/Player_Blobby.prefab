@@ -207,6 +207,7 @@ GameObject:
   - 114: {fileID: 11431688}
   - 114: {fileID: 11498398}
   - 114: {fileID: 11481656}
+  - 143: {fileID: 14374172}
   m_Layer: 13
   m_Name: Blob_Animations_Bundle
   m_TagString: Interactable
@@ -1595,17 +1596,28 @@ MonoBehaviour:
   - {fileID: 8300000, guid: 9416d63c2a0920948b6db55e5cefdb7f, type: 3}
   - {fileID: 8300000, guid: e0beee5b53acb0c47af2d04d8b741b7c, type: 3}
   footstepsWood:
-  - {fileID: 8300000, guid: eb99c06ce537cf549a4f2843588610f1, type: 3}
-  - {fileID: 8300000, guid: 5edc3987c9be90641b132ff0c690c969, type: 3}
-  - {fileID: 8300000, guid: af29ed00be17b86448a8d48c75459ffb, type: 3}
-  - {fileID: 8300000, guid: 2bee27b032eeeb4409f1df5046d98582, type: 3}
-  - {fileID: 8300000, guid: ee0024096e52b044491a35bfb3b0a7c0, type: 3}
+  - {fileID: 8300000, guid: 19b66248e015a21438e96a95b8461640, type: 3}
+  - {fileID: 8300000, guid: f79547d489f5bef4783f4e1b87a7e241, type: 3}
+  - {fileID: 8300000, guid: 587cb6ff28b70e24d9df72241eed5775, type: 3}
+  - {fileID: 8300000, guid: faf91eab30931a7408aa7d5adbac7634, type: 3}
+  - {fileID: 8300000, guid: 4bda46699c8af3a4c92118d8f20567ef, type: 3}
   footstepsWater:
   - {fileID: 8300000, guid: 99415bc0854deab43a2db1f253c67429, type: 3}
   - {fileID: 8300000, guid: 74526a23530e24a4382f53ced7723aac, type: 3}
   - {fileID: 8300000, guid: 527fc838efb188f429faf82c92b8bf9d, type: 3}
   - {fileID: 8300000, guid: 19a4c8cdf61e40548bbd1721192faee3, type: 3}
   - {fileID: 8300000, guid: f04e0f145d187824e8d038b0b03ef9dd, type: 3}
+  footstepsDirt:
+  - {fileID: 8300000, guid: 34cc45495ec6ba8499ac4f3e7fcb2ea1, type: 3}
+  - {fileID: 8300000, guid: 6c417d579cbbbaa44be9c8263c95b18b, type: 3}
+  - {fileID: 8300000, guid: b8d964313c692184da5f0396daabcdb7, type: 3}
+  - {fileID: 8300000, guid: cdadf3c679f932b408d82991c0cd67fc, type: 3}
+  - {fileID: 8300000, guid: 17410947023acad40888fdbdf17143c7, type: 3}
+  - {fileID: 8300000, guid: d9688b737d03ad943b0582a1dab7c171, type: 3}
+  - {fileID: 8300000, guid: ee878be59f580b84cbda9fde8fa06263, type: 3}
+  - {fileID: 8300000, guid: ab9bff9eeb991314d81f9ed1482224ba, type: 3}
+  - {fileID: 8300000, guid: 6064949a84d19e74ba6b46fb603c702b, type: 3}
+  - {fileID: 8300000, guid: 7d26017ce79f1dd46b5817d1ca064ca9, type: 3}
   footDelay: .400000006
   active: 0
   isMoving: 0
@@ -1654,6 +1666,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   messageDuration: 2
   speechBubble: {fileID: 11484586, guid: 2024149ff37589e40a359bb9f9de9fae, type: 2}
+  currentSpeechBubble: {fileID: 0}
   interractItem: {fileID: 0}
   interactTransform: {fileID: 465808}
   interractSound: {fileID: 0}
@@ -1763,6 +1776,23 @@ SkinnedMeshRenderer:
     m_Center: {x: -.00969737768, y: .317368746, z: -.0193866491}
     m_Extent: {x: .676410258, y: .703494787, z: .63329953}
   m_DirtyAABB: 0
+--- !u!143 &14374172
+CharacterController:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 124844}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Height: 2
+  m_Radius: .5
+  m_SlopeLimit: 45
+  m_StepOffset: .300000012
+  m_SkinWidth: .0799999982
+  m_MinMoveDistance: .00100000005
+  m_Center: {x: 0, y: 1, z: 0}
 --- !u!195 &19572648
 NavMeshAgent:
   m_ObjectHideFlags: 1

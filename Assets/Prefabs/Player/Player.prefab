@@ -2247,7 +2247,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 135992}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: -.949999988, y: .100000001, z: -1.40999997}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 484842}
@@ -3175,7 +3175,18 @@ MonoBehaviour:
   - {fileID: 8300000, guid: 527fc838efb188f429faf82c92b8bf9d, type: 3}
   - {fileID: 8300000, guid: 19a4c8cdf61e40548bbd1721192faee3, type: 3}
   - {fileID: 8300000, guid: f04e0f145d187824e8d038b0b03ef9dd, type: 3}
-  footDelay: .600000024
+  footstepsDirt:
+  - {fileID: 8300000, guid: 34cc45495ec6ba8499ac4f3e7fcb2ea1, type: 3}
+  - {fileID: 8300000, guid: 6c417d579cbbbaa44be9c8263c95b18b, type: 3}
+  - {fileID: 8300000, guid: b8d964313c692184da5f0396daabcdb7, type: 3}
+  - {fileID: 8300000, guid: cdadf3c679f932b408d82991c0cd67fc, type: 3}
+  - {fileID: 8300000, guid: 17410947023acad40888fdbdf17143c7, type: 3}
+  - {fileID: 8300000, guid: d9688b737d03ad943b0582a1dab7c171, type: 3}
+  - {fileID: 8300000, guid: ee878be59f580b84cbda9fde8fa06263, type: 3}
+  - {fileID: 8300000, guid: ab9bff9eeb991314d81f9ed1482224ba, type: 3}
+  - {fileID: 8300000, guid: 6064949a84d19e74ba6b46fb603c702b, type: 3}
+  - {fileID: 8300000, guid: 7d26017ce79f1dd46b5817d1ca064ca9, type: 3}
+  footDelay: .400000006
   isMoving: 0
   active: 1
   speed: 100

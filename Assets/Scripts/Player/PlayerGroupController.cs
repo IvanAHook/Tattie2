@@ -40,7 +40,10 @@ public class PlayerGroupController : MonoBehaviour {
     void UpdateInput() {
 
         if (Input.GetKeyDown(KeyCode.Space)) {
-            SwitchPlayer();
+            if (playerBlob.friendly) {
+                SwitchPlayer();
+            }
+
         }
 
         if (Input.GetMouseButtonDown(0)) {
