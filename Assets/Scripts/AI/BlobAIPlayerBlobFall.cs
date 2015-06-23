@@ -19,6 +19,7 @@ public class BlobAIPlayerBlobFall : MonoBehaviour
 	private int tripHash;
 	private int playerTripHash;
 	private int playerGetUpHash;
+	private int playerBlobRunningHash;
 	private float nextRandomIdle;
 	private float pushupTime;
 	private float minRandomIdle = 1;
@@ -29,8 +30,7 @@ public class BlobAIPlayerBlobFall : MonoBehaviour
     private const string emissionID = "_Emission";
     private Material mat;
 	
-	//private bool pushingUp;
-	//private bool 
+	private bool pushingUp;
 	
 	private enum BlobAction {Idling,PushingUp,Moving}
 	private BlobAction myAction;
@@ -49,6 +49,7 @@ public class BlobAIPlayerBlobFall : MonoBehaviour
 		tripHash = Animator.StringToHash ("Trip");
 		playerTripHash = Animator.StringToHash ("PlayerTrip");
 		playerGetUpHash = Animator.StringToHash ("PlayerGetUp");
+		playerBlobRunningHash = Animator.StringToHash ("PlayerBlobRunning");
 		RandomTime ();
 		myAction = BlobAction.Idling;
 
@@ -63,6 +64,7 @@ public class BlobAIPlayerBlobFall : MonoBehaviour
 		if (agent.velocity.magnitude<0.15f) 
 		{
 			anim.SetFloat(moveSpeedHash, 0f);
+			anim.SetBool (playerBlobRunningHash, false);
 			if (myAction==BlobAction.PushingUp && Time.time>pushupTime)
 			{
 				myAction=BlobAction.Idling;
@@ -96,9 +98,12 @@ public class BlobAIPlayerBlobFall : MonoBehaviour
 		{
             if (myAction != BlobAction.Moving && moveHash != 0)
 			{
+				Debug.Log("HEJ");
 				myAction=BlobAction.Moving;
 				anim.SetTrigger (moveHash);
 				anim.SetBool (pushUpHash, false);
+				//anim.SetBool (playerBlobRunningHash, true);
+
 			}
             if (agent.remainingDistance<= 0.2f && !hasTripped)
 			{
@@ -107,28 +112,25 @@ public class BlobAIPlayerBlobFall : MonoBehaviour
                 mat.DOFloat(0.33f, emissionID, 1f);
                 light.GetComponent<TestFlyingLight>().StartMoving();
 			}
-			blendSpeed = Mathf.Lerp (0, 1, agent.velocity.magnitude / agent.speed);
-			anim.SetFloat(moveSpeedHash, blendSpeed);
-			if (blendSpeed>0.8f)
+			if (hasFallen)
 			{
-				//anim.SetTrigger (tripHash);
-				if (!hasFallen)
-				{
-					float tripRandom = Random.value;
-					if (tripRandom<0.0f)
-					{
-						Trip ();
-					}
-				}
+				blendSpeed = Mathf.Lerp (0f, 0.5f, agent.velocity.magnitude / agent.speed);
+				anim.SetFloat(moveSpeedHash, blendSpeed);
+			} else
+			{
+				blendSpeed = Mathf.Lerp (0f, 1f, agent.velocity.magnitude / agent.speed);
+				anim.SetFloat(moveSpeedHash, blendSpeed);
 			}
+
+
 		}
 	}
+
 	private void Trip ()
 	{
 		anim.SetTrigger (playerTripHash);
 		agent.SetDestination(transform.position+transform.forward*2f);
 		hasFallen=true;
-		//Invoke ("RunAgain",2.5f);
 	}
 	
 	public void RunAgain ()
