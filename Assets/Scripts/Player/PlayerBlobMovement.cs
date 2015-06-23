@@ -3,6 +3,7 @@ using System.Collections;
 using DG.Tweening;
 using UnityEngine.EventSystems;
 
+[RequireComponent(typeof(AudioSource))]
 public class PlayerBlobMovement : MonoBehaviour {
 
     NavMeshAgent agent;
@@ -35,6 +36,7 @@ public class PlayerBlobMovement : MonoBehaviour {
         agent = GetComponent<NavMeshAgent>();
 
         audioSource = transform.GetComponent<AudioSource>();
+        footsteps = footstepsGrass;
         StartCoroutine(Footsteps());
     }
 
@@ -103,17 +105,17 @@ public class PlayerBlobMovement : MonoBehaviour {
         while (true) {
             if (isMoving) {
                 RaycastHit hitInfo;
-                Physics.Raycast(transform.position, Vector3.down, out hitInfo);
-
-                if (hitInfo.transform.tag == "Grass") {
-                    footsteps = footstepsGrass;
-                } else if (hitInfo.transform.tag == "Wood_Floor") {
-                    footsteps = footstepsWood;
-                } else if (hitInfo.transform.tag == "Water") {
-                    footsteps = footstepsWater;
+                if (Physics.Raycast(transform.position, Vector3.down, out hitInfo)) {
+                    if (hitInfo.transform.tag == "Grass") {
+                        footsteps = footstepsGrass;
+                    } else if (hitInfo.transform.tag == "Wood_Floor") {
+                        footsteps = footstepsWood;
+                    } else if (hitInfo.transform.tag == "Water") {
+                        footsteps = footstepsWater;
+                    }
+                    audioSource.PlayOneShot(footsteps[Random.Range(0, footsteps.Length)]);
+                    yield return new WaitForSeconds(footDelay);
                 }
-                audioSource.PlayOneShot(footsteps[Random.Range(0, footsteps.Length)]);
-                yield return new WaitForSeconds(footDelay);
             } else {
                 yield return 0;
             }

@@ -104,7 +104,7 @@ public class BlobAIPlayerBlobFall : MonoBehaviour
 			{
 				hasTripped = true;
 				Trip ();
-                mat.DOFloat(0.25f, emissionID, 1f);
+                mat.DOFloat(0.33f, emissionID, 1f);
                 light.GetComponent<TestFlyingLight>().StartMoving();
 			}
 			blendSpeed = Mathf.Lerp (0, 1, agent.velocity.magnitude / agent.speed);
@@ -126,7 +126,7 @@ public class BlobAIPlayerBlobFall : MonoBehaviour
 	private void Trip ()
 	{
 		anim.SetTrigger (playerTripHash);
-		agent.SetDestination(transform.position+transform.forward*2);
+		agent.SetDestination(transform.position+transform.forward*2f);
 		hasFallen=true;
 		//Invoke ("RunAgain",2.5f);
 	}
