@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 using System.Collections;
+using DG.Tweening;
 
 public class TutorialTrigger : MonoBehaviour {
 
@@ -10,11 +11,15 @@ public class TutorialTrigger : MonoBehaviour {
     bool played;
     public Transform player;
     public PlayerBlobMovement blob;
+    public Color skyColor;
+
+    void Start() {
+        skyColor = RenderSettings.ambientSkyColor;
+    }
 
     void OnTriggerEnter(Collider other) {
 
         if (other.gameObject.tag == "Player" && blob.friendly) {
-
             if (currentSpeechBubble == null && speechBubble != null && !played) {
                 currentSpeechBubble = Instantiate(speechBubble, transform.position, Quaternion.identity) as SpeechBubble;
                 currentSpeechBubble.messageDuration = messageDuration;
@@ -23,6 +28,7 @@ public class TutorialTrigger : MonoBehaviour {
         }
 
     }
+
 
     void Update() {
         if (currentSpeechBubble != null) currentSpeechBubble.transform.position = player.position;

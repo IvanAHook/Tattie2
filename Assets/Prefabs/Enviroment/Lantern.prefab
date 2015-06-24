@@ -28,7 +28,7 @@ GameObject:
   - 33: {fileID: 3372788}
   - 65: {fileID: 6598702}
   - 23: {fileID: 2324466}
-  m_Layer: 0
+  m_Layer: 13
   m_Name: Cube
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -45,7 +45,9 @@ GameObject:
   - 4: {fileID: 415534}
   - 33: {fileID: 3314482}
   - 23: {fileID: 2304562}
-  m_Layer: 0
+  - 114: {fileID: 11467808}
+  - 65: {fileID: 6593258}
+  m_Layer: 13
   m_Name: Lantern_Hock_Mesh
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -60,9 +62,9 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 482964}
-  m_Layer: 0
+  m_Layer: 13
   m_Name: Lantern
-  m_TagString: Untagged
+  m_TagString: Interactable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -95,7 +97,7 @@ GameObject:
   - 64: {fileID: 6402648}
   - 23: {fileID: 2318950}
   - 65: {fileID: 6597672}
-  m_Layer: 8
+  m_Layer: 13
   m_Name: FloorQuad
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -345,6 +347,18 @@ MeshCollider:
   serializedVersion: 2
   m_Convex: 0
   m_Mesh: {fileID: 10210, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!65 &6593258
+BoxCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 142582}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: .411611348, y: .844958723, z: .319486171}
+  m_Center: {x: .0164463781, y: -.422479361, z: -.00024358189}
 --- !u!65 &6597672
 BoxCollider:
   m_ObjectHideFlags: 1
@@ -401,6 +415,22 @@ Light:
   m_ShadowRadius: 0
   m_ShadowAngle: 0
   m_AreaSize: {x: 1, y: 1}
+--- !u!114 &11467808
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 142582}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5d34c8ced5edb3c4c97fb132b4242fbd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  soundFX: {fileID: 0}
+  shakeDuration: 2
+  shakeStrength: {x: 30, y: 30, z: 30}
+  shakeVibrato: 3
+  shakeRandomness: 30
 --- !u!198 &19864764
 ParticleSystem:
   m_ObjectHideFlags: 1
