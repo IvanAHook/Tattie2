@@ -145,7 +145,9 @@ public class PlayerMovement : MonoBehaviour {
             interract = true;
             interractTarget = t;
             t.SendMessage("PlayAnim", SendMessageOptions.DontRequireReceiver);
-            SetDestination(t.GetComponent<Interactable>().interactTransform.position);
+            if (t.GetComponent<Interactable>()) {
+                SetDestination(t.GetComponent<Interactable>().interactTransform.position);
+            }
             //agent.destination = t.GetComponent<Interactable>().interactTransform.position;
             return;
         }
