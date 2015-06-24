@@ -296,3 +296,7 @@ Material:
         first:
           name: _BorderColor
         second: {r: .382352948, g: .382352948, b: .382352948, a: 1}
+      data:
+        first:
+          name: _Grass_color
+        second: {r: .713235259, g: .713235259, b: .713235259, a: 1}
