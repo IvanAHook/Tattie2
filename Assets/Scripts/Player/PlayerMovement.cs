@@ -2,6 +2,7 @@
 using System.Collections;
 using UnityEngine.EventSystems;
 
+[RequireComponent(typeof(AudioSource))]
 public class PlayerMovement : MonoBehaviour {
 
     public NavMeshAgent agent;
@@ -12,6 +13,7 @@ public class PlayerMovement : MonoBehaviour {
     public AudioClip[] footstepsGrass;
     public AudioClip[] footstepsWood;
     public AudioClip[] footstepsWater;
+    public AudioClip[] footstepsDirt;
     public float footDelay;
 
 	private int moveSpeedHash;
@@ -143,7 +145,9 @@ public class PlayerMovement : MonoBehaviour {
             interract = true;
             interractTarget = t;
             t.SendMessage("PlayAnim", SendMessageOptions.DontRequireReceiver);
-            SetDestination(t.GetComponent<Interactable>().interactTransform.position);
+            if (t.GetComponent<Interactable>()) {
+                SetDestination(t.GetComponent<Interactable>().interactTransform.position);
+            }
             //agent.destination = t.GetComponent<Interactable>().interactTransform.position;
             return;
         }
@@ -163,13 +167,18 @@ public class PlayerMovement : MonoBehaviour {
                 RaycastHit hitInfo;
                 Physics.Raycast(transform.position, Vector3.down, out hitInfo);
 
-                if (hitInfo.transform.tag == "Grass") {
-                    footsteps = footstepsGrass;
-                } else if (hitInfo.transform.tag == "Wood_Floor") {
-                    footsteps = footstepsWood;
-                } else if (hitInfo.transform.tag == "Water") {
-                    footsteps = footstepsWater;
+                if (hitInfo.transform != null) {
+                    if (hitInfo.transform.tag == "Grass") {
+                        footsteps = footstepsGrass;
+                    } else if (hitInfo.transform.tag == "Wood_Floor") {
+                        footsteps = footstepsWood;
+                    } else if (hitInfo.transform.tag == "Water") {
+                        footsteps = footstepsWater;
+                    } else if (hitInfo.transform.tag == "Dirt") {
+                        footsteps = footstepsDirt;
+                    }
                 }
+
                 audioSource.PlayOneShot(footsteps[Random.Range(0, footsteps.Length)]);
                 yield return new WaitForSeconds(footDelay);
             } else {

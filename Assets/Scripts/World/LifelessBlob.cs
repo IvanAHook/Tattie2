@@ -43,6 +43,7 @@ public class LifelessBlob : Interactable {
         GetComponentInChildren<PlayerBlobResponse>().ShowResponse();
         yield return new WaitForSeconds(messageDuration + 0.2f);
         GetComponentInChildren<PlayerBlobMovement>().enabled = true;
+        GetComponentInChildren<PlayerBlobMovement>().friendly = true;
     }
 
     void ProximityBrightness() {

@@ -30,7 +30,9 @@ public class WaitTrigger : MonoBehaviour {
     }
 
     void OnDisable() {
-        blob.GetComponent<PlayerBlobMovement>().Wait(false);
+        if (blob != null) {
+            blob.GetComponent<PlayerBlobMovement>().Wait(false);
+        }
     }
 
 }
