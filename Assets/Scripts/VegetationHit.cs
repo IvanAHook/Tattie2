@@ -1,6 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 
+[RequireComponent(typeof(AudioSource))]
 public class VegetationHit : MonoBehaviour {
 	
 	//private const float axWobble;
@@ -21,9 +22,13 @@ public class VegetationHit : MonoBehaviour {
 	private int hitTime;
 	
 	float maxIntensity = 1;
+
+    AudioSource audioSource;
+    public AudioClip audioClip;
 	
 	void Awake()
 	{
+        audioSource = GetComponent<AudioSource>();
 		part=GetComponentInChildren<ParticleSystem>();
 		mat = GetComponent<Renderer> ().material;
 		wobbleID = Shader.PropertyToID ("_Intensity");
@@ -66,6 +71,7 @@ public class VegetationHit : MonoBehaviour {
 	void Wobble (Vector3 dir)
 	{
 		if (part) part.Play ();
+        if (audioClip) audioSource.PlayOneShot(audioClip);
 		doWobble = true;
 		slowDown = false;
 		dir = Quaternion.Euler (-transform.localEulerAngles) * dir; //Shifting the pushdirection baset on local rotation of the plant

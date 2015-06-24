@@ -207,7 +207,7 @@ GameObject:
   - 114: {fileID: 11431688}
   - 114: {fileID: 11498398}
   - 114: {fileID: 11481656}
-  - 143: {fileID: 14374172}
+  - 143: {fileID: 14358152}
   m_Layer: 13
   m_Name: Blob_Animations_Bundle
   m_TagString: Interactable
@@ -303,7 +303,7 @@ GameObject:
   - 23: {fileID: 2388148}
   - 65: {fileID: 6522512}
   m_Layer: 8
-  m_Name: FloorQuad
+  m_Name: Quad
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1457,7 +1457,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 0}
   m_PlayOnAwake: 1
-  m_Volume: .25
+  m_Volume: .200000003
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -1620,6 +1620,7 @@ MonoBehaviour:
   - {fileID: 8300000, guid: 7d26017ce79f1dd46b5817d1ca064ca9, type: 3}
   footDelay: .400000006
   active: 0
+  friendly: 0
   isMoving: 0
   speed: 100
   player: {fileID: 0}
@@ -1776,7 +1777,7 @@ SkinnedMeshRenderer:
     m_Center: {x: -.00969737768, y: .317368746, z: -.0193866491}
     m_Extent: {x: .676410258, y: .703494787, z: .63329953}
   m_DirtyAABB: 0
---- !u!143 &14374172
+--- !u!143 &14358152
 CharacterController:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
