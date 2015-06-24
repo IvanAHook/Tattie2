@@ -11,11 +11,6 @@ public class TutorialTrigger : MonoBehaviour {
     bool played;
     public Transform player;
     public PlayerBlobMovement blob;
-    public Color skyColor;
-
-    void Start() {
-        skyColor = RenderSettings.ambientSkyColor;
-    }
 
     void OnTriggerEnter(Collider other) {
 
