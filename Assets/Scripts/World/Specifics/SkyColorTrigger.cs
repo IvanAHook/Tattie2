@@ -8,6 +8,8 @@ public class SkyColorTrigger : MonoBehaviour {
     public Color skyColor;
     Color defaultColor;
 
+    GameObject[] goArray;
+
     void Start() {
         defaultColor = RenderSettings.ambientSkyColor;
     }
@@ -27,4 +29,5 @@ public class SkyColorTrigger : MonoBehaviour {
         }
 
     }
+
 }
