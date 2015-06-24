@@ -32,6 +32,7 @@ public class PlayerBlobMovement : MonoBehaviour {
 
     bool aquired;
     bool wait = false;
+    public bool controllable = true;
 
     void Start() {
 
@@ -70,12 +71,14 @@ public class PlayerBlobMovement : MonoBehaviour {
     }
 
     public void SetDestination(Vector3 destination) {
-        NavMeshPath path = new NavMeshPath();
-        agent.CalculatePath(destination, path);
-        if (path.status == NavMeshPathStatus.PathComplete && (!wait || active)) {
-            agent.SetPath(path);
-        } else {
-            Halt();
+        if (controllable) {
+            NavMeshPath path = new NavMeshPath();
+            agent.CalculatePath(destination, path);
+            if (path.status == NavMeshPathStatus.PathComplete && (!wait || active)) {
+                agent.SetPath(path);
+            } else {
+                Halt();
+            }
         }
     }
 

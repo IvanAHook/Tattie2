@@ -19,6 +19,7 @@ public class PlayerGroupController : MonoBehaviour {
 
     public GameObject clickDust;
     public GameObject clickLeaves;
+    public GameObject clickWater;
 
     public enum ActivePlayer { Player, Blob };
 
@@ -72,7 +73,15 @@ public class PlayerGroupController : MonoBehaviour {
                 //    }
                 //}
 
-                Instantiate(clickDust, new Vector3(hitInfo.transform.position.x, hitInfo.transform.position.y + 1f, hitInfo.transform.position.z), Quaternion.identity);
+                if (hitInfo.transform.tag == "Grass") {
+                    Instantiate(clickLeaves, new Vector3(hitInfo.transform.position.x, hitInfo.transform.position.y + 1f, hitInfo.transform.position.z), Quaternion.identity);
+                } else if (hitInfo.transform.tag == "Wood_Floor") {
+                    Instantiate(clickDust, new Vector3(hitInfo.transform.position.x, hitInfo.transform.position.y + 1f, hitInfo.transform.position.z), Quaternion.identity);
+                } else if (hitInfo.transform.tag == "Water") {
+                    Instantiate(clickWater, new Vector3(hitInfo.transform.position.x, hitInfo.transform.position.y + 1f, hitInfo.transform.position.z), Quaternion.identity);
+                } else if (hitInfo.transform.tag == "Dirt") {
+                    Instantiate(clickDust, new Vector3(hitInfo.transform.position.x, hitInfo.transform.position.y + 1f, hitInfo.transform.position.z), Quaternion.identity);
+                }
 
                 if (activePlayer == ActivePlayer.Player) {
                     player.SetDestination(hitInfo.point);
