@@ -143,7 +143,6 @@ public class PlayerMovement : MonoBehaviour {
             t.SendMessage("PlayAnim", SendMessageOptions.DontRequireReceiver);
             inventoryItem = t;
             SetDestination(t.position);
-            Debug.Log("FUCK");
             return;
         }
         if (t.tag == "Interactable") {

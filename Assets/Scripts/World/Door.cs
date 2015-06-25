@@ -17,7 +17,6 @@ public class Door : Interactable {
 	}
 
     public override void Interact() {
-        Debug.Log("HEJ");
         if (interractItem == null && !opened) {
             OpenDoor();
             opened = true;
