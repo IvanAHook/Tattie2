@@ -58,6 +58,7 @@ public class PlayerGroupController : MonoBehaviour {
             if (EventSystem.current.IsPointerOverGameObject()) {
                 return;
             }
+            Debug.Log(hitInfo.transform.name);
 
             if (hitInfo.transform.gameObject.layer == 8) {
 

@@ -286,35 +286,35 @@ MeshFilter:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 133136}
-  m_Mesh: {fileID: 0}
+  m_Mesh: {fileID: 4300000, guid: be9a1d5716cfee64db0339cf32ccb372, type: 3}
 --- !u!33 &3348418
 MeshFilter:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 121870}
-  m_Mesh: {fileID: 0}
+  m_Mesh: {fileID: 4300000, guid: be9a1d5716cfee64db0339cf32ccb372, type: 3}
 --- !u!33 &3363882
 MeshFilter:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 173186}
-  m_Mesh: {fileID: 0}
+  m_Mesh: {fileID: 4300000, guid: be9a1d5716cfee64db0339cf32ccb372, type: 3}
 --- !u!33 &3378954
 MeshFilter:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 131028}
-  m_Mesh: {fileID: 0}
+  m_Mesh: {fileID: 4300000, guid: be9a1d5716cfee64db0339cf32ccb372, type: 3}
 --- !u!33 &3387828
 MeshFilter:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 154568}
-  m_Mesh: {fileID: 0}
+  m_Mesh: {fileID: 4300000, guid: 71104d6955801494fbfc6bc338082eef, type: 3}
 --- !u!65 &6520684
 BoxCollider:
   m_ObjectHideFlags: 1
@@ -420,7 +420,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _mesh: {fileID: 0}
-  originalMaterial: {fileID: 2100000, guid: c40cf86e5e978dc42950499ea050d3ca, type: 2}
+  originalMaterial: {fileID: 2100000, guid: beddaecfff58d4d4c9b4d3b51eaff764, type: 2}
   originalMesh: {fileID: 4300000, guid: be9a1d5716cfee64db0339cf32ccb372, type: 3}
   editorCollider: {fileID: 0}
   _isDynamic: 0
@@ -436,7 +436,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _mesh: {fileID: 0}
-  originalMaterial: {fileID: 2100000, guid: c40cf86e5e978dc42950499ea050d3ca, type: 2}
+  originalMaterial: {fileID: 2100000, guid: beddaecfff58d4d4c9b4d3b51eaff764, type: 2}
   originalMesh: {fileID: 4300000, guid: be9a1d5716cfee64db0339cf32ccb372, type: 3}
   editorCollider: {fileID: 0}
   _isDynamic: 0
@@ -452,7 +452,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _mesh: {fileID: 0}
-  originalMaterial: {fileID: 2100000, guid: c40cf86e5e978dc42950499ea050d3ca, type: 2}
+  originalMaterial: {fileID: 2100000, guid: beddaecfff58d4d4c9b4d3b51eaff764, type: 2}
   originalMesh: {fileID: 4300000, guid: be9a1d5716cfee64db0339cf32ccb372, type: 3}
   editorCollider: {fileID: 0}
   _isDynamic: 0
@@ -468,7 +468,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _mesh: {fileID: 0}
-  originalMaterial: {fileID: 2100000, guid: c40cf86e5e978dc42950499ea050d3ca, type: 2}
+  originalMaterial: {fileID: 2100000, guid: beddaecfff58d4d4c9b4d3b51eaff764, type: 2}
   originalMesh: {fileID: 4300000, guid: be9a1d5716cfee64db0339cf32ccb372, type: 3}
   editorCollider: {fileID: 0}
   _isDynamic: 0
