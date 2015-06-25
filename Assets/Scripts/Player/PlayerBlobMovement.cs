@@ -62,7 +62,11 @@ public class PlayerBlobMovement : MonoBehaviour {
 
         if (interract && interractTarget) {
             if (Vector3.Distance(transform.position, agent.destination) < 2f) {
-                interractTarget.GetComponent<Interactable>().Interact();
+                if (interractTarget.GetComponent<Interactable>()) {
+                    interractTarget.GetComponent<Interactable>().Interact();
+                } else {
+                    interractTarget.SendMessage("Interract", SendMessageOptions.DontRequireReceiver);
+                }
                 interract = false;
                 Halt();
             }
