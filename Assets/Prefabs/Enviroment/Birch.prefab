@@ -17,7 +17,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!1 &148254
 GameObject:
@@ -35,7 +35,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!1 &148456
 GameObject:
@@ -54,7 +54,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!1 &180428
 GameObject:
@@ -73,7 +73,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!1 &181934
 GameObject:
@@ -92,7 +92,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!1 &195658
 GameObject:
@@ -106,12 +106,13 @@ GameObject:
   - 23: {fileID: 2327560}
   - 95: {fileID: 9521548}
   - 114: {fileID: 11425450}
+  - 65: {fileID: 6541280}
   m_Layer: 0
   m_Name: Birch
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &415108
 Transform:
@@ -144,7 +145,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 195658}
   m_LocalRotation: {x: .078332141, y: -.870383441, z: -.264852822, w: -.407614797}
-  m_LocalPosition: {x: 8.42399979, y: 3.40100002, z: 3.39400005}
+  m_LocalPosition: {x: -21.2736187, y: -9.17545223, z: -.217348099}
   m_LocalScale: {x: 100, y: 100, z: 100}
   m_Children:
   - {fileID: 476914}
@@ -376,6 +377,18 @@ MeshFilter:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 181934}
   m_Mesh: {fileID: 4300000, guid: 7d4756b484660bc42b57fd98541c9958, type: 3}
+--- !u!65 &6541280
+BoxCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 195658}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: .0307694022, y: .0440303683, z: 9.70724123e-09}
+  m_Center: {x: .00216004904, y: .00095109368, z: -1.4942481e-08}
 --- !u!95 &9505932
 Animator:
   serializedVersion: 3
@@ -506,7 +519,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _mesh: {fileID: 0}
-  originalMaterial: {fileID: 0}
+  originalMaterial: {fileID: 2100000, guid: 53d52289211263643a22ac0f01342178, type: 2}
   originalMesh: {fileID: 4300000, guid: 7d4756b484660bc42b57fd98541c9958, type: 3}
   editorCollider: {fileID: 0}
   _isDynamic: 0
@@ -522,7 +535,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _mesh: {fileID: 0}
-  originalMaterial: {fileID: 0}
+  originalMaterial: {fileID: 2100000, guid: 53d52289211263643a22ac0f01342178, type: 2}
   originalMesh: {fileID: 4300000, guid: 7d4756b484660bc42b57fd98541c9958, type: 3}
   editorCollider: {fileID: 0}
   _isDynamic: 0

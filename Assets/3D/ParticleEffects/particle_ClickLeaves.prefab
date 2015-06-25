@@ -54,7 +54,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 124398}
   m_LocalRotation: {x: -.707106829, y: 0, z: 0, w: .707106829}
-  m_LocalPosition: {x: 6.63000011, y: 0, z: 5.15999985}
+  m_LocalPosition: {x: 4.125, y: .194000006, z: 1.92400002}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 408452}
@@ -235,10 +235,10 @@ ParticleSystem:
         rgba: 4279510308
       maxColor:
         serializedVersion: 2
-        rgba: 4282739541
+        rgba: 4281101609
       minMaxState: 2
     startSize:
-      scalar: 1
+      scalar: .600000024
       maxCurve:
         serializedVersion: 2
         m_Curve:
@@ -253,7 +253,7 @@ ParticleSystem:
         serializedVersion: 2
         m_Curve:
         - time: 0
-          value: .200000003
+          value: .333333313
           inSlope: 0
           outSlope: 0
           tangentMode: 0
@@ -1253,7 +1253,7 @@ ParticleSystem:
         rgba: 4282406748
       maxColor:
         serializedVersion: 2
-        rgba: 4290040270
+        rgba: 4279126802
       minMaxState: 2
     startSize:
       scalar: 1
@@ -2175,10 +2175,10 @@ ParticleSystemRenderer:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 108460}
   m_Enabled: 1
-  m_CastShadows: 1
-  m_ReceiveShadows: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
   m_Materials:
-  - {fileID: 2100000, guid: 8918413e5b7df7c4a86c9c8f8c9e4a07, type: 2}
+  - {fileID: 2100000, guid: 92f0edaa88161bf429bb50aea3547ccf, type: 2}
   m_SubsetIndices: 
   m_StaticBatchRoot: {fileID: 0}
   m_UseLightProbes: 1
