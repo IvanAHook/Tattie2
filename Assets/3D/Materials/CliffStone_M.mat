@@ -16,10 +16,17 @@ Material:
     m_TexEnvs:
       data:
         first:
-          name: _Diffuse
+          name: _Moss_T
         second:
-          m_Texture: {fileID: 2800000, guid: 4d6568d54fdf1244b9f02c2082ee1baf, type: 3}
-          m_Scale: {x: 4, y: 4}
+          m_Texture: {fileID: 2800000, guid: 3fb06727ff1b77b47a394012b1326378, type: 3}
+          m_Scale: {x: 6, y: 6}
+          m_Offset: {x: 0, y: 0}
+      data:
+        first:
+          name: _Moss_N
+        second:
+          m_Texture: {fileID: 2800000, guid: 32f9322402dcb1e45bf48725c0e97e07, type: 3}
+          m_Scale: {x: 1, y: 1}
           m_Offset: {x: 0, y: 0}
       data:
         first:
@@ -27,6 +34,13 @@ Material:
         second:
           m_Texture: {fileID: 2800000, guid: 9bacd7f0b42049043a53e32ce339766c, type: 3}
           m_Scale: {x: 1, y: 1}
+          m_Offset: {x: 0, y: 0}
+      data:
+        first:
+          name: _Diffuse
+        second:
+          m_Texture: {fileID: 2800000, guid: 4d6568d54fdf1244b9f02c2082ee1baf, type: 3}
+          m_Scale: {x: 4, y: 4}
           m_Offset: {x: 0, y: 0}
       data:
         first:
@@ -49,20 +63,6 @@ Material:
           m_Texture: {fileID: 0}
           m_Scale: {x: 1, y: 1}
           m_Offset: {x: 0, y: 0}
-      data:
-        first:
-          name: _Moss_T
-        second:
-          m_Texture: {fileID: 2800000, guid: 3fb06727ff1b77b47a394012b1326378, type: 3}
-          m_Scale: {x: 4, y: 4}
-          m_Offset: {x: 0, y: 0}
-      data:
-        first:
-          name: _Moss_N
-        second:
-          m_Texture: {fileID: 2800000, guid: 32f9322402dcb1e45bf48725c0e97e07, type: 3}
-          m_Scale: {x: 1, y: 1}
-          m_Offset: {x: 0, y: 0}
     m_Floats:
       data:
         first:
@@ -80,4 +80,4 @@ Material:
       data:
         first:
           name: _node_3023
-        second: {r: .45588237, g: .45588237, b: .45588237, a: 1}
+        second: {r: .389705896, g: .389705896, b: .389705896, a: 1}

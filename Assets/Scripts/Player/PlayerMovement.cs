@@ -73,7 +73,11 @@ public class PlayerMovement : MonoBehaviour {
 
         if (interract && interractTarget) {
             if (Vector3.Distance(transform.position, agent.destination) < 2f) {
-                interractTarget.GetComponent<Interactable>().Interact();
+                if (interractTarget.GetComponent<Interactable>()) {
+                    interractTarget.GetComponent<Interactable>().Interact();
+                } else {
+                    interractTarget.SendMessage("Interract", SendMessageOptions.DontRequireReceiver);
+                }
                 interract = false;
                 Halt();
             }
@@ -145,7 +149,9 @@ public class PlayerMovement : MonoBehaviour {
             interract = true;
             interractTarget = t;
             t.SendMessage("PlayAnim", SendMessageOptions.DontRequireReceiver);
-            SetDestination(t.GetComponent<Interactable>().interactTransform.position);
+            if (t.GetComponent<Interactable>()) {
+                SetDestination(t.GetComponent<Interactable>().interactTransform.position);
+            }
             //agent.destination = t.GetComponent<Interactable>().interactTransform.position;
             return;
         }

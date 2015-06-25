@@ -292,7 +292,7 @@ GameObject:
   - 95: {fileID: 9594676}
   m_Layer: 0
   m_Name: BrokenBridge
-  m_TagString: Untagged
+  m_TagString: Wood_Floor
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -309,7 +309,7 @@ GameObject:
   - 23: {fileID: 2301050}
   m_Layer: 0
   m_Name: Bridge_p2_Mesh
-  m_TagString: Untagged
+  m_TagString: Wood_Floor
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -437,7 +437,7 @@ GameObject:
   - 23: {fileID: 2350906}
   - 65: {fileID: 6525248}
   m_Layer: 8
-  m_Name: FloorQuad
+  m_Name: Quad
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -637,7 +637,7 @@ GameObject:
   - 23: {fileID: 2356426}
   m_Layer: 0
   m_Name: Bridge_p1_Mesh
-  m_TagString: Untagged
+  m_TagString: Wood_Floor
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -712,6 +712,23 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
+  m_IsActive: 1
+--- !u!1 &182130
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 455706}
+  - 65: {fileID: 6587936}
+  - 114: {fileID: 11492276}
+  m_Layer: 2
+  m_Name: WaitBox
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!1 &184240
 GameObject:
@@ -983,8 +1000,9 @@ Transform:
   - {fileID: 436786}
   - {fileID: 405244}
   - {fileID: 458934}
-  - {fileID: 443642}
+  - {fileID: 455706}
   - {fileID: 495522}
+  - {fileID: 443642}
   m_Father: {fileID: 0}
   m_RootOrder: 0
 --- !u!4 &410704
@@ -1154,7 +1172,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 405794}
-  m_RootOrder: 5
+  m_RootOrder: 7
 --- !u!4 &446732
 Transform:
   m_ObjectHideFlags: 1
@@ -1203,6 +1221,18 @@ Transform:
   m_Children: []
   m_Father: {fileID: 405244}
   m_RootOrder: 29
+--- !u!4 &455706
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 182130}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 22, y: 0, z: 35}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 405794}
+  m_RootOrder: 5
 --- !u!4 &456232
 Transform:
   m_ObjectHideFlags: 1
@@ -3485,6 +3515,18 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: .100000001}
   m_Center: {x: 0, y: 0, z: .0500000007}
+--- !u!65 &6587936
+BoxCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 182130}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 5, y: 3, z: 4}
+  m_Center: {x: 0, y: 1, z: 0}
 --- !u!65 &6592254
 BoxCollider:
   m_ObjectHideFlags: 1
@@ -3621,6 +3663,19 @@ MonoBehaviour:
   bridgeWhole: {fileID: 191692}
   bridgeBroken: {fileID: 139054}
   obstacle: {fileID: 20838392}
+--- !u!114 &11492276
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 182130}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 627c569452482dc4e9488fb89799fbb5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  player: {fileID: 0}
+  blob: {fileID: 0}
 --- !u!114 &11497836
 MonoBehaviour:
   m_ObjectHideFlags: 1

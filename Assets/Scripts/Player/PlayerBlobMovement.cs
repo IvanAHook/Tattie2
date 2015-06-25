@@ -32,6 +32,7 @@ public class PlayerBlobMovement : MonoBehaviour {
 
     bool aquired;
     bool wait = false;
+    public bool controllable = true;
 
     void Start() {
 
@@ -61,7 +62,11 @@ public class PlayerBlobMovement : MonoBehaviour {
 
         if (interract && interractTarget) {
             if (Vector3.Distance(transform.position, agent.destination) < 2f) {
-                interractTarget.GetComponent<Interactable>().Interact();
+                if (interractTarget.GetComponent<Interactable>()) {
+                    interractTarget.GetComponent<Interactable>().Interact();
+                } else {
+                    interractTarget.SendMessage("Interract", SendMessageOptions.DontRequireReceiver);
+                }
                 interract = false;
                 Halt();
             }
@@ -70,12 +75,14 @@ public class PlayerBlobMovement : MonoBehaviour {
     }
 
     public void SetDestination(Vector3 destination) {
-        NavMeshPath path = new NavMeshPath();
-        agent.CalculatePath(destination, path);
-        if (path.status == NavMeshPathStatus.PathComplete && (!wait || active)) {
-            agent.SetPath(path);
-        } else {
-            Halt();
+        if (controllable) {
+            NavMeshPath path = new NavMeshPath();
+            agent.CalculatePath(destination, path);
+            if (path.status == NavMeshPathStatus.PathComplete && (!wait || active)) {
+                agent.SetPath(path);
+            } else {
+                Halt();
+            }
         }
     }
 
@@ -88,7 +95,9 @@ public class PlayerBlobMovement : MonoBehaviour {
             interract = true;
             interractTarget = t;
             t.SendMessage("PlayAnim", SendMessageOptions.DontRequireReceiver);
-            SetDestination(t.GetComponent<Interactable>().interactTransform.position);
+            if (t.GetComponent<Interactable>()) {
+                SetDestination(t.GetComponent<Interactable>().interactTransform.position);
+            }
             //agent.destination = t.GetComponent<Interactable>().interactTransform.position;
             return;
         }

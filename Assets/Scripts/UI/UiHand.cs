@@ -16,7 +16,7 @@ public class UiHand : MonoBehaviour {
     public Transform player;
     public List<Transform> heldItems;
 
-    float hideDelay = 3f;
+    float hideDelay = 1.5f;
     float hideTimer = 0f;
 
     bool didHoverLastFrame;
