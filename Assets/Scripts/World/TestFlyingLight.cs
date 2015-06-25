@@ -21,22 +21,22 @@ public class TestFlyingLight : MonoBehaviour {
         if (startMoving) {
 
             
-            if (Vector3.Distance(transform.position, waypoints[i].position) < 1f) {
+            //if (Vector3.Distance(transform.position, waypoints[i].position) < 1f) {
 
-                if (i < (waypoints.Length - 1)) {
+            //    if (i < (waypoints.Length - 1)) {
 
-                    i += 1;
+            //        i += 1;
 
-                }
+            //    }
 
-            }
+            //}
 
-            Sequence testS = DOTween.Sequence();
-            testS.Append(transform.DOMove(waypoints[i].position, 2f))
-                .Append(transform.DORotate(new Vector3(0f, 180f, 0f), 2f));
+            //Sequence testS = DOTween.Sequence();
+            //testS.Append(transform.DOMove(waypoints[i].position, 3f))
+            //    .Append(transform.DORotate(new Vector3(0f, 180f, 0f), 3f));
 
 
-            //transform.DOMove(waypoints[i].position, 4f);
+            transform.DOMove(waypoints[0].position, 4f);
             //Vector3.MoveTowards(transform.position, waypoints[i].position, 1f);
         }
 
