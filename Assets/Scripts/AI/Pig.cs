@@ -3,64 +3,110 @@ using System.Collections;
 
 public class Pig : MonoBehaviour {
 		
-		public Transform target;
+		public Transform targetPatrol1;
+		public Transform targetPatrol2;
+		public Transform targetPatrol3;
+		public Transform targetOpenDoor;
+
 		public NavMeshAgent agent;
+
 		private int moveSpeedHash;
 		private int assHash;
 		private int suspiciousHash;
-		private int fiddleHash;
+		private int fiddlingHash;
+		private int laughHash;
 		private int moveHash;
-		//private int tripHash;
 		private float nextRandomIdle;
-		//private float pushupTime;
-		private float minRandomIdle = 1;
-		private float maxRandomIdle = 7;
+		private float fiddleTime;
+		private float minRandomIdle = 3;
+		private float maxRandomIdle = 8;
 		bool idleAgain;
+
+		private const string stopFiddle = "StopFiddle";
+
+		int fiddleTimeCount = 0;
 		
-		private enum PigAction {Idling,Fiddling,Moving,Ass,Laugh,Suspicious}
+		
+		private enum PigAction {Idling,Fiddling,Moving}
 		private PigAction myAction;
 		
 		Animator anim;
 		float blendSpeed;
 		
 		bool triggered = false;
+		bool fiddle = false;
+		bool currentlyMoving;
+		bool currentlyIdling;
+		bool hasOpenedDoor = false;
+		bool idleDone;
 		
 		void Awake(){
 			anim = GetComponent<Animator> ();
 			moveSpeedHash = Animator.StringToHash ("Speed");
 			assHash = Animator.StringToHash ("Ass");
 			suspiciousHash = Animator.StringToHash ("Suspicious");
-			fiddleHash = Animator.StringToHash ("Fiddle");
+			fiddlingHash = Animator.StringToHash ("Fiddling");
+			laughHash = Animator.StringToHash ("Laugh");
 			RandomTime ();
 			myAction = PigAction.Idling;
 		}
+		
 		float RandomTime ()
 		{
 			return Time.time + Random.Range (minRandomIdle, maxRandomIdle);
 		}
+		
 		void Update()
+		{
+		Debug.Log (currentlyIdling);	
+
+		PlayAnimations ();
+
+			Patrol ();
+
+			if (Input.GetKeyDown (KeyCode.A)) 
+			{
+				OpenDoor();
+			}
+
+		}
+		
+		
+
+
+		public void PlayAnimations()
 		{
 			if (agent.velocity.magnitude<0.15f) 
 			{
 				anim.SetFloat(moveSpeedHash, 0f);
+				currentlyMoving = false;
 				
-				if (Time.time>nextRandomIdle && myAction==PigAction.Idling)
+				if (myAction==PigAction.Idling && Time.time>fiddleTime)
 				{
+					
+					anim.SetBool (fiddlingHash, false);
+				}	
+				
+				if (Time.time>nextRandomIdle && agent.pathStatus == NavMeshPathStatus.PathComplete && myAction!=PigAction.Idling)
+				{
+					myAction=PigAction.Idling;
 					nextRandomIdle = RandomTime ();
 					int randomTrigger = Random.Range (0,3);
+					currentlyIdling = true;
 					switch (randomTrigger)
 					{
 					case 0:
 						anim.SetTrigger (assHash);
 						break;
 					case 1:
-						anim.SetTrigger (fiddleHash);
+						anim.SetTrigger (laughHash);
 						break;
 					case 2:
-						anim.SetTrigger (suspiciousHash);	
-						//anim.SetBool (pushUpHash, true);
-						//pushupTime=RandomTime();
-						//myAction=BlobAction.PushingUp;
+						anim.SetBool (fiddlingHash, true);
+						fiddleTime=RandomTime();
+						Invoke (stopFiddle,fiddleTime-Time.time);
+					Debug.Log ("Stop fiddling in : "+(fiddleTime-Time.time)+" seconds.");
+						myAction=PigAction.Fiddling;
 						break;
 					default:
 						Debug.Log("Incorrect anim trigger selection");
@@ -74,33 +120,57 @@ public class Pig : MonoBehaviour {
 				{
 					myAction=PigAction.Moving;
 					anim.SetTrigger (moveHash);
-				}
+					
+			}
 				blendSpeed = Mathf.Lerp (0, 1, agent.velocity.magnitude / agent.speed);
 				anim.SetFloat(moveSpeedHash, blendSpeed);
+				currentlyMoving = true;
+				//currentlyIdling = false;
+		}
+		}	
+
+		public void Patrol () 
+		{
+			if (currentlyMoving == false && hasOpenedDoor == false && currentlyIdling == false && myAction!=PigAction.Moving)
+			{
+				myAction=PigAction.Moving;
+				anim.SetTrigger (moveHash);
+
+				nextRandomIdle = RandomTime ();
+				int randomTrigger = Random.Range (0,3);
+				switch (randomTrigger)
+				{
+				case 0:
+					agent.SetDestination (targetPatrol1.position);
+					break;
+				case 1:
+					agent.SetDestination (targetPatrol2.position);
+					break;
+				case 2:
+					agent.SetDestination (targetPatrol3.position);
+					bool fiddle = false;
+					break;
+				default:
+					Debug.Log("Incorrect patrol trigger selection");
+					break;
+				}
+
 			}
 		}
-		private void Trip ()
+
+
+		public void StopFiddle()
 		{
-			/*anim.SetTrigger (tripHash);
-			agent.SetDestination(transform.position + transform.forward * 2);
-			hasFallen=true;
-			Invoke ("RunAgain",2.5f);*/
+			currentlyIdling = false;
 		}
-		
-		void RunAgain ()
+
+		public void OpenDoor () 
 		{
-			agent.SetDestination (target.position);
-		}
-		
-		public void Trigger () 
-		{
-			/*if (triggered == false) {
-				anim.SetTrigger("StartRunning");
-				myAction=BlobAction.Moving;
-				anim.SetTrigger (moveHash);
-				anim.SetBool (pushUpHash, false);
-				triggered = true;
-				agent.SetDestination (target.position);
-			} */
+			anim.SetTrigger("StartRunning");
+			myAction=PigAction.Moving;
+			anim.SetTrigger (moveHash);
+			anim.SetBool (fiddlingHash, false);
+			agent.SetDestination (targetOpenDoor.position);
+			hasOpenedDoor = true;
 		}
 	}
