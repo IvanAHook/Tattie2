@@ -8,7 +8,7 @@ public class Door : Interactable {
 
 	public BoxCollider col;
 
-    bool opened = false;
+    public bool opened = false;
 
     //public Transform blocker;
 
@@ -32,7 +32,7 @@ public class Door : Interactable {
 
     void OpenDoor() {
 
-        transform.DORotate(new Vector3(0f, -90f, 0f), 1f);
+        transform.DORotate(new Vector3(0f, -135f, 0f), 1f);
 
         //blocker.transform.gameObject.SetActive(false);
         //col.enabled = false;

@@ -27,8 +27,8 @@ public class Pickup : MonoBehaviour {
 
     }
 
-	public void PlayAnim(){
-		if (!playingAnim) {
+	public void PlayAnim() {
+		if (!playingAnim && shakeDuration != 0) {
 			StartCoroutine ("AnimTimer");
 		}
 	}

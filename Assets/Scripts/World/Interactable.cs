@@ -1,6 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 
+[RequireComponent(typeof(AudioSource))]
 public class Interactable  : MonoBehaviour {
 
     Animator animator;
@@ -24,6 +25,7 @@ public class Interactable  : MonoBehaviour {
         if (animator) {
             animator = gameObject.GetComponentInChildren<Animator>();
         }
+        audioSource = GetComponent<AudioSource>();
     }
 
     public void PlayAnim() {
@@ -33,6 +35,9 @@ public class Interactable  : MonoBehaviour {
     }
 
     public virtual void Interact() {
+        if (interractSound != null) {
+            audioSource.PlayOneShot(interractSound);
+        }
         if (currentSpeechBubble == null && speechBubble != null) {
             currentSpeechBubble = Instantiate(speechBubble, transform.position, Quaternion.identity) as SpeechBubble;
             currentSpeechBubble.messageDuration = messageDuration;
