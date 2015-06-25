@@ -12,7 +12,7 @@ GameObject:
   - 23: {fileID: 2330328}
   - 65: {fileID: 6576794}
   - 114: {fileID: 11460128}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: Muschroom_01
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -29,7 +29,7 @@ GameObject:
   - 4: {fileID: 404818}
   - 198: {fileID: 19812292}
   - 199: {fileID: 19914822}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: Smoke
   m_TagString: Untagged
   m_Icon: {fileID: 0}

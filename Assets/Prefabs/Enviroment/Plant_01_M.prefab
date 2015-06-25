@@ -10,7 +10,7 @@ GameObject:
   - 4: {fileID: 495180}
   - 198: {fileID: 19886250}
   - 199: {fileID: 19989914}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: Flower_Group_prtkl 1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -29,7 +29,7 @@ GameObject:
   - 23: {fileID: 2364530}
   - 65: {fileID: 6519756}
   - 114: {fileID: 11437872}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: Plant_01_M
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -43,8 +43,8 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 198412}
   m_LocalRotation: {x: -.225906849, y: .0254275016, z: -.108922586, w: .967706263}
-  m_LocalPosition: {x: 12.3401279, y: .0700000003, z: 6.40205669}
-  m_LocalScale: {x: 2, y: 2, z: 2}
+  m_LocalPosition: {x: -28.5489998, y: -11.5249996, z: -19.2189999}
+  m_LocalScale: {x: 1.32747293, y: 1.32747293, z: 1.32747293}
   m_Children:
   - {fileID: 495180}
   m_Father: {fileID: 0}
@@ -119,6 +119,7 @@ MonoBehaviour:
   SpeedUp: 5
   PlayerPush: 1
   ExploPush: 2
+  audioClip: {fileID: 0}
 --- !u!198 &19886250
 ParticleSystem:
   m_ObjectHideFlags: 1
