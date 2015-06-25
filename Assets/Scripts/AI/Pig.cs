@@ -34,7 +34,6 @@ public class Pig : MonoBehaviour {
 		float blendSpeed;
 		
 		bool triggered = false;
-		bool fiddle = false;
 		bool currentlyMoving;
 		bool currentlyIdling;
 		bool hasOpenedDoor = false;
@@ -58,7 +57,6 @@ public class Pig : MonoBehaviour {
 		
 		void Update()
 		{
-		Debug.Log (currentlyIdling);	
 
 		PlayAnimations ();
 
@@ -148,7 +146,6 @@ public class Pig : MonoBehaviour {
 					break;
 				case 2:
 					agent.SetDestination (targetPatrol3.position);
-					bool fiddle = false;
 					break;
 				default:
 					Debug.Log("Incorrect patrol trigger selection");

@@ -20,6 +20,8 @@ public class BlobAI : MonoBehaviour
 	bool hasFallen;
 	bool idleAgain;
 
+    public bool isMayor;
+
 	private enum BlobAction {Idling,PushingUp,Moving}
 	private BlobAction myAction;
 
@@ -57,6 +59,7 @@ public class BlobAI : MonoBehaviour
 			{
 				nextRandomIdle = RandomTime ();
 				int randomTrigger = Random.Range (0,3);
+                if (isMayor) randomTrigger = 1;
 				switch (randomTrigger)
 				{
 				case 0:
