@@ -1,5 +1,21 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!1 &129610
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 436224}
+  - 114: {fileID: 11462178}
+  m_Layer: 0
+  m_Name: Editor Collider
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 4294967295
+  m_IsActive: 1
 --- !u!1 &129612
 GameObject:
   m_ObjectHideFlags: 0
@@ -12,13 +28,54 @@ GameObject:
   - 23: {fileID: 2394534}
   - 114: {fileID: 11475582}
   - 65: {fileID: 6554280}
+  - 114: {fileID: 11497318}
   m_Layer: 0
   m_Name: Log_04
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
+--- !u!1 &190606
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 416028}
+  - 114: {fileID: 11458830}
+  m_Layer: 0
+  m_Name: Editor Collider
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 4294967295
+  m_IsActive: 1
+--- !u!4 &416028
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 190606}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 448576}
+  m_RootOrder: 1
+--- !u!4 &436224
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 129610}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 448576}
+  m_RootOrder: 0
 --- !u!4 &448576
 Transform:
   m_ObjectHideFlags: 1
@@ -28,7 +85,9 @@ Transform:
   m_LocalRotation: {x: .286480129, y: .748625457, z: -.510109723, w: .311893016}
   m_LocalPosition: {x: -13.8000002, y: -7.9000001, z: -12.1099997}
   m_LocalScale: {x: 1.37, y: 1.37, z: 1.37}
-  m_Children: []
+  m_Children:
+  - {fileID: 436224}
+  - {fileID: 416028}
   m_Father: {fileID: 0}
   m_RootOrder: 0
 --- !u!23 &2394534
@@ -61,7 +120,7 @@ MeshFilter:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 129612}
-  m_Mesh: {fileID: 4300006, guid: ad2eb0ae5c4d34748b89e4b0df3abf99, type: 3}
+  m_Mesh: {fileID: 0}
 --- !u!65 &6554280
 BoxCollider:
   m_ObjectHideFlags: 1
@@ -74,7 +133,45 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 2.91909695, y: 1.51240579e-06, z: 6.04242754}
   m_Center: {x: 1.19209346e-07, y: 9.53674316e-07, z: 9.53674316e-07}
+--- !u!114 &11458830
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 190606}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 24b2c044504c1584fb23efb5a2bf265a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &11462178
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 129610}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 24b2c044504c1584fb23efb5a2bf265a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &11475582
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 129612}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8d614693c3a746244b662c25f9c59649, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _mesh: {fileID: 0}
+  originalMaterial: {fileID: 2100000, guid: f89a327619c66f64d8e71e15fbca886e, type: 2}
+  originalMesh: {fileID: 0}
+  editorCollider: {fileID: 0}
+  _isDynamic: 0
+--- !u!114 &11497318
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
