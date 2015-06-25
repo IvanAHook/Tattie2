@@ -210,11 +210,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   messageDuration: 4
   speechBubble: {fileID: 11414440, guid: 164fc5dcca07cb34fb1c22abb2faee16, type: 2}
+  currentSpeechBubble: {fileID: 0}
   interractItem: {fileID: 0}
   interactTransform: {fileID: 409324}
   interractSound: {fileID: 0}
-  messageDuration2: 3
-  speechBubble2: {fileID: 11499904, guid: c8fc1b5346d0ae042b54b3994645ade4, type: 2}
 --- !u!114 &11484814
 MonoBehaviour:
   m_ObjectHideFlags: 1

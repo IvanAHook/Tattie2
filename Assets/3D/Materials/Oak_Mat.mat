@@ -120,6 +120,10 @@ Material:
         second: 0
       data:
         first:
+          name: _Metallic
+        second: 0
+      data:
+        first:
           name: _Parallax
         second: .0199999996
       data:
@@ -156,12 +160,8 @@ Material:
         second: 0
       data:
         first:
-          name: _Metallic
-        second: 0
-      data:
-        first:
           name: _ScriptedTime
-        second: 30.3935375
+        second: 84.0971985
       data:
         first:
           name: _Time
