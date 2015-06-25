@@ -21,6 +21,7 @@ public class BlobAI : MonoBehaviour
 	bool idleAgain;
 
     public bool isMayor;
+	public bool isHanging;
 
 	private enum BlobAction {Idling,PushingUp,Moving}
 	private BlobAction myAction;
@@ -39,12 +40,29 @@ public class BlobAI : MonoBehaviour
 		tripHash = Animator.StringToHash ("Trip");
 		RandomTime ();
 		myAction = BlobAction.Idling;
+		Hanging ();
 	}
+
 	float RandomTime ()
 	{
 		return Time.time + Random.Range (minRandomIdle, maxRandomIdle);
 	}
+
+
+
 	void Update()
+	{
+		PlayAnimations ();
+
+		if (Input.GetKeyDown (KeyCode.G)) 
+		{
+			FallDown();
+		}
+	}
+
+
+
+	private void PlayAnimations()
 	{
 		if (agent.velocity.magnitude<0.15f) 
 		{
@@ -54,12 +72,12 @@ public class BlobAI : MonoBehaviour
 				myAction=BlobAction.Idling;
 				anim.SetBool (pushUpHash, false);
 			}
-
+			
 			if (Time.time>nextRandomIdle && myAction==BlobAction.Idling)
 			{
 				nextRandomIdle = RandomTime ();
 				int randomTrigger = Random.Range (0,3);
-                if (isMayor) randomTrigger = 1;
+				if (isMayor) randomTrigger = 1;
 				switch (randomTrigger)
 				{
 				case 0:
@@ -90,9 +108,9 @@ public class BlobAI : MonoBehaviour
 			if (agent.remainingDistance < 1f)
 			{
 				myAction=BlobAction.Idling;
-                if (transform.parent.tag != "Player") {
-                    Destroy(transform.parent.gameObject);
-                }
+				if (transform.parent.tag != "Player") {
+					Destroy(transform.parent.gameObject);
+				}
 			}
 			blendSpeed = Mathf.Lerp (0, 1, agent.velocity.magnitude / agent.speed);
 			anim.SetFloat(moveSpeedHash, blendSpeed);
@@ -110,6 +128,8 @@ public class BlobAI : MonoBehaviour
 			}
 		}
 	}
+
+
 	private void Trip ()
 	{
 		anim.SetTrigger (tripHash);
@@ -133,5 +153,19 @@ public class BlobAI : MonoBehaviour
 			triggered = true;
 			agent.SetDestination (target.position);
 		} 
+	}
+
+	public void Hanging ()
+	{
+		if (isHanging)
+		{
+			anim.SetTrigger("Hanging");
+		}
+	}
+
+	public void FallDown()
+	{
+		anim.SetTrigger ("FallDown");
+		isHanging = false;
 	}
 }
