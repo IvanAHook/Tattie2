@@ -120,14 +120,14 @@ MeshFilter:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 115058}
-  m_Mesh: {fileID: 4300000, guid: e5894b94806f946408d44ccf15c44034, type: 3}
+  m_Mesh: {fileID: 0}
 --- !u!33 &3314252
 MeshFilter:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 176416}
-  m_Mesh: {fileID: 10210, guid: 0000000000000000e000000000000000, type: 0}
+  m_Mesh: {fileID: 0}
 --- !u!64 &6448842
 MeshCollider:
   m_ObjectHideFlags: 1
@@ -210,6 +210,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   messageDuration: 4
   speechBubble: {fileID: 11414440, guid: 164fc5dcca07cb34fb1c22abb2faee16, type: 2}
+  currentSpeechBubble: {fileID: 0}
   interractItem: {fileID: 0}
   interactTransform: {fileID: 409324}
   interractSound: {fileID: 0}

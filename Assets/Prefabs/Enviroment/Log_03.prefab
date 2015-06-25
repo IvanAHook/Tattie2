@@ -1,5 +1,21 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!1 &108840
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 470644}
+  - 114: {fileID: 11419340}
+  m_Layer: 0
+  m_Name: Editor Collider
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 4294967295
+  m_IsActive: 1
 --- !u!1 &195778
 GameObject:
   m_ObjectHideFlags: 0
@@ -12,23 +28,66 @@ GameObject:
   - 23: {fileID: 2356062}
   - 114: {fileID: 11489384}
   - 65: {fileID: 6541158}
+  - 114: {fileID: 11489598}
   m_Layer: 0
   m_Name: Log_03
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
+--- !u!1 &196516
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 432048}
+  - 114: {fileID: 11487442}
+  m_Layer: 0
+  m_Name: Editor Collider
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 4294967295
+  m_IsActive: 1
+--- !u!4 &432048
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 196516}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 473882}
+  m_RootOrder: 1
+--- !u!4 &470644
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 108840}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 473882}
+  m_RootOrder: 0
 --- !u!4 &473882
 Transform:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 195778}
-  m_LocalRotation: {x: -.330865264, y: -.272402406, z: -.226705611, w: .874602556}
-  m_LocalPosition: {x: 2.12815666, y: -8.16275024, z: -9.44288254}
-  m_LocalScale: {x: 1.65432084, y: 1.65432048, z: 1.65432048}
-  m_Children: []
+  m_LocalRotation: {x: .348925263, y: .776957512, z: -.292684555, w: .434653878}
+  m_LocalPosition: {x: -19.4899998, y: -9.52000046, z: 2.67000008}
+  m_LocalScale: {x: 1.09419274, y: 1.09419203, z: 1.09419215}
+  m_Children:
+  - {fileID: 470644}
+  - {fileID: 432048}
   m_Father: {fileID: 0}
   m_RootOrder: 0
 --- !u!23 &2356062
@@ -74,7 +133,45 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 2.40928817, y: 3.65972653e-07, z: 5.05214024}
   m_Center: {x: 1.2189144e-15, y: -7.61227057e-07, z: -1.90734863e-06}
+--- !u!114 &11419340
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 108840}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 24b2c044504c1584fb23efb5a2bf265a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &11487442
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 196516}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 24b2c044504c1584fb23efb5a2bf265a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &11489384
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 195778}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8d614693c3a746244b662c25f9c59649, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _mesh: {fileID: 0}
+  originalMaterial: {fileID: 2100000, guid: f89a327619c66f64d8e71e15fbca886e, type: 2}
+  originalMesh: {fileID: 4300004, guid: ad2eb0ae5c4d34748b89e4b0df3abf99, type: 3}
+  editorCollider: {fileID: 0}
+  _isDynamic: 0
+--- !u!114 &11489598
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}

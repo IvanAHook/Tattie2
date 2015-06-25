@@ -133,7 +133,7 @@ Material:
       data:
         first:
           name: _Spec
-        second: 2
+        second: 1.27999997
       data:
         first:
           name: _Refract
@@ -149,7 +149,7 @@ Material:
       data:
         first:
           name: _exp
-        second: 1.32000005
+        second: 1.13
     m_Colors:
       data:
         first:
@@ -162,7 +162,7 @@ Material:
       data:
         first:
           name: _Color
-        second: {r: 0, g: .186764732, b: .213235319, a: .388235301}
+        second: {r: 0, g: .186764732, b: .213235319, a: 0}
       data:
         first:
           name: _EmissionColorUI

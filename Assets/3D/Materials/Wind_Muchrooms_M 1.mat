@@ -59,7 +59,7 @@ Material:
       data:
         first:
           name: _ShakeDistance
-        second: 3
+        second: .860000014
       data:
         first:
           name: _PlayerX
