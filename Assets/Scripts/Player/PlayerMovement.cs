@@ -22,6 +22,7 @@ public class PlayerMovement : MonoBehaviour {
 	Animator anim;
 
     public bool active = true;
+    public bool controllable = true;
 
     public float speed = 100f;
     bool pickup;
@@ -121,15 +122,15 @@ public class PlayerMovement : MonoBehaviour {
     }
 
     public void SetDestination(Vector3 target) {
-
-        NavMeshPath path = new NavMeshPath();
-        agent.CalculatePath(target, path);
-        if (path.status == NavMeshPathStatus.PathComplete) {
-            agent.SetPath(path);
-        } else {
-            Halt();
+        if (controllable) {
+            NavMeshPath path = new NavMeshPath();
+            agent.CalculatePath(target, path);
+            if (path.status == NavMeshPathStatus.PathComplete) {
+                agent.SetPath(path);
+            } else {
+                Halt();
+            }
         }
-
     }
 
     public void Halt() {

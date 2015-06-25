@@ -162,6 +162,13 @@ public class PlayerGroupController : MonoBehaviour {
         }
     }
 
+    public void Flee(Vector3 dest) {
+        player.controllable = false;
+        playerBlob.controllable = false;
+        player.SetDestination(dest);
+        playerBlob.SetDestination(dest);
+    }
+
     Color GetRaycastColor(RaycastHit hitInfo) {
         int triangle = hitInfo.triangleIndex;
         Vector3 coord = hitInfo.barycentricCoordinate;
@@ -199,3 +206,4 @@ public class PlayerGroupController : MonoBehaviour {
     }
 
 }
+
