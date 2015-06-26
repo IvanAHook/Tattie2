@@ -37,6 +37,27 @@ Material:
           m_Offset: {x: 0, y: 0}
       data:
         first:
+          name: _Normal
+        second:
+          m_Texture: {fileID: 2800000, guid: 967e6093cdd4a9d4eafc63fcd71cc492, type: 3}
+          m_Scale: {x: 1, y: 1}
+          m_Offset: {x: 0, y: 0}
+      data:
+        first:
+          name: _nN_Moss
+        second:
+          m_Texture: {fileID: 2800000, guid: 32f9322402dcb1e45bf48725c0e97e07, type: 3}
+          m_Scale: {x: 4, y: 4}
+          m_Offset: {x: 0, y: 0}
+      data:
+        first:
+          name: _T_Moss
+        second:
+          m_Texture: {fileID: 2800000, guid: 3fb06727ff1b77b47a394012b1326378, type: 3}
+          m_Scale: {x: 4, y: 4}
+          m_Offset: {x: 0, y: 0}
+      data:
+        first:
           name: _ParallaxMap
         second:
           m_Texture: {fileID: 0}
@@ -76,27 +97,6 @@ Material:
         second:
           m_Texture: {fileID: 0}
           m_Scale: {x: 1, y: 1}
-          m_Offset: {x: 0, y: 0}
-      data:
-        first:
-          name: _Normal
-        second:
-          m_Texture: {fileID: 2800000, guid: 967e6093cdd4a9d4eafc63fcd71cc492, type: 3}
-          m_Scale: {x: 1, y: 1}
-          m_Offset: {x: 0, y: 0}
-      data:
-        first:
-          name: _nN_Moss
-        second:
-          m_Texture: {fileID: 2800000, guid: 32f9322402dcb1e45bf48725c0e97e07, type: 3}
-          m_Scale: {x: 4, y: 4}
-          m_Offset: {x: 0, y: 0}
-      data:
-        first:
-          name: _T_Moss
-        second:
-          m_Texture: {fileID: 2800000, guid: 3fb06727ff1b77b47a394012b1326378, type: 3}
-          m_Scale: {x: 4, y: 4}
           m_Offset: {x: 0, y: 0}
       data:
         first:
@@ -161,7 +161,7 @@ Material:
       data:
         first:
           name: _ScriptedTime
-        second: 84.0971985
+        second: 12.8006897
       data:
         first:
           name: _Time

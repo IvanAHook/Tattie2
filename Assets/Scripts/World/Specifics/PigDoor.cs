@@ -4,8 +4,6 @@ using DG.Tweening;
 
 public class PigDoor : Door {
 
-    public Vector3 doorRot;
-
     public override void Interact() {
         if (interractItem == null && !base.opened) {
             OpenPigDoor();

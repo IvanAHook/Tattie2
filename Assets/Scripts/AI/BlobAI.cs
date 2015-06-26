@@ -26,7 +26,7 @@ public class BlobAI : MonoBehaviour
 	private enum BlobAction {Idling,PushingUp,Moving}
 	private BlobAction myAction;
 
-	Animator anim;
+	public Animator anim;
 	float blendSpeed;
 
 	bool triggered = false;
@@ -51,13 +51,8 @@ public class BlobAI : MonoBehaviour
 
 
 	void Update()
-	{
-		PlayAnimations ();
-
-		if (Input.GetKeyDown (KeyCode.G)) 
-		{
-			FallDown();
-		}
+	{  
+        PlayAnimations();
 	}
 
 
@@ -78,6 +73,7 @@ public class BlobAI : MonoBehaviour
 				nextRandomIdle = RandomTime ();
 				int randomTrigger = Random.Range (0,3);
 				if (isMayor) randomTrigger = 1;
+                if (isHanging) randomTrigger = 5;
 				switch (randomTrigger)
 				{
 				case 0:
@@ -91,6 +87,8 @@ public class BlobAI : MonoBehaviour
 					pushupTime=RandomTime();
 					myAction=BlobAction.PushingUp;
 					break;
+                case 5:
+                    break;
 				default:
 					Debug.Log("Incorrect anim trigger selection");
 					break;
@@ -138,7 +136,7 @@ public class BlobAI : MonoBehaviour
 		Invoke ("RunAgain",2.5f);
 	}
 
-	void RunAgain ()
+	public void RunAgain ()
 	{
 		agent.SetDestination (target.position);
 	}
@@ -166,6 +164,6 @@ public class BlobAI : MonoBehaviour
 	public void FallDown()
 	{
 		anim.SetTrigger ("FallDown");
-		isHanging = false;
+		//isHanging = false;
 	}
 }

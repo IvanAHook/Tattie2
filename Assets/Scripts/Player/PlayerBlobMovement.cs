@@ -6,7 +6,7 @@ using UnityEngine.EventSystems;
 [RequireComponent(typeof(AudioSource))]
 public class PlayerBlobMovement : MonoBehaviour {
 
-    NavMeshAgent agent;
+    public NavMeshAgent agent;
 
     AudioSource audioSource;
 
@@ -21,6 +21,7 @@ public class PlayerBlobMovement : MonoBehaviour {
     public bool friendly = false;
 
     public bool isMoving;
+    bool fleeing;
 
     public float speed = 100f;
 
@@ -31,7 +32,7 @@ public class PlayerBlobMovement : MonoBehaviour {
     Transform interractTarget;
 
     bool aquired;
-    bool wait = false;
+    public bool wait = false;
     public bool controllable = true;
 
     void Start() {
@@ -57,6 +58,13 @@ public class PlayerBlobMovement : MonoBehaviour {
         } else {
             if (isMoving) {
                 isMoving = false;
+            }
+        }
+
+        if (fleeing) {
+            if (agent.remainingDistance <= 1f) {
+                fleeing = false;
+                controllable = true;
             }
         }
 
@@ -110,6 +118,11 @@ public class PlayerBlobMovement : MonoBehaviour {
 
     public bool IsAquired() {
         return aquired;
+    }
+
+    public void Flee(Vector3 pos) {
+        controllable = false;
+        fleeing = true;
     }
 
     IEnumerator Footsteps() {

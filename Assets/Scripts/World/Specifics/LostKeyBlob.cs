@@ -5,6 +5,8 @@ public class LostKeyBlob : Interactable {
 
     bool idling;
 
+    public Animator fade;
+
     public float messageDurationHostile;
 
     public SpeechBubble speechBubbleHostile;
@@ -14,6 +16,8 @@ public class LostKeyBlob : Interactable {
 
     public SpeechBubble speechBubbleComplete;
     SpeechBubble currentSpeechBubbleComplete;
+
+    public bool isMayor;
 
     bool occupied = false;
 
@@ -28,20 +32,41 @@ public class LostKeyBlob : Interactable {
             occupied = true;
             Invoke("ResetOccupied", messageDurationHostile);
         }
+        if (isMayor) {
+            FinishGame();
+        }
     }
 
     public override void Interact(Transform item) {
-        if (item.GetComponent<UiItem>().worldItem == interractItem) {
-            if (base.currentSpeechBubble == null && currentSpeechBubbleComplete == null && speechBubbleComplete != null) {
-                currentSpeechBubbleComplete = Instantiate(speechBubbleComplete, transform.position, Quaternion.identity) as SpeechBubble;
-                currentSpeechBubbleComplete.messageDuration = messageDurationComplete;
-                Destroy(item.gameObject);
+        if (interractItem != null) {
+            if (item.GetComponent<UiItem>().worldItem == interractItem) {
+                if (currentSpeechBubbleComplete == null && speechBubbleComplete != null) {
+                    if (currentSpeechBubbleHostile != null) currentSpeechBubbleHostile.enabled = false;
+                    if (base.currentSpeechBubble != null) base.currentSpeechBubble.enabled = false;
+                    speechBubbleHostile = speechBubbleComplete;
+                    base.speechBubble = speechBubbleComplete;
+                    currentSpeechBubbleComplete = Instantiate(speechBubbleComplete, transform.position, Quaternion.identity) as SpeechBubble;
+                    currentSpeechBubbleComplete.messageDuration = messageDurationComplete;
+                    Destroy(item.gameObject);
+                }
             }
         }
     }
+
 
     void ResetOccupied() {
         occupied = false;
     }
 
+
+    public void FinishGame() {
+        StartCoroutine(FinishGame2());
+    }
+
+    public IEnumerator FinishGame2() {
+        fade.SetTrigger("Fade");
+        yield return new WaitForSeconds(4f);
+        Application.LoadLevel("MainMenu");
+    }
+	
 }

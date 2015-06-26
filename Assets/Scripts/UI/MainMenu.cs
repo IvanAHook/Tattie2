@@ -28,7 +28,7 @@ public class MainMenu : MonoBehaviour {
 	}
 
 	public void LoadAfterFade(){
-		Application.LoadLevel("MainLevelImplementingStuff");
+		Application.LoadLevel("MainLevel");
 	}
 
 	void BlobRunAway(){

@@ -58,8 +58,6 @@ public class PlayerGroupController : MonoBehaviour {
             if (EventSystem.current.IsPointerOverGameObject()) {
                 return;
             }
-            Debug.Log(hitInfo.transform.name);
-
             if (hitInfo.transform.gameObject.layer == 8) {
 
                 //RaycastHit hitInfo2;
@@ -147,7 +145,7 @@ public class PlayerGroupController : MonoBehaviour {
     }
 
     // make this more pretty somehow pliss ivan lol
-    void SwitchPlayer() {
+    public void SwitchPlayer() {
         if (activePlayer == ActivePlayer.Player) {
             activePlayer = ActivePlayer.Blob;
             playerBlob.active = true;
